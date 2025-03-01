@@ -71,14 +71,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 
 .uppermiddle nav {
     display: flex;
     justify-content: space-around;
     width: 40rem;
-    align-items: center;
 }
 .uppermiddle button {
     height: 4rem;
@@ -86,13 +84,10 @@ body {
     border-radius: 20px;
     font-size: 1.5rem;
     transition: background-color 300ms;
-    border: 1px solid BLACK;
-    background-color: tomato;
-    color: white;
 }
 
 .uppermiddle button:hover {
-    background-color: darkred;
+    background-color: darkgrey;
 }
 
 
@@ -145,7 +140,6 @@ body {
     text-align: left;
     font-size: 1rem;
     overflow: hidden;
-    padding: 10px;
 }
 
 .upper {
