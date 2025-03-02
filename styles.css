@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #f5f5dc;
+    background-color: white;
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
 }
@@ -80,13 +80,17 @@ body {
     width: 40rem;
     align-items: center;
 }
+
+a {
+    
+}
 .uppermiddle button {
     height: 4rem;
     width: 9rem;
     border-radius: 20px;
     font-size: 1.5rem;
     transition: background-color 300ms;
-    border: 1px solid BLACK;
+    border: 1px solid black;
     background-color: tomato;
     color: white;
 }
@@ -109,11 +113,9 @@ body {
     font-size: 3rem;
     font-size: "Cenzel";
     color: #C04E4E;
-    -webkit-text-stroke-color: red;
-    -webkit-text-stroke-width: 1px;
 }
 
-.middle {
+#middle {
     box-sizing: border-box;
     height: 2000px;
     display: grid;
@@ -125,7 +127,7 @@ body {
 
 }
 
-.middle .piece {
+.piece {
     width: 20rem;
     height: 20rem;
     border: 5px solid black;
@@ -242,4 +244,102 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     transform: rotate(-60deg);
+}
+
+#streamercontainer {
+    box-sizing: border-box;
+    height: 2000px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+    align-items: start;
+    padding: 100px;
+    
+}
+
+.pieces {
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
+    box-sizing: border-box;
+    border-radius: 360px;
+    padding: 50px;
+}
+
+.title {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.oilking {
+    height: 60%;
+    width: 100%;
+    background-image: url("oilking.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.bigbird {
+    height: 60%;
+    width: 100%;
+    background-image: url("bigbird.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.jb {
+    height: 60%;
+    width: 100%;
+    background-image: url("jb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.links {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-youtube {
+    color: red;
+    font-size: 2rem;
+}
+
+.fa-twitch {
+    color: #9146FF;
+    font-size: 2rem;
+}
+
+.fa-x-twitter {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.bottom h3 {
+    font-size: 3rem;
+    font-size: "Cenzel";
+    color: #C04E4E;
+    display: flex;
+    justify-content: center;
 }
