@@ -1,6 +1,7 @@
 * {
     padding: 0%;
     margin: 0%;
+    font-family: "Poppins";
 }
 
 body {
@@ -53,7 +54,6 @@ body {
     font-size: 4rem;
     color: #C04E4E;
 
-    font-family: "Cinzel";
     margin-bottom: 40px;
     margin: 0%;
     padding: 0%;
@@ -61,7 +61,6 @@ body {
 
 .description p {
     font-size: 1.3rem;
-    font-family: "Cinzel";
     font-weight: 600;
 }
 
