@@ -5,9 +5,14 @@
 }
 
 body {
-    background-color: white;
+    background: url("css-pattern-by-magicpattern.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
+    width: 100dvw;
+    padding: 0;
+    
 }
 
 
@@ -23,8 +28,8 @@ body {
 }
 
 .profilepic {
-    height: 20rem;
-    width: 20rem;
+    height: 50%;
+    width: 20%;
     background-image: url("RashidCropLateef.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -42,8 +47,8 @@ body {
     flex-direction: column;
     background-color: white;
     position: relative;
-    height: 20rem;
-    width: 50rem;
+    height: 60%;
+    width: 40%;
     border: 1px solid lightgray;
     box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
     border-radius: 30px;
@@ -115,13 +120,14 @@ a {
 
 #middle {
     box-sizing: border-box;
-    height: 2000px;
+    height: 1300px;
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     justify-items: center;
     align-items: start;
+    background-repeat: no-repeat;
 
 }
 
@@ -246,7 +252,7 @@ a {
 
 #streamercontainer {
     box-sizing: border-box;
-    height: 2000px;
+    height: 1000px;
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
@@ -265,6 +271,8 @@ a {
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
+    background-color: white;
+    background-blend-mode: ;
 }
 
 .title {
@@ -293,12 +301,22 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    
 }
 
 .jb {
     height: 60%;
     width: 100%;
     background-image: url("jb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.gachikun {
+    height: 60%;
+    width: 100%;
+    background-image: url("gachikun.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
