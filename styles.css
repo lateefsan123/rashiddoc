@@ -53,7 +53,10 @@ body {
     box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
     border-radius: 30px;
     overflow: hidden;
+
 }
+
+
 
 .description h3 {
     font-size: 4rem;
@@ -62,6 +65,17 @@ body {
     margin-bottom: 40px;
     margin: 0%;
     padding: 0%;
+    animation: word 2s infinite alternate;
+}
+
+@keyframes word {
+    from {
+        color: #C04E4E;;
+    }
+
+    to {
+        color: darkred;
+    }
 }
 
 .description p {
@@ -83,7 +97,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    width: 40rem;
+    width: 100vw;
     align-items: center;
 }
 
@@ -272,7 +286,6 @@ a {
     border-radius: 360px;
     padding: 50px;
     background-color: white;
-    background-blend-mode: ;
 }
 
 .title {
@@ -362,4 +375,79 @@ a:visited {
 
 .fa-brands {
     cursor: pointer;
+}
+
+#labbers {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#labbers h3 {
+    font-size: 3rem;
+    font-size: "Cenzel";
+    color: #C04E4E;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+#labbercontainer {
+    box-sizing: border-box;
+    height: 1000px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+    align-items: start;
+    padding: 100px;
+    
+}
+
+#labbercontainer .title {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+    font-size: 3rem;
+    box-sizing: border-box;
+}
+
+.labber {
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
+    box-sizing: border-box;
+    border-radius: 360px;
+    padding: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.gallant {
+    background-image: url("gallant.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+.gomamochi {
+    background-image: url("gomamochi.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.fourshika {
+    background-image: url("4shika.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
