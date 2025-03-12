@@ -335,6 +335,15 @@ a {
     background-position: center;
 }
 
+.john {
+    height: 60%;
+    width: 100%;
+    background-image: url("jt.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 .links {
     height: 30%;
     width: 100%;
@@ -450,4 +459,13 @@ a:visited {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.twitterholder {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.twitterholder i {
+    color: black;
 }
