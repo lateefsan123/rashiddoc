@@ -193,7 +193,12 @@ a {
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 30px;
+    transition: transform 300ms;
 
+}
+
+.piece:hover {
+    transform: scale(1.1);
 }
 
 .piece h3 {
