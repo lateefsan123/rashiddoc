@@ -37,7 +37,50 @@ body {
 
 }
 
+@media (max-width: 600px) {
+    .top {
+        display: none;
+    }
 
+    .description {
+        display: none;
+    }
+    
+    #tech h3 {
+        margin-top: 200px;
+    }
+
+    .uppermiddle {
+        background-color: grey;
+        height: 10%;
+        width: 100%;
+        top: 0;
+        border-bottom: 2px solid black;
+
+        box-sizing: border-box;
+    }
+
+    .uppermiddle nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .uppermiddle button {
+        height: 2rem;
+        width: 5rem;
+        border-radius: none;
+        font-size: 1rem;
+        transition: none;
+        background-color: transparent;
+        color: black;
+        border: none;
+    }
+
+    .yo {
+        display: none;
+    }
+}
 
 .description {
     box-sizing: border-box;
@@ -81,6 +124,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid black;
     
 }
 
@@ -90,6 +135,7 @@ body {
     gap: 2rem;
     width: 100vw;
     align-items: center;
+    
 }
 
 a {
@@ -98,16 +144,17 @@ a {
 .uppermiddle button {
     height: 4rem;
     width: 9rem;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 1.5rem;
     transition: background-color 300ms;
-    border: 1px solid black;
-    background-color: #C04E4E;
-    color: white;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
 }
 
 .uppermiddle button:hover {
-    background-color: darkred;
+    background-color: rgb(43, 232, 191);
 }
 
 
@@ -144,6 +191,7 @@ a {
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
+    margin-bottom: 30px;
 
 }
 
