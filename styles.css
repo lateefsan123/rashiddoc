@@ -125,7 +125,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     
 }
 
@@ -174,11 +174,12 @@ a {
 #middle {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) ) ;
-    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr) ) ;
+    gap: 20px;
     justify-items: center;
     background-repeat: no-repeat;
     margin-bottom: 40px;
+    padding: 100px;
 
 }
 
@@ -318,6 +319,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) ) ;
     gap: 40px;
+    justify-content: center;
     justify-items: center;
     align-items: start;
     padding: 100px;
@@ -449,7 +451,7 @@ a:visited {
     color: #C04E4E;
     display: flex;
     justify-content: center;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
 }
 
 #labbercontainer {
@@ -458,6 +460,7 @@ a:visited {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) ) ;
     gap: 40px;
     justify-items: center;
+    justify-content: center;
     align-items: start;
     padding: 50px;
     
