@@ -5,7 +5,12 @@
 }
 
 body {
-    background: url("css-pattern-by-magicpattern.png") no-repeat center center;
+    
+    
+    background: linear-gradient(45deg, #FFDAB9, #E6E6FA, #98FF98);
+
+
+
     background-size: cover;
     background-attachment: fixed;
     height: 100vh; /* Full viewport height */
@@ -103,7 +108,7 @@ body {
 
 .description h3 {
     font-size: 3rem;
-    color: #C04E4E;
+    color: #333333;
 
     margin-bottom: 40px;
     margin: 0%;
@@ -164,10 +169,10 @@ a {
 #tech h3 {
     font-size: 3rem;
     font-size: "Cenzel";
-    color: #C04E4E;
+    color: #333333;
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -328,6 +333,7 @@ a {
     justify-items: center;
     align-items: start;
     padding: 100px;
+    color: #333333;
     
 }
 
@@ -340,6 +346,15 @@ a {
     border-radius: 360px;
     padding: 50px;
     background-color: white;
+
+}
+
+.bottom h3 {
+    color: #333333;
+}
+
+.stream {
+    color: #333333;
 }
 
 .title {
@@ -350,6 +365,7 @@ a {
     align-items: center;
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #333333;
 }
 
 .oilking {
@@ -431,7 +447,6 @@ a:visited {
 .bottom h3 {
     font-size: 3rem;
     font-size: "Cenzel";
-    color: #C04E4E;
     display: flex;
     justify-content: center;
 }
@@ -453,7 +468,7 @@ a:visited {
 #labbers h3 {
     font-size: 3rem;
     font-size: "Cenzel";
-    color: #C04E4E;
+    color: #333333;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
@@ -490,6 +505,11 @@ a:visited {
     padding: 50px;
     background-color: white;
     cursor: pointer;
+    transition: transform 400ms;
+}
+
+.labber:hover {
+    transform: scale(1.1);
 }
 
 .gallant {
