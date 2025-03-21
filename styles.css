@@ -132,6 +132,8 @@ body {
     justify-content: center;
     background-color: white;
     border-bottom: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
     
 }
 
@@ -139,14 +141,75 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     
 }
 
-a {
+#charselect {
+    position: relative;;
+    font-size: medium;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 0px;
+    justify-self: right;
+    align-self: center;
+    transition: background-color 200ms ease-in;
+    transition: color 200ms ease-in;
     
 }
+
+#charselect:hover {
+    background-color: lightgray;
+    color: black;
+    transform: scale(1.1);
+}
+
+.dropdown {
+    display: none;
+    position: fixed;
+    left: 89%;
+    top: 13%;
+    flex-direction: column;
+    gap: 8px;
+    height: 300px;
+    width:  150px;
+    padding: 0%;
+    border: none;
+    z-index: 2;
+    
+}
+
+.dropdown div {
+    width: 120px;
+    height: 120px;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 66px;
+}
+
+.dropdown div:hover {
+    transform: scale(1.1);
+}
+
+.kimberly {
+    background-image: url("Kimberly_Jackson.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+}
+
+.rashid {
+    background-image: url("rashidheadshot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .uppermiddle button {
     height: 4rem;
     width: 9rem;
@@ -158,6 +221,8 @@ a {
     border: none;
     cursor: pointer;
 }
+
+
 
 .uppermiddle button:hover {
     background-color: lightgrey;
@@ -410,7 +475,7 @@ a {
 .gachikun {
     height: 60%;
     width: 100%;
-    background-image: url("gachikun.png");
+    background-image: url("gachigoat.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
