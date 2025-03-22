@@ -414,8 +414,8 @@ body {
 }
 
 .pieces {
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
     border: 5px solid black;
     box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
     box-sizing: border-box;
@@ -439,7 +439,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     color: #333333;
 }
@@ -484,7 +484,7 @@ body {
 .john {
     height: 60%;
     width: 100%;
-    background-image: url("jt.png");
+    background-image: url("jt1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
