@@ -7,7 +7,7 @@
 body {
     
     
-    background: linear-gradient(45deg, #FFDAB9, #E6E6FA, #98FF98);
+    background: #181a1b;
 
 
 
@@ -125,25 +125,76 @@ body {
 
 .uppermiddle {
     position: fixed;
+    top: 0;
+    transition: all 0.3s ease;
     z-index: 2;
     height: 5rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: 1fr;
+    background-color: transparent;
+
     padding: 10px;
     box-sizing: border-box;
+    border: none;
+    
+}
+
+.uppermiddle.scrolled {
+    background-color: rgba(228, 57, 85, 0.9);
+    color: white;
+
+}
+
+.center.scrolled {
+    color: white;
+}
+
+.titletop {
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-size: 1.90em;
+    letter-spacing: 0.2em;
+}
+
+.center {
+    color: red;
+    border: none;
     
 }
 
 .uppermiddle nav {
+    grid-column: 2;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     width: 100%;
     align-items: center;
-    
+    font-size: 1.40em;
+}
+
+nav span {
+    color: white;
+    font-size: 1.30em;
+    gap: 4rem;
+}
+
+.uppermiddle span {
+    transition: border-bottom 100ms ease-in-out;
+}
+
+
+
+
+nav span:hover {
+    border-bottom: 6px solid red;
+}
+
+.wild span.scrolled:hover {
+    border-bottom: 6px solid black;
 }
 
 
@@ -226,9 +277,6 @@ body {
 
 
 
-.uppermiddle button:hover {
-    background-color: lightgrey;
-}
 
 
 
@@ -237,7 +285,7 @@ body {
 #tech h3 {
     font-size: 3rem;
     font-size: "Cenzel";
-    color: #333333;
+    color: white;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
@@ -279,6 +327,7 @@ body {
 }
 
 .piece h3 {
+    color: black;
     font-size: 1.5rem;
 }
 
@@ -502,7 +551,7 @@ body {
 }
 
 .bottom h3 {
-    color: #333333;
+    color: white;
 }
 
 .stream {
@@ -609,6 +658,7 @@ a:visited {
     font-size: "Cenzel";
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .fa-brands {
@@ -628,7 +678,7 @@ a:visited {
 #labbers h3 {
     font-size: 3rem;
     font-size: "Cenzel";
-    color: #333333;
+    color: white;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
