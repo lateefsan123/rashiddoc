@@ -30,6 +30,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-radius: 0% 100% 100% 0% / 56% 0% 100% 44% ;
+    border: 5px solid white;
 }
 
 .profilepic {
@@ -77,7 +80,7 @@ body {
     }
 
     #tech {
-        margin-top: 100px;
+        margin-top: 500px;
     }
 
     #streamercontainer {
@@ -96,8 +99,8 @@ body {
     background-color: white;
     position: relative;
     width: 45%;
-    border: 5px solid red;
     overflow: hidden;
+    border: 3px solid black;
 
 }
 
@@ -143,6 +146,11 @@ body {
 
 }
 
+.uppermiddle.scrolled a {
+    color: white;
+
+}
+
 .center.scrolled {
     color: white;
 }
@@ -151,7 +159,7 @@ body {
     grid-column: 1;
     align-self: center;
     justify-self: center;
-    color: white;
+    color: black;
     font-size: 1.90em;
     letter-spacing: 0.2em;
 }
@@ -173,7 +181,7 @@ body {
 }
 
 nav span {
-    color: white;
+    color: black;
     font-size: 1em;
     gap: 4rem;
 }
@@ -191,73 +199,19 @@ nav span:hover {
 
 .wild span.scrolled:hover {
     border-bottom: 6px solid black;
+
+}
+
+.wild span.scrolled {
+    color: white;
 }
 
 
 
-#charselect {
-    position: relative;;
-    font-size: medium;
-    border: 3px solid black;
-    padding: 10px;
-    border-radius: 0px;
-    justify-self: right;
-    align-self: center;
-    transition: background-color 200ms ease-in;
-    transition: color 200ms ease-in;
-    
-}
 
-#charselect:hover {
-    background-color: lightgray;
-    color: black;
-    transform: scale(1.1);
-}
 
-.dropdown {
-    display: none;
-    position: fixed;
-    left: 89%;
-    top: 13%;
-    flex-direction: column;
-    gap: 8px;
-    height: 300px;
-    width:  150px;
-    padding: 0%;
-    border: none;
-    z-index: 2;
-    
-}
 
-.dropdown div {
-    width: 120px;
-    height: 120px;
-    padding: 0%;
-    margin: 0%;
-    background-color: white;
-    cursor: pointer;
-    border: 3px solid black;
-    border-radius: 66px;
-}
 
-.dropdown div:hover {
-    transform: scale(1.1);
-}
-
-.kimberly {
-    background-image: url("Kimberly_Jackson.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: none;
-}
-
-.rashid {
-    background-image: url("rashidheadshot.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 .uppermiddle button {
     height: 4rem;
@@ -306,7 +260,6 @@ nav span:hover {
     width: 20rem;
     height: 20rem;
     border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
     box-sizing: border-box;
     background-color: white;
     border-radius: 15px;
@@ -318,7 +271,7 @@ nav span:hover {
 
 .piece:hover {
     transform: scale(1.1);
-    box-shadow: 2px 4px 10px 0px lightcoral;
+    box-shadow: 2px 4px 10px 0px rgb(255, 17, 17);
 
 }
 
@@ -528,7 +481,7 @@ nav span:hover {
     width: 16rem;
     height: 16rem;
     border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
+    box-shadow: 0 4px 8px rgba(225, 83, 44, 0.3);
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
@@ -543,7 +496,7 @@ nav span:hover {
 
 .pieces:hover {
     transform: scale(1.1);
-    box-shadow: 2px 4px 10px 0px lightcoral;
+    box-shadow: 2px 4px 10px 0px rgb(255, 0, 0);
 }
 
 .bottom h3 {
@@ -627,7 +580,26 @@ nav span:hover {
 .fa-twitch {
     color: #9146FF;
     font-size: 2rem;
+    animation: twitchflash  2s  infinite alternate;
 }
+
+#@keyframes twitchflash {
+    from {
+        transform: scale(0.8);
+        color: #9146FF;
+
+    }
+
+    to {
+    color: #e600ff;
+    transform: scale(1.1);
+
+    }
+
+
+    
+}
+
 
 .fa-x-twitter {
     font-size: 2rem;
@@ -723,7 +695,7 @@ a:visited {
 }
 
 .hub {
-    color: red;
+    color: black;
 }
 
 .gallant {
