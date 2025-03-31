@@ -146,6 +146,8 @@ body {
     
 }
 
+
+
 #charselect {
     position: relative;;
     font-size: medium;
@@ -272,6 +274,8 @@ body {
 
 .piece:hover {
     transform: scale(1.1);
+    box-shadow: 2px 4px 10px 0px lightcoral;
+
 }
 
 .piece h3 {
@@ -309,8 +313,14 @@ body {
     color: black;
     font-size: 1.9rem;
     cursor: pointer;
+    
+}
+
+
+.fa-arrow-up-right-from-square:hover {
     animation: icon 2s infinite alternate;
 }
+
 
 @keyframes icon {
     from {
@@ -481,8 +491,14 @@ body {
     animation: apear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+    transition: transform 200ms ease-in-out;
     
 
+}
+
+.pieces:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 4px 10px 0px lightcoral;
 }
 
 .bottom h3 {
