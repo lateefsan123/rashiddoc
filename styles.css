@@ -691,6 +691,7 @@ a:visited {
 .labber:hover {
     transform: scale(1.1);
     filter: grayscale(0%);
+    box-shadow: 2px 4px 10px 0px rgb(255, 0, 0);
 
 }
 
@@ -727,4 +728,62 @@ a:visited {
 
 .twitterholder i {
     color: black;
+}
+
+.section {
+    position: fixed;
+    top: 50%;
+    left: 95%;
+    width: 70px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-discord {
+    color: white;
+    font-size: 2rem;
+    animation: bounce 5s infinite;
+    margin-bottom: 15px;
+    align-self: center;
+}
+
+@keyframes bounce {
+    0% {
+
+    }
+
+    50% {
+        transform: translateY(10px);
+        color: rgba(115,138,219);
+    }
+
+    100% {
+
+    }
+    
+}
+
+.framedate {
+    background-image: url("ogimage.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    align-self: center;
+    animation: bounce 5s infinite;
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+
+}
+
+.framedate:hover {
+    transform: scale(1.2);
 }
