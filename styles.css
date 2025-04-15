@@ -593,22 +593,7 @@ nav span:hover {
     animation: twitchflash  2s  infinite alternate;
 }
 
-#@keyframes twitchflash {
-    from {
-        transform: scale(0.8);
-        color: #9146FF;
 
-    }
-
-    to {
-    color: #e600ff;
-    transform: scale(1.1);
-
-    }
-
-
-    
-}
 
 
 .fa-x-twitter {
@@ -696,17 +681,24 @@ a:visited {
     filter: grayscale(100%);
     transition: transform 200ms;
     transition: filter 200ms ease-in-out;
+    margin-top: 10px;
 }
 
 .labber:hover {
-    transform: scale(1.1);
     filter: grayscale(0%);
-    box-shadow: 2px 4px 10px 0px rgb(255, 0, 0);
+    box-shadow: 2px 4px 10px 0px rgba(199, 3, 3, 0.855);
 
 }
 
 .hub {
     color: black;
+}
+
+#labbercontainer h2{
+    text-align: center;
+    opacity: 0%;
+    color: rgba(228, 57, 85, 0.9);
+    transition: opacity 300ms ease-in;
 }
 
 .gallant {
@@ -757,43 +749,44 @@ a:visited {
 
 .fa-discord {
     color: white;
-    font-size: 2rem;
-    animation: bounce 5s infinite ;
+    font-size: 1.5rem;
+    padding: 0.5rem;
     margin-bottom: 15px;
     align-self: center;
+    background: #7350f4;
+    border-radius: 50%;
 }
 
-@keyframes bounce {
-    0% {
-
-    }
-
-    50% {
-        transform: translateY(10px);
-        color: rgba(115,138,219);
-    }
-
-    100% {
-
-    }
-    
-}
 
 .framedate {
     background-image: url("ogimage.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 3rem;
-    width: 3rem;
+    height: 2.3rem;
+    width: 2.3rem;
     border-radius: 50%;
     align-self: center;
     animation: bounce 5s infinite;
     transition: transform 200ms ease-in-out;
     cursor: pointer;
+    margin-bottom: 15px;
 
 }
 
-.framedate:hover {
+.framedate:hover, .fa-file-word:hover {
     transform: scale(1.2);
+}
+
+.fa-file-word {
+    color: green;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    align-self: center;
+}
+
+#playBtn i {
+    color: white;
+    font-size: 2rem;
+    align-self: center;
 }
