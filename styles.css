@@ -104,16 +104,36 @@ body {
     padding: 15px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    
     background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     width: 45%;
-    overflow: hidden;
+    height: 45%;
     /*border: 3px solid black;*/
     border: 10px groove #2a2727;
 
 }
 
+.firstone {
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 45%;
+    height: 45%;
+    /*border: 3px solid black;*/
+    border: 10px groove #2a2727;
+}
 
 
 .description h3 {
@@ -132,6 +152,116 @@ body {
     font-weight: 600;
 }
 
+.achievement {
+    background-image: url("big-bird-red-bull-kumite.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.achievement a {
+    padding-top: 20px;
+}
+
+.achievement h2 {
+    transition: all 300ms ease-in-out;
+}
+
+.achievement h2:hover {
+    color: red;
+    transform: scale(1.05);
+}
+
+.redbull {
+    color: white;
+}
+
+.description.replay {
+    display: flex;
+    justify-content: row;
+    padding: 0;
+}
+
+.replay div {
+    height: 100%;
+    width: 50%;
+    margin: none;
+    background-color: transparent;
+}
+
+.replay h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.leftthird {
+    padding: 10px;
+}
+
+.leftthird button {
+    width: 40%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    
+    
+}
+
+.leftthird button:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: -5px 5px 0px 0px rgba(223, 0, 0, 0.75);
+    transform: translateY(-2px);
+    transition: transform 200ms ease-in;
+}
+
+.rightthird {
+    background-image: url("blues.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fa-arrow-right {
+    font-size: 3rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fa-arrow-right:hover {
+    transform: scale(1.1);
+}
+
+.nextpg {
+    display: flex;
+    justify-content: center;
+    transform: translateY(60px);
+}
+
+.nextpg span {
+    display: flex;
+    gap: 10px;
+}
+
+
+.nextpg button{
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
+
+}
+
+.nextpg button:first-of-type {
+    background-color: grey;
+}
 .uppermiddle {
     position: fixed;
     top: 0;
@@ -789,4 +919,5 @@ a:visited {
     color: white;
     font-size: 2rem;
     align-self: center;
+    opacity: 100%;
 }
