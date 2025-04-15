@@ -159,6 +159,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
+    opacity: 100%;
 }
 
 .achievement a {
@@ -166,12 +167,12 @@ body {
 }
 
 .achievement h2 {
-    transition: all 300ms ease-in-out;
 }
 
 .achievement h2:hover {
     color: red;
     transform: scale(1.05);
+    webkit-tex
 }
 
 .redbull {
@@ -182,6 +183,7 @@ body {
     display: flex;
     justify-content: row;
     padding: 0;
+    opacity: 100%;
 }
 
 .replay div {
@@ -209,7 +211,10 @@ body {
     border-radius: 15px;
     
     
+    
 }
+
+
 
 .leftthird button:hover {
     transform: scale(1.1);
@@ -218,6 +223,16 @@ body {
     box-shadow: -5px 5px 0px 0px rgba(223, 0, 0, 0.75);
     transform: translateY(-2px);
     transition: transform 200ms ease-in;
+    animation: moveit 3s infinite alternate;
+    
+    
+}
+
+@keyframes moveit {
+    50% {
+        transform: scale(1.1);
+      }
+    
 }
 
 .rightthird {
@@ -231,7 +246,10 @@ body {
     font-size: 3rem;
     margin-left: 10px;
     cursor: pointer;
+    
 }
+
+
 
 .fa-arrow-right:hover {
     transform: scale(1.1);
