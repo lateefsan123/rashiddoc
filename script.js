@@ -67,6 +67,12 @@ window.addEventListener("scroll", function () {
  
 
   function changecarrosel() {
+    number+=1
+
+
+    desc.classList.add("fade-out");
+
+    
     if (number > 3) {
       number = 1
     }
@@ -116,11 +122,55 @@ window.addEventListener("scroll", function () {
       desc.classList.add("replay")
       desc.classList.remove("achievement");
     }
-    number+=1
+    setTimeout(() => {
+      desc.classList.remove("fade-out");
+    }, 50);
   }
+
 
 next.addEventListener("click", changecarrosel) 
 
   
 setInterval(changecarrosel, 8000 )
+
+function updateTornadoWidth() {
+  const top = document.querySelector('.top');
+  const description = document.querySelector('.description');
+  const tornadoContainer = document.querySelector('.tornadocontainer');
+
+  const topWidth = top.offsetWidth;
+  const descriptionWidth = description.offsetWidth;
+
+  const resultWidth = topWidth - descriptionWidth;
+  tornadoContainer.style.width = `${resultWidth}px`;
+}
+
+// Run it on load
+updateTornadoWidth();
+
+// Optional: also update on window resize
+window.addEventListener('resize', updateTornadoWidth);
+
+function moveTornado() {
+  const tornadoImg = document.querySelector('.tornado img');
+  const tornadoContainer = document.querySelector('.tornadocontainer');
+
+  if (tornadoImg && tornadoContainer) {
+    const containerWidth = tornadoContainer.offsetWidth;
+    const imgWidth = tornadoImg.offsetWidth;
+    const travelDistance = containerWidth - imgWidth;
+
+    tornadoImg.style.transform = `translateX(${travelDistance}px)`;
+
+    // Optional: Reset after it finishes, to repeat
+    setTimeout(() => {
+      tornadoImg.style.transform = `translateX(0px)`;
+    }, 8000); // match duration of transition
+  }
+}
+
+// Run it on load
+
+
+
 

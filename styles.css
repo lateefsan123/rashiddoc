@@ -33,6 +33,7 @@ body {
     background-color: white;
     border-radius: 0% 100% 100% 0% / 56% 0% 100% 44% ;
     border: 5px solid white;
+    position: relative;
 }
 
 .profilepic {
@@ -114,8 +115,50 @@ body {
     height: 45%;
     /*border: 3px solid black;*/
     border: 10px groove #2a2727;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 
 }
+
+.tornadocontainer {
+    height: 70px;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 20%;
+    top: 16%;
+    
+}
+
+.tornado {
+    margin-left: 25%;
+    margin-bottom: 20%;
+}
+
+
+
+
+
+.staticrashidtornado {
+    height: 60px;
+    width: 60px;
+    animation: lol 8s ease-in-out infinite;
+
+}
+
+@keyframes lol {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(600px);
+    }
+    
+}
+
+.description.fade-out {
+    opacity: 0%;
+  }
 
 .firstone {
     box-sizing: border-box;
@@ -160,6 +203,7 @@ body {
     justify-content: center;
     align-items: end;
     opacity: 100%;
+    transition: opacity, 400ms ease-in;
 }
 
 .achievement a {
@@ -172,7 +216,6 @@ body {
 .achievement h2:hover {
     color: red;
     transform: scale(1.05);
-    webkit-tex
 }
 
 .redbull {
@@ -184,6 +227,7 @@ body {
     justify-content: row;
     padding: 0;
     opacity: 100%;
+    transition: opacity, 400ms ease-in;
 }
 
 .replay div {
@@ -223,7 +267,7 @@ body {
     box-shadow: -5px 5px 0px 0px rgba(223, 0, 0, 0.75);
     transform: translateY(-2px);
     transition: transform 200ms ease-in;
-    animation: moveit 3s infinite alternate;
+    animation: moveit 1s infinite alternate;
     
     
 }
@@ -866,6 +910,13 @@ a:visited {
 
 .fourshika {
     background-image: url("rashidUSAN.ico");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.yasyan {
+    background-image: url("YASYAN.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
