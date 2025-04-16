@@ -775,6 +775,15 @@ nav span:hover {
     background-position: center;
 }
 
+.kevin {
+    height: 60%;
+    width: 100%;
+    background-image: url("dk.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 
 .links {
     height: 30%;
@@ -941,6 +950,13 @@ a:visited {
 
 .shift {
     background-image: url("shift1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.dj {
+    background-image: url("dj.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
