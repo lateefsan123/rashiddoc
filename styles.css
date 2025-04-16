@@ -760,11 +760,21 @@ nav span:hover {
 .john {
     height: 60%;
     width: 100%;
-    background-image: url("jttt.webp");
+    background-image: url("jt7.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
+.wrestlingman {
+    height: 60%;
+    width: 100%;
+    background-image: url("wrestlingman.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 
 .links {
     height: 30%;
@@ -917,6 +927,20 @@ a:visited {
 
 .yasyan {
     background-image: url("YASYAN.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.magou {
+    background-image: url("magou.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.shift {
+    background-image: url("shift1.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
