@@ -485,12 +485,12 @@ nav span:hover {
 
 .piece h3 {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .piece p {
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
     overflow: hidden;
     padding: 10px;
 }
@@ -512,7 +512,7 @@ nav span:hover {
 .lower span {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
 }
 
 .fa-arrow-up-right-from-square {
@@ -614,6 +614,22 @@ nav span:hover {
     font-size: 1.2rem;
     font-weight: bold;
     transform: rotate(-60deg);
+}
+
+.floki {
+    background-image: url("floaki.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #D4F1F4;
+}
+
+.flipki {
+    background-image: url("aa-fotor-bg-remover-20250418184255.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: 	#FFF6D1;
 }
 
 #streamercontainer {
