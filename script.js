@@ -1,6 +1,8 @@
 const navbar = document.querySelector(".uppermiddle");
 const titletop = document.querySelector(".center")
 const navitems = document.querySelectorAll(".wild span")
+const highest = document.querySelector(".highest");
+const highestitems = document.querySelectorAll(".highest a");
 let scrolltop = 0;
 
 window.addEventListener("scroll", function () {
@@ -19,12 +21,31 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.addEventListener("scroll", function () {
+
+
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      highest.classList.add("scrolled");
+      highestitems.forEach(function(item) {
+          item.classList.add("scrolled")
+      })
+    } else {
+      highest.classList.remove("scrolled");
+      highestitems.forEach(function(item) {
+          item.classList.remove("scrolled")
+      })
+    }
+  });
+  
+  window.addEventListener("scroll", function () {
     let currentscroll = window.pageYOffset;
     if (currentscroll < scrolltop) {
         
     }
   });
+
+  
 
 
   const gallant = document.querySelectorAll(".testingit");

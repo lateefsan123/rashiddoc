@@ -21,11 +21,6 @@ body {
     
 }
 
-.highest {
-    display: none;
-    
-}
-
 
 
 
@@ -42,6 +37,11 @@ body {
     position: relative;
 }
 
+
+.highest {
+    display: none;
+    z-index: 3;
+}
 .profilepic {
     height: 50%;
     width: 20%;
@@ -52,7 +52,7 @@ body {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
     .uppermiddle,
     .section,
     .titletop,
@@ -99,8 +99,78 @@ body {
     }
 
     .highest a {
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
+    }
+
+
+    .space {
+        display: block;
+        height: 150px;
+    }
+
+    
+
+    
+  }
+  
+
+@media (max-width: 600px) {
+    .uppermiddle,
+    .section,
+    .titletop,
+    .profilepic,
+    .tornadocontainer,
+    .tornado,
+    .fa-arrow-right,
+    .top {
+      display: none !important;
+    }
+
+    #middle {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) ) ;
+        gap: 20px;
+        justify-items: center;
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+        padding: 100px;
+        justify-content: center;
+    
+    }
+    
+    .piece {
+        width: 10rem;
+        height: 10rem;
+        border: none;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        transition: transform 300ms;
+    
+    }
+
+    .highest {
+        display: flex;
+        justify-content: space-around;
+        height: 2rem;
+        margin-bottom: 200px;
+        
+    }
+
+    .highest a {
+        font-size: 1rem;
+        color: white;
+    }
+
+
+    .space {
+        display: block;
+        height: 150px;
+        z-index: 3;
     }
 
     
@@ -149,17 +219,39 @@ body {
     }
 
     .highest {
+        position: fixed;
+        width: 100%;
         display: flex;
         justify-content: space-around;
-        height: 2rem;
+        align-items: center;
+        height: 4rem;
         margin-bottom: 200px;
+        padding: 10px;
         
     }
 
     .highest a {
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
     }
+
+    .highest.scrolled {
+        background-color: rgba(228, 57, 85, 0.9);
+        color: white;
+    
+    }
+    
+    .highest.scrolled a {
+        color: white;
+    
+    }
+    
+    .space {
+        display: block;
+        height: 150px;
+        z-index: 3;
+    }
+
 
     
     
