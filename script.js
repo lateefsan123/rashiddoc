@@ -91,15 +91,12 @@ window.addEventListener("scroll", function () {
     
     if (number == 2) {
       
-      desc.innerHTML= `
-      <audio id="bbmusic" src="bbchant.mp3"></audio>
-        <a  href="https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX" target="_blank">
-          <h2 class="redbull" ">Big Bird Red Bull Kumite</h2>
-        </a>
-      
+      desc.innerHTML = `
+      <div onclick="window.open('https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Big Bird Red Bull Kumite</h2>
+      </div>
+    `;
 
-        
-      `;
 
       document.querySelector(".redbull").addEventListener("click", () => {
         document.getElementById("bbmusic").play();

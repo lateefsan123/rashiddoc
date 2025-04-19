@@ -467,7 +467,7 @@ nav span:hover {
 .piece {
     width: 20rem;
     height: 20rem;
-    border: 5px solid black;
+    border: none;
     box-sizing: border-box;
     background-color: white;
     border-radius: 15px;
@@ -512,7 +512,7 @@ nav span:hover {
 .lower span {
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
 }
 
 .fa-arrow-up-right-from-square {
@@ -543,7 +543,7 @@ nav span:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-color: #FF6347 ;
+    background-color: #FADADD ;
 }
 
 .mediumeagle {
@@ -551,7 +551,7 @@ nav span:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-color: #FF69B4;
+    background-color: #C1F4D7;
 }
 
 .overhead {
@@ -559,7 +559,7 @@ nav span:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-color: #8A2BE2;
+    background-color: #FFDAC1;
 }
 
 .crouchingmedium {
@@ -567,7 +567,7 @@ nav span:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-color: #00CED1 ;
+    background-color: #FFF5BA ;
 }
 
 .sa2 {
@@ -575,7 +575,7 @@ nav span:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-color: #F0E68C;
+    background-color: #AEDFF7;
 }
 
 .fivehk {
@@ -583,7 +583,7 @@ nav span:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-color: #DDA0DD;
+    background-color: 	#FDE2E4;
 }
 
 .driveimpact {
@@ -607,7 +607,7 @@ nav span:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-color: #7350f4;
+    background-color: #E6CCFF;
 }
 
 .dirty {
