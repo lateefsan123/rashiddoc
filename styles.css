@@ -21,6 +21,11 @@ body {
     
 }
 
+.highest {
+    display: none;
+    
+}
+
 
 
 
@@ -47,64 +52,121 @@ body {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    .uppermiddle,
+    .section,
+    .titletop,
+    .profilepic,
+    .tornadocontainer,
+    .tornado,
+    .fa-arrow-right,
     .top {
-        display: none;
+      display: none !important;
     }
 
-    .description {
-        display: none;
+    #middle {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) ) ;
+        gap: 20px;
+        justify-items: center;
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+        padding: 100px;
+        justify-content: center;
+    
     }
     
-    #tech h3 {
-        margin-top: 200px;
+    .piece {
+        width: 10rem;
+        height: 10rem;
+        border: none;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        transition: transform 300ms;
+    
+    }
+
+    .highest {
+        display: flex;
+        justify-content: space-around;
+        height: 2rem;
+        margin-bottom: 200px;
+        
+    }
+
+    .highest a {
         font-size: 2rem;
+        color: white;
     }
 
-    .uppermiddle {
-        display: none;
-    }
+    
 
-    .uppermiddle nav {
-        display: none;
-    }
-
-
-
-    .yo {
-        display: none;
-    }
-
-    .titletop {
-        display: hidden;
-    }
-
-    .section {
-        display: none;
-     }
-}
+    
+  }
+  
 
 @media (max-width: 900px) {
+
+    .uppermiddle,
+    .section,
+    .titletop,
+    .profilepic,
+    .tornadocontainer,
+    .tornado,
+    .fa-arrow-right,
     .top {
-        display: none;
+      display: none !important;
     }
 
-    #tech {
-        margin-top: 500px;
-    }
-
-    #streamercontainer {
-        display: none;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
-    }
-
-    .section {
-       display: none;
+    #middle {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) ) ;
+        gap: 20px;
+        justify-items: center;
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+        padding: 100px;
+        justify-content: center;
+    
     }
     
+    .piece {
+        width: 10rem;
+        height: 10rem;
+        border: none;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        transition: transform 300ms;
+    
+    }
 
+    .highest {
+        display: flex;
+        justify-content: space-around;
+        height: 2rem;
+        margin-bottom: 200px;
+        
+    }
+
+    .highest a {
+        font-size: 2rem;
+        color: white;
+    }
+
+    
     
 }
+    
+    
+
 
 .description {
     box-sizing: border-box;
