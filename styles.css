@@ -624,7 +624,7 @@ nav span:hover {
 .piece {
     width: 20rem;
     height: 20rem;
-    border: none;
+    border: 7px solid white;
     box-sizing: border-box;
     background-color: white;
     border-radius: 15px;
