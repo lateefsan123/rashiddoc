@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     font-family: "Poppins";
+    text-decoration: none;
 }
 
 body {
@@ -41,6 +42,7 @@ body {
 .highest {
     display: none;
     z-index: 3;
+    box-sizing: border-box;
 }
 .profilepic {
     height: 50%;
@@ -72,8 +74,8 @@ body {
         justify-items: center;
         background-repeat: no-repeat;
         margin-bottom: 40px;
-        padding: 100px;
         justify-content: center;
+        width: 100%;
     
     }
     
@@ -85,7 +87,6 @@ body {
         background-color: white;
         border-radius: 15px;
         overflow: hidden;
-        margin-bottom: 30px;
         transition: transform 300ms;
     
     }
@@ -134,7 +135,6 @@ body {
         gap: 20px;
         justify-items: center;
         background-repeat: no-repeat;
-        margin-bottom: 40px;
         padding: 100px;
         justify-content: center;
     
@@ -199,10 +199,14 @@ body {
         gap: 20px;
         justify-items: center;
         background-repeat: no-repeat;
-        margin-bottom: 40px;
         padding: 100px;
         justify-content: center;
     
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
     }
     
     .piece {
@@ -612,7 +616,6 @@ nav span:hover {
     gap: 20px;
     justify-items: center;
     background-repeat: no-repeat;
-    margin-bottom: 40px;
     padding: 100px;
     justify-content: center;
 
@@ -639,11 +642,12 @@ nav span:hover {
 
 .piece h3 {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .piece p {
-    text-align: left;
+    text-align: center;
     font-size: 0.8rem;
     overflow: hidden;
     padding: 10px;
@@ -762,6 +766,7 @@ nav span:hover {
     background-size: contain;
     background-position: center;
     background-color: #E6CCFF;
+    color: black;
 }
 
 .dirty {
@@ -898,7 +903,6 @@ nav span:hover {
 
 .oilking {
     height: 60%;
-    width: 100%;
     background-image: url("oilking.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -907,7 +911,6 @@ nav span:hover {
 
 .bigbird {
     height: 60%;
-    width: 100%;
     background-image: url("bigbird.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -917,7 +920,6 @@ nav span:hover {
 
 .jb {
     height: 60%;
-    width: 100%;
     background-image: url("jb.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -926,7 +928,6 @@ nav span:hover {
 
 .gachikun {
     height: 60%;
-    width: 100%;
     background-image: url("gachigoat.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -935,7 +936,6 @@ nav span:hover {
 
 .john {
     height: 60%;
-    width: 100%;
     background-image: url("jt7.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -944,7 +944,6 @@ nav span:hover {
 
 .wrestlingman {
     height: 60%;
-    width: 100%;
     background-image: url("wrestlingman.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -953,7 +952,6 @@ nav span:hover {
 
 .kevin {
     height: 60%;
-    width: 100%;
     background-image: url("dk.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -1251,3 +1249,8 @@ a:visited {
     }
     
   }
+
+  .burnoutp, .flokip, .flipkip, .driveimpactp, .fivehkp, .sa2p, .dirtyp, .crouchingmediump, .overheadp, .mediumeaglep, .lighteaglep {
+    color: black;
+  }
+
