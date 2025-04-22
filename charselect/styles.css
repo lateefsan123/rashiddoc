@@ -42,6 +42,11 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    -webkit-text-stroke: #000000;
+    -webkit-text-stroke-width: 1px;
   }
   
   .fighter:hover {
@@ -71,6 +76,164 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+.akuma {
+    background-image: url("images/Akuma\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bison {
+    background-image: url("images/Bison\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blanka {
+    background-image: url("images/Blanka\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cammy {
+    background-image: url("images/Cammy\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.chun {
+    background-image: url("images/Chun\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.deejay {
+    background-image: url("images/Deejay\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dhalsim {
+    background-image: url("images/Dhalsim\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.honda {
+    background-image: url("images/E.\ Honda\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ed {
+    background-image: url("images/Ed\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jamie {
+    background-image: url("images/Jamie\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jp {
+    background-image: url("images/Jp\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.juri {
+    background-image: url("images/Juri\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ryu {
+    background-image: url("images/Ryu\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.terry {
+    background-image: url("images/Terry\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.zangief {
+    background-image: url("images/Zangief\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lily {
+    background-image: url("images/Lily\ \(2\)\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.luke {
+    background-image: url("images/Luke\ \(2\)\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.manon {
+    background-image: url("images/Manon\ \(2\)\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.marrissa {
+    background-image: url("images/Marisa\ \(2\)\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.guile {
+    background-image: url("images/Guile\ \(2\)\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aki {
+    background-image: url("images/AKI\ \(1\)\ \(1\).png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mai {
+    background-image: url("images/mai.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
 .right {
     width: 40vw;
     box-sizing: border-box;

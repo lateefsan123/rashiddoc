@@ -16,9 +16,9 @@ let render = document.querySelector(".preview")
 
 let character = {
     char1: {
-        name: "kimberly",
+        name: "Kimberly",
         weight: "134",
-        height: "164",
+        height: "5'6",
         archetype: "rushdown",
         num: "no1",
         background: "url('images/kimgif.gif')"
@@ -26,9 +26,9 @@ let character = {
     },
 
     char2: {
-        name: "rashid",
-        weight: "190",
-        height: "180",
+        name: "Rashid",
+        weight: "187",
+        height: "5'10",
         archetype: "rushdown",
         num: "no2",
         background: "url('images/rashidgif.gif')"
@@ -36,14 +36,264 @@ let character = {
     },
 
     char3: {
-        name: "ken",
-        weight: "200",
-        height: "175",
+        name: "Ken",
+        weight: "183",
+        height: "5'9",
         archetype: "shoto",
         num: "no3",
         background: "url('images/kenmasters.gif')"
+    },
 
-    }
+    char4: {
+        name: "Akuma",
+        weight: "198",
+        height: "5'10",
+        archetype: "shoto",
+        num: "no4",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char5: {
+        name: "Bison",
+        weight: "247",
+        height: "6'0",
+        archetype: "Rushdown",
+        num: "no6",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char6: {
+        name: "Blanka",
+        weight: "216",
+        height: "6'4",
+        archetype: "Rushdown",
+        num: "no7",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char7: {
+        name: "Cammy",
+        weight: "134",
+        height: "5'5",
+        archetype: "Rushdown",
+        num: "no8",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char8: {
+        name: "Chun-Li",
+        weight: "secret",
+        height: "5'7",
+        archetype: "Defensive",
+        num: "no8",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char9: {
+        name: "Dee jay",
+        weight: "203",
+        height: "6'0",
+        archetype: "Rushdown",
+        num: "no9",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char10: {
+        name: "Dhalsim",
+        weight: "106",
+        height: "5'9",
+        archetype: "zoner",
+        num: "no10",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char11: {
+        name: "E.Honda",
+        weight: "302",
+        height: "6'1",
+        archetype: "Defensive",
+        num: "no11",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char12: {
+        name: "Ed",
+        weight: "190",
+        height: "6'0",
+        archetype: "Rushdown",
+        num: "no12",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char13: {
+        name: "Jamie",
+        weight: "170",
+        height: "5'9",
+        archetype: "Trickster",
+        num: "no13",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char14: {
+        name: "J.P",
+        weight: "214",
+        height: "6'3",
+        archetype: "Zoner",
+        num: "no14",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char15: {
+        name: "Juri",
+        weight: "126",
+        height: "5'5",
+        archetype: "Trickster",
+        num: "no15",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char16: {
+        name: "Ryu",
+        weight: "187",
+        height: "5'9",
+        archetype: "Shoto",
+        num: "no16",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char17: {
+        name: "Terry",
+        weight: "170",
+        height: "6'0",
+        archetype: "Shoto",
+        num: "no17",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char18: {
+        name: "Zangief",
+        weight: "399",
+        height: "7'0",
+        archetype: "Grappler",
+        num: "no18",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char19: {
+        name: "Aki",
+        weight: "126",
+        height: "5'8",
+        archetype: "Trickster",
+        num: "no19",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char20: {
+        name: "Lily",
+        weight: "106",
+        height: "5'3",
+        archetype: "Grappler",
+        num: "no20",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char21: {
+        name: "Manon",
+        weight: "145",
+        height: "6'1",
+        archetype: "Grappler",
+        num: "no21",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char22: {
+        name: "Luke",
+        weight: "198",
+        height: "6'1",
+        archetype: "Shoto",
+        num: "no22",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char23: {
+        name: "Guile",
+        weight: "218",
+        height: "6'0",
+        archetype: "Zoner",
+        num: "no23",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char24: {
+        name: "Marisa",
+        weight: "269",
+        height: "6'8",
+        archetype: "Big Body",
+        num: "no24",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char25: {
+        name: "Mai",
+        weight: "110",
+        height: "5'5",
+        archetype: "Rushdown",
+        num: "no25",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char17: {
+        name: "Terry",
+        weight: "170",
+        height: "6'0",
+        archetype: "Shoto",
+        num: "no17",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char17: {
+        name: "Terry",
+        weight: "170",
+        height: "6'0",
+        archetype: "Shoto",
+        num: "no17",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
+    char17: {
+        name: "Terry",
+        weight: "170",
+        height: "6'0",
+        archetype: "Shoto",
+        num: "no17",
+        background: "url('images/kenmasters.gif')"
+
+    },
+
 }
 
 
