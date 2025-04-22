@@ -1,11 +1,13 @@
 * {
-    font-family: "Poppins";
+    
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to bottom, #000000, #23012d, #68006f);
-
+    background-color: #000000;
+    background-image: url("images/white-wall-3-2.png");
 }
 
 .main {
@@ -32,13 +34,19 @@ body {
     box-sizing: border-box;
 }
 
+.top {
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    color: red;
+}
+
 .fighter {
     padding: 12px 20px;
     background-color: #1a1a1a;
     color: white;
     border: 2px solid #7e22ce; /* Vibrant purple border */
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -46,14 +54,25 @@ body {
     justify-content: center;
     align-items: end;
     -webkit-text-stroke: #000000;
-    -webkit-text-stroke-width: 1px;
+
+    filter: grayscale(100%);
+    cursor: not-allowed;
   }
   
   .fighter:hover {
-    background-color: #2e2e2e;
+    background-color: #2c2c2c;
     border-color: #a855f7; /* Lighter purple on hover */
-    transform: scale(1.05);
     box-shadow: 0 0 10px #7e22ce66;
+  }
+
+  .out {
+    filter: none;
+  }
+
+  .out:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    cursor: pointer;
   }
   
 
@@ -149,7 +168,7 @@ body {
 }
 
 .jp {
-    background-image: url("images/Jp\ \(1\).png");
+    background-image: url("images/JP\ \(1\).png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -273,17 +292,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    width: 50%;
-    height: 20%;
+    height: 100%;
     height: auto;
     font-size: 1.2rem;
-    font-weight: bold;
     background: transparent;
   transition: all  200ms ease-in-out ;
 
 
     color: white;
     border-bottom: 2px solid white;
+}
+
+.charname {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin: 0px;
+    text-shadow: -2px 3px 1px rgba(255,0,0,0.66);
+}
+
+.charnumber {
+    letter-spacing: 3px;
+    margin: 0px;
 }
 
 .right .details {
@@ -325,14 +354,18 @@ body {
 
 .preview {
     grid-column: 3/6;
-    height: 600%;
+    grid-row: 2/7;
+    height: 100%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    transition: all 200ms ease-in-out;
+    transition: all 100ms ease-in-out;
+    filter: contrast(100%);
+    
 }
 
 .right .middle {
+    height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;

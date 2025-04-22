@@ -50,7 +50,7 @@ let character = {
         height: "5'10",
         archetype: "shoto",
         num: "no4",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/akumagif.gif')"
 
     },
 
@@ -60,7 +60,7 @@ let character = {
         height: "6'0",
         archetype: "Rushdown",
         num: "no6",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/bisongif.gif')"
 
     },
 
@@ -70,7 +70,7 @@ let character = {
         height: "6'4",
         archetype: "Rushdown",
         num: "no7",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/blankagif.gif')"
 
     },
 
@@ -80,17 +80,17 @@ let character = {
         height: "5'5",
         archetype: "Rushdown",
         num: "no8",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/cammygif.gif')"
 
     },
 
     char8: {
         name: "Chun-Li",
-        weight: "secret",
+        weight: "secret♡",
         height: "5'7",
         archetype: "Defensive",
         num: "no8",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/chunligif.gif')"
 
     },
 
@@ -100,7 +100,7 @@ let character = {
         height: "6'0",
         archetype: "Rushdown",
         num: "no9",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/deejaygif.gif')"
 
     },
 
@@ -110,7 +110,7 @@ let character = {
         height: "5'9",
         archetype: "zoner",
         num: "no10",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/simgif.gif')"
 
     },
 
@@ -120,7 +120,7 @@ let character = {
         height: "6'1",
         archetype: "Defensive",
         num: "no11",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/hondagif.gif')"
 
     },
 
@@ -130,7 +130,7 @@ let character = {
         height: "6'0",
         archetype: "Rushdown",
         num: "no12",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/edgif.gif')"
 
     },
 
@@ -140,7 +140,7 @@ let character = {
         height: "5'9",
         archetype: "Trickster",
         num: "no13",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/jamiegif.gif')"
 
     },
 
@@ -150,7 +150,7 @@ let character = {
         height: "6'3",
         archetype: "Zoner",
         num: "no14",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/jpgif.gif')"
 
     },
 
@@ -160,7 +160,7 @@ let character = {
         height: "5'5",
         archetype: "Trickster",
         num: "no15",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/jurigif.gif')"
 
     },
 
@@ -170,7 +170,7 @@ let character = {
         height: "5'9",
         archetype: "Shoto",
         num: "no16",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/ryu.png')"
 
     },
 
@@ -180,7 +180,7 @@ let character = {
         height: "6'0",
         archetype: "Shoto",
         num: "no17",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/terry.png')"
 
     },
 
@@ -190,7 +190,7 @@ let character = {
         height: "7'0",
         archetype: "Grappler",
         num: "no18",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/zangief.png')"
 
     },
 
@@ -200,7 +200,7 @@ let character = {
         height: "5'8",
         archetype: "Trickster",
         num: "no19",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/aki.png')"
 
     },
 
@@ -210,7 +210,7 @@ let character = {
         height: "5'3",
         archetype: "Grappler",
         num: "no20",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/lily.png')"
 
     },
 
@@ -220,7 +220,7 @@ let character = {
         height: "6'1",
         archetype: "Grappler",
         num: "no21",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/manon\ \(3\).png')"
 
     },
 
@@ -230,7 +230,7 @@ let character = {
         height: "6'1",
         archetype: "Shoto",
         num: "no22",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/luke.png')"
 
     },
 
@@ -240,7 +240,7 @@ let character = {
         height: "6'0",
         archetype: "Zoner",
         num: "no23",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/guile.png')"
 
     },
 
@@ -250,7 +250,7 @@ let character = {
         height: "6'8",
         archetype: "Big Body",
         num: "no24",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/marisa.png')"
 
     },
 
@@ -260,39 +260,11 @@ let character = {
         height: "5'5",
         archetype: "Rushdown",
         num: "no25",
-        background: "url('images/kenmasters.gif')"
+        background: "url('images/maii.png')"
 
-    },
+    }
 
-    char17: {
-        name: "Terry",
-        weight: "170",
-        height: "6'0",
-        archetype: "Shoto",
-        num: "no17",
-        background: "url('images/kenmasters.gif')"
-
-    },
-
-    char17: {
-        name: "Terry",
-        weight: "170",
-        height: "6'0",
-        archetype: "Shoto",
-        num: "no17",
-        background: "url('images/kenmasters.gif')"
-
-    },
-
-    char17: {
-        name: "Terry",
-        weight: "170",
-        height: "6'0",
-        archetype: "Shoto",
-        num: "no17",
-        background: "url('images/kenmasters.gif')"
-
-    },
+  
 
 }
 
