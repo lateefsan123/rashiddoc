@@ -2,12 +2,24 @@
     
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #000000;
-    background-image: url("images/white-wall-3-2.png");
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-image: 
+            linear-gradient(to top, #000000, #1a1a1a, #333333),
+            url("images/white-wall-3-2.png");
+        background-size: contain;
+        background-blend-mode: overlay; /* optional, try multiply or darken too */
+}
+
+.behind {
+    position: fixed;
+    top: 20%;
+    left: 38%;
+    z-index: -1;
+    height: 40%;
+    opacity: 30%;
 }
 
 .main {
