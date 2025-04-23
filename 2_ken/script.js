@@ -82,8 +82,8 @@ window.addEventListener("scroll", function () {
     if (number == 1) {
       desc.innerHTML = `
         <h3>Ken <span class='hub'> Centre</span></h3>
-        <p>
-          Welcome to the ultimate Ken hub! Whether you're a newcomer or a seasoned fighter, this site is designed to help you master Ken in Street Fighter 6. Here, you'll find tips, strategies, combo guides, and character insights to elevate your gameplay and make the most of Ken’s aggressive rushdown style and fiery offense. Get ready to take your Ken skills to the next level!
+        <p class= "text">
+          Welcome to the Ken hub! Whether you're new or experienced, this site helps you master Ken in Street Fighter 6 with tips, combos, and strategies to level up your rushdown game.
         </p>
       `;
       desc.classList.add("firstone")
