@@ -53,7 +53,7 @@ nav span:hover {
 }
 
 nav.scrolled {
-    background-color: rgb(28, 26, 26);
+    background-color: rgba(28, 26, 26, 0.5);
     color: white;
 
 }
@@ -73,6 +73,11 @@ nav.scrolled a {
 
 .left.scrolled {
     color: rgb(14, 112, 44);
+}
+
+.changechar.scrolled {
+    background-color: rgba(14, 112, 44, 0.5);
+    color: white;
 }
 
 
@@ -242,7 +247,7 @@ nav.scrolled a {
 }
 
 #playBtn i {
-    color: green;
+    color: rgb(6, 123, 232);
     font-size: 2rem;
     align-self: center;
     opacity: 100%;
@@ -318,6 +323,31 @@ nav.scrolled a {
     background-color: #FFD300;
 }
 
+.safejump {
+    background-image: url("images/safejump.png");
+    background-color: #DC143C;
+    background-position: center;
+}
+
+.burnout {
+    background-image: url("images/burnout.png");
+    background-color: #E97451;
+}
+
+.trade {
+    background-image: url("images/trade.png");
+    background-color: #960018;
+}
+
+.oki {
+    background-image: url("images/oki.png");
+    background-color: #ba6d6d;
+}
+
+.jinrai {
+    background-image: url("images/jinrai.png");
+    background-color: #ac9457;
+}
 /* streamers section */
 
 .streamers {
@@ -437,6 +467,12 @@ nav.scrolled a {
     background-image: url("images/booce.png");
 }
 
+.cosa {
+    background-image: url("images/cosa.png");
+}
+.ryukichi {
+    background-image: url("images/ryukichi.png");
+}
 .fa-twitch.live {
     color: purple;
     animation: twitchlive 2s infinite alternate;
@@ -499,13 +535,11 @@ nav.scrolled a {
     width: 15rem;
     height: 15rem;
     border: 5px solid black;
-    box-shadow: 0 4px 8px rgb(14, 95, 38);
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
     background-color: white;
     cursor: pointer;
-    filter: grayscale(100%);
     transition: transform 200ms;
     transition: filter 200ms ease-in-out;
     margin-top: 10px;
@@ -522,13 +556,20 @@ nav.scrolled a {
 
 .labbers h2{
     text-align: center;
-    opacity: 0%;
     color: rgb(10, 67, 27);
     transition: opacity 300ms ease-in;
 }
 
 .soualiho {
     background-image: url("images/soualiho.jpg");
+}
+
+.kazey {
+    background-image: url("images/kazey.jpg");
+}
+
+.rushg {
+    background-image: url("images/rushg.png");
 }
 
 .achievement {

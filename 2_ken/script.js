@@ -2,6 +2,7 @@ const navbar = document.querySelector("nav");
 const titletop = document.querySelector(".center")
 const left = document.querySelector(".left")
 const navitems = document.querySelectorAll("nav span")
+const change = document.querySelector(".changechar")
 let scrolltop = 0;
 
 window.addEventListener("scroll", function () {
@@ -9,6 +10,7 @@ window.addEventListener("scroll", function () {
     left.classList.add("scrolled");
     navbar.classList.add("scrolled");
     titletop.classList.add("scrolled");
+    change.classList.add("scrolled");
     navitems.forEach(function(item) {
         item.classList.add("scrolled")
     })
@@ -16,6 +18,7 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
+    change.classList.remove("scrolled");
     navitems.forEach(function(item) {
         item.classList.remove("scrolled")
     })
@@ -134,7 +137,7 @@ window.addEventListener("scroll", function () {
 next.addEventListener("click", changecarrosel) 
 
   
-setInterval(changecarrosel, 8000 )
+setInterval(changecarrosel, 15000 )
 
 function updateTornadoWidth() {
   const top = document.querySelector('.top');
