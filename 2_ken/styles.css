@@ -112,7 +112,6 @@ nav.scrolled a {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-radius: 0% 100% 100% 0% / 56% 0% 100% 44% ;
     border: none;
     position: relative;
 }
@@ -236,7 +235,7 @@ nav.scrolled a {
 }
 
 #playBtn i {
-    color: white;
+    color: black;
     font-size: 2rem;
     align-self: center;
     opacity: 100%;
@@ -538,8 +537,23 @@ nav.scrolled a {
 
 }
 
+
+
 .japan {
-    color: white;
+    color: rgb(0, 255, 0);
+    animation: bounce 600ms  infinite alternate ease-in-out;
+    transition: color 200ms ease-in-out;
+}
+
+.japan:hover {
+    color: green
+}
+
+@keyframes bounce {
+    50% {
+        transform: translatey(5px);
+    }
+    
 }
 
 
