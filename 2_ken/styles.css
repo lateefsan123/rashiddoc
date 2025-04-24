@@ -3,6 +3,7 @@
     margin: 0;
     text-decoration: none;
     font-family: "Poppins";
+    transition: all 300ms ease-in-out;
     
 }
 
@@ -75,6 +76,11 @@ nav.scrolled a {
     color: rgb(14, 112, 44);
 }
 
+
+.changechar.hover {
+    background-color: rgb(14, 112, 44);
+}
+
 .changechar.scrolled {
     background-color: rgba(14, 112, 44, 0.5);
     color: white;
@@ -99,9 +105,9 @@ nav.scrolled a {
 
 .changechar {
     border: 3px solid black;
+    background-color: transparent;
     padding: 10px;
     width: 50%;
-    background-color: white;
     cursor: pointer;
 }
 

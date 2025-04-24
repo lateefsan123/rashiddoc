@@ -1,18 +1,21 @@
 const navbar = document.querySelector("nav");
 const titletop = document.querySelector(".center")
 const navitems = document.querySelectorAll("nav span")
+const change = document.querySelector(".changechar")
 let scrolltop = 0;
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
     titletop.classList.add("scrolled");
+    change.classList.add("scrolled");
     navitems.forEach(function(item) {
         item.classList.add("scrolled")
     })
   } else {
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
+    change.classList.remove("scrolled");
     navitems.forEach(function(item) {
         item.classList.remove("scrolled")
     })
@@ -78,9 +81,9 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Rashid <span class='hub'>Centre</span></h3>
+        <h3>Kimberly <span class='hub'>Centre</span></h3>
         <p>
-          Welcome to the ultimate Rashid hub! Whether you're a newcomer or a seasoned fighter, this site is designed to help you master Rashid in Street Fighter 6. Here, you'll find tips, strategies, combo guides, and character insights to elevate your gameplay and make the most of Rashid’s unique speed and mix-up potential. Get ready to take your Rashid skills to the next level!
+          Welcome, Kimberly! Whether you're new or a pro, this hub will help you master Kimberly in Street Fighter 6. Find tips, combos, and strategies to level up your gameplay and unleash her speed and mix-ups!
         </p>
       `;
       desc.classList.add("firstone")
@@ -91,8 +94,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Big Bird Red Bull Kumite</h2>
+      <div onclick="window.open('https://www.youtube.com/live/0Of06swqWNk?si=XJzOGWaMhtl6agzE&t=29430', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">team flyquest wins sfl</h2>
       </div>
     `;
 
@@ -109,8 +112,8 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Rashid Replays</h3>
-        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9Jlu2BBhSkTAqj2SiIMGKdv&si=9JUnKpEmTaRTKw0P" target = "_blank">
+        <h3>Watch High Level kim Replays</h3>
+        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9K1p3AQg1ZZJyXt9kh8EHkQ&si=ZkfUBJ3xh0uOZZ3b" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>
