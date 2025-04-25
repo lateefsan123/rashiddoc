@@ -3,6 +3,7 @@ const titletop = document.querySelector(".center")
 const navitems = document.querySelectorAll("nav span")
 const change = document.querySelector(".changechar")
 let scrolltop = 0;
+const btn = document.getElementById("playBtn");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
@@ -12,15 +13,24 @@ window.addEventListener("scroll", function () {
     navitems.forEach(function(item) {
         item.classList.add("scrolled")
     })
+
+  
   } else {
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
     change.classList.remove("scrolled");
+    btn.classList.remove("scrolled")
     navitems.forEach(function(item) {
         item.classList.remove("scrolled")
     })
   }
 });
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 35) {
+    btn.classList.add("scrolled")
+  }
+})
 
 
 
@@ -45,7 +55,7 @@ window.addEventListener("scroll", function () {
   });
 
   const music = document.getElementById("bgMusic");
-  const btn = document.getElementById("playBtn");
+  
 
   btn.addEventListener("click", () => {
     console.log("hello")
@@ -138,41 +148,6 @@ next.addEventListener("click", changecarrosel)
   
 setInterval(changecarrosel, 8000 )
 
-function updateTornadoWidth() {
-  const top = document.querySelector('.top');
-  const description = document.querySelector('.description');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
-
-  const topWidth = top.offsetWidth;
-  const descriptionWidth = description.offsetWidth;
-
-  const resultWidth = topWidth - descriptionWidth;
-  tornadoContainer.style.width = `${resultWidth}px`;
-}
-
-// Run it on load
-updateTornadoWidth();
-
-// Optional: also update on window resize
-window.addEventListener('resize', updateTornadoWidth);
-
-function moveTornado() {
-  const tornadoImg = document.querySelector('.tornado img');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
-
-  if (tornadoImg && tornadoContainer) {
-    const containerWidth = tornadoContainer.offsetWidth;
-    const imgWidth = tornadoImg.offsetWidth;
-    const travelDistance = containerWidth - imgWidth;
-
-    tornadoImg.style.transform = `translateX(${travelDistance}px)`;
-
-    // Optional: Reset after it finishes, to repeat
-    setTimeout(() => {
-      tornadoImg.style.transform = `translateX(0px)`;
-    }, 8000); // match duration of transition
-  }
-}
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     const clientSecret = "gl4v4exjfj9sr225q0ep9llxax6y8q";
@@ -219,7 +194,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 
     async function init() {
       const token = await getAccessToken();
-      const buttons = document.querySelectorAll(".livebutton");
+      const buttons = document.querySelectorAll(".livebuttonn");
 
       buttons.forEach(button => {
         const streamerName = button.getAttribute("data-streamer");

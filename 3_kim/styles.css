@@ -4,21 +4,17 @@
     text-decoration: none;
     font-family: "Poppins";
     
+    
 }
+
+
 
 a {
     text-decoration: none;
     color: inherit;
 }
 
-main {
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/starring.png");
 
-    position: relative;
-    top: 0%;
-    
-}
 
 
 nav {
@@ -33,6 +29,11 @@ nav {
     position: fixed;
     width: 100%;
     overflow: hidden;
+    color: black;
+}
+
+.kim {
+    color: black;
 }
 
 .nav {
@@ -51,7 +52,7 @@ nav span.scrolled:hover {
 }
 
 nav.scrolled {
-    background-color: rgba(228, 57, 85, 0.85);
+    background-color: rgba(25, 87, 81, 0.7);
     color: white;
 
 }
@@ -93,6 +94,15 @@ nav.scrolled a {
     
 }
 
+main {
+    background-color: black;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(97, 97, 105, 0.5)), 
+                url("images/grafiti.jpg") fixed;
+    background-position: center;
+    background-size: contain;
+   
+}
+
 
 .changechar {
     border: 3px solid black;
@@ -113,8 +123,10 @@ nav.scrolled a {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: contain;
     background-color: white;
     position: relative;
+    
 
 }
 
@@ -135,7 +147,8 @@ nav.scrolled a {
     display: flex;
     flex-direction: column;
     
-    background-color: white;
+    background-color: black;
+    color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,12 +162,20 @@ nav.scrolled a {
     opacity: 1;
     transition: opacity 0.5s ease;
     overflow: hidden;
+    animation: changecol 6s ease-in-out infinite;
 
+}
+
+@keyframes changecol {
+    50% {
+        border-image: linear-gradient(to right, #046871,#40E0D0, black) 1;
+    }
+    
 }
 
 .description h3 {
     font-size: 2rem;
-    color: black;
+    color: white;
 
     margin-bottom: 0px;
     margin: 0%;
@@ -184,12 +205,12 @@ nav.scrolled a {
 @keyframes glitch {
     50% {
       transform: skew(180deg);
-      color: rgb(5, 219, 5);
+      color: white;
     }
   }
 
 .redbull {
-    color: green;
+    color: turquoise;
     animation: glitch 0.5s infinite;
 }
 
@@ -198,7 +219,8 @@ nav.scrolled a {
     flex-direction: row;
     padding: 0;
     opacity: 100%;
-    transition: opacity, 400ms ease-in;
+    transition: opacity, 200ms ease-in;
+    background-color: white;
 }
 
 .replay div {
@@ -211,6 +233,7 @@ nav.scrolled a {
 .replay h3 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: black;
 }
 
 .leftthird {
@@ -220,8 +243,8 @@ nav.scrolled a {
 .leftthird button {
     width: 40%;
     height: 20%;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     cursor: pointer;
     border-radius: 15px;
     
@@ -331,13 +354,17 @@ nav.scrolled a {
     align-self: center;
 }
 
-#playBtn i {
-    color: white;
+#playBtn {
+    color: black;
     font-size: 2rem;
     align-self: center;
     opacity: 100%;
 }
 
+#playBtn.scrolled {
+    color: white;
+    transition: all 150ms ease-in-out;
+}
 /* combos and oki section */
 
 .combos {
@@ -367,7 +394,7 @@ nav.scrolled a {
 
 .combopiece:hover {
     transform: scale(1.1);
-    box-shadow: 2px 4px 10px 0px rgb(255, 229, 79);
+    box-shadow: 2px 4px 10px 0px rgb(64, 223, 208);
 
 }
 
@@ -411,19 +438,28 @@ nav.scrolled a {
 
 .tatsu {
     background-image: url("images/tatsu.png");
-    background-color: #F9C8D4;
+    background-color: #FF0066;
 }
 
 .vagabond {
     background-image: url("images/vagabond.png");
-    background-color: #A2C8E1;
+    background-color: #00FFFF;
 }
 
 .runstop {
     background-image: url("images/run.png");
-    background-color: #B7E1B7;
+    background-color: #00FF00;
 }
 
+.safe {
+    background-image: url("images/safejump.png");
+    background-color: #FFFF00;
+}
+
+.burnout {
+    background-image: url("images/burnout.png");
+    background-color: #FF4500;
+}
 
 
 /* streamers section */
@@ -443,8 +479,7 @@ nav.scrolled a {
 .streamerpiece {
     width: 16rem;
     height: 16rem;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(225, 83, 44, 0.3);
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
@@ -454,7 +489,7 @@ nav.scrolled a {
     
 .streamerpiece:hover {
     transform: scale(1.1);
-    box-shadow: 2px 4px 10px 0px rgb(255, 0, 0);
+    box-shadow: 2px 4px 10px 0px black;
 }
     
 .bottom h3 {
@@ -512,10 +547,96 @@ nav.scrolled a {
 .face {
     height: 60%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     
 }
+
+.psycho {
+    background-image: url("images/psycho.png");
+}
+
+.punk {
+    background-image: url("images/punk.png");
+}
+
+.shine {
+    background-image: url("images/shine.png");
+}
+
+
+.fierce {
+    background-image: url("images/fierce.png");
+}
+
+.zykles {
+    background-image: url("images/zykles.png");
+}
+
+.true {
+    background-image: url("images/true.png");
+}
+
+.diaphone {
+    background-image: url("images/diaphone.png");
+}
+
+.s4ltykid {
+    background-image: url("images/s4ltykid.png");
+}
+
+.surini {
+    background-image: url("images/surini.png");
+}
+
+.matsu {
+    background-image: url("images/matsu.png");
+}
+
+.narikun {
+    background-image: url("images/narikun.png");
+}
+
+.fa-twitch.live {
+    color: purple;
+    animation: twitchlive 2s infinite alternate;
+  }
+
+  @keyframes twitchlive {
+    10% {
+        color: #00CED1;
+    }
+
+    20% {
+        color: #32CD32;
+    }
+
+    30% {
+        color: red;
+    }
+    50% {
+        color: #7350f4;
+        transform: scale(-10px);
+    }
+
+    60% {
+        color: #00CED1;
+    }
+
+    70% {
+        color: #32CD32;
+    }
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: #8A2BE2;
+        transform: translateY(10px);
+    }
+    
+  }
 
 /* labbers section */
 
@@ -563,4 +684,26 @@ nav.scrolled a {
     opacity: 0%;
     color: rgba(228, 57, 85, 0.9);
     transition: opacity 300ms ease-in;
+}
+
+.gadi {
+    background-image: url("images/gadi.jpg");
+}
+
+.tooru {
+    background-image: url("images/tooru.jpg");
+}
+
+.ram {
+    background-image: url("images/ram.jpg");
+}
+
+.derricott {
+    background-image: url("images/dericott.jpg");
+}
+
+@media (min-width: 1650px) {
+    .profilepic {
+        background-image: url("images/kimsec.png");
+    }
 }
