@@ -597,6 +597,16 @@ main {
     background-image: url("images/narikun.png");
 }
 
+
+.cuhz {
+    background-image: url("images/cuhz\ \(3\).png");
+}
+
+.scythe {
+    background-image: url("images/scythe\ \(2\).png");
+}
+
+
 .fa-twitch.live {
     color: purple;
     animation: twitchlive 2s infinite alternate;
