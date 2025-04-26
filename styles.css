@@ -2,6 +2,9 @@
     
 }
 
+
+  
+
     body {
         width: 100vw;
         height: 100vh;
@@ -69,7 +72,9 @@
     -webkit-text-stroke: #000000;
     height: 100%;
     width: 100%;
-    filter: grayscale(100%);
+    text-decoration: none;
+
+    filter: grayscale(99%);
     cursor: not-allowed;
   }
   
@@ -89,6 +94,9 @@
     cursor: pointer;
   }
   
+a {
+    text-decoration: none;
+  }
 
 .kim {
     background-image: url("images/kim\ \(2\).png");
