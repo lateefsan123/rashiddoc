@@ -353,6 +353,12 @@ nav.scrolled a {
     opacity: 100%;
 }
 
+
+#ctitle {
+    margin-top: 50px;
+}
+
+
 #playbtn i.scrolled {
     color: white;
 }
