@@ -14,23 +14,22 @@ window.addEventListener("scroll", function () {
         item.classList.add("scrolled")
     })
 
+    if (window.scrollY > 35) {
+      btn.classList.add("scrolled");
+    } else {
+      btn.classList.remove("scrolled");
+    }
+
   
   } else {
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
     change.classList.remove("scrolled");
-    btn.classList.remove("scrolled")
     navitems.forEach(function(item) {
         item.classList.remove("scrolled")
     })
   }
 });
-
-window.addEventListener("scroll", function() {
-  if (window.scrollY > 35) {
-    btn.classList.add("scrolled")
-  }
-})
 
 
 
