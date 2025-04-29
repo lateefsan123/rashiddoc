@@ -678,3 +678,23 @@ nav.scrolled a {
 .dogoru {
     background-image: url("images/dogoru.jpg");
 }
+
+.videoplayer {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 800px;
+    background: rgba(0, 0, 0, 0.8); /* dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+.videoplayer iframe {
+    width: 700px;
+    height: 400px;
+}
+  
