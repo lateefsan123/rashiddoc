@@ -578,6 +578,48 @@ nav.scrolled a {
     animation: twitchflash  2s  infinite alternate;
 }
 
+.fa-twitch.live {
+    color: purple;
+    animation: twitchlive 2s infinite alternate;
+  }
+
+  @keyframes twitchlive {
+    10% {
+        color: #00CED1;
+    }
+
+    20% {
+        color: #32CD32;
+    }
+
+    30% {
+        color: red;
+    }
+    50% {
+        color: #7350f4;
+        transform: scale(-10px);
+    }
+
+    60% {
+        color: #00CED1;
+    }
+
+    70% {
+        color: #32CD32;
+    }
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: #8A2BE2;
+        transform: translateY(10px);
+    }
+    
+  }
+
+
 .fa-x-twitter {
     font-size: 2rem;
 }
