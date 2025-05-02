@@ -137,19 +137,8 @@ window.addEventListener("scroll", function () {
 next.addEventListener("click", changecarrosel) 
 
   
-setInterval(changecarrosel, 15000 )
+setInterval(changecarrosel, 15000 );
 
-function updateTornadoWidth() {
-  const top = document.querySelector('.top');
-  const description = document.querySelector('.description');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
-
-  const topWidth = top.offsetWidth;
-  const descriptionWidth = description.offsetWidth;
-
-  const resultWidth = topWidth - descriptionWidth;
-  tornadoContainer.style.width = `${resultWidth}px`;
-}
 
 
 
@@ -208,4 +197,28 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 
     init();
 // Run it on load
+
+const box = document.querySelectorAll(".combopiece");
+const video = document.querySelector(".videoplayer");
+const iframe = document.querySelector("#popupVideo")
+
+box.forEach((boxes) =>  {
+  boxes.addEventListener("click", function(event) {
+    console.log("working")
+    event.stopPropagation();
+    video.style.display = "flex";
+    let link = boxes.getAttribute("data-link");
+    iframe.src = link;
+  })
+  
+  
+})
+
+
+
+document.addEventListener("click", function () {
+  video.style.display = "none";
+  iframe.src = "";
+});
+
 

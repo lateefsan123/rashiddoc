@@ -249,3 +249,26 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     init();
 // Run it on load
 
+const box = document.querySelectorAll(".combopiece");
+const video = document.querySelector(".videoplayer");
+const iframe = document.querySelector("#popupVideo")
+
+box.forEach((boxes) =>  {
+  boxes.addEventListener("click", function(event) {
+    event.stopPropagation();
+    video.style.display = "flex";
+    let link = boxes.getAttribute("data-link");
+    iframe.src = link;
+  })
+  
+  
+})
+
+
+
+document.addEventListener("click", function () {
+  video.style.display = "none";
+  iframe.src = "";
+});
+
+

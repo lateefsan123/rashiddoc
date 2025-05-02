@@ -285,3 +285,5 @@ fighters.forEach(function(fighter) {
 
     })
 })
+
+
