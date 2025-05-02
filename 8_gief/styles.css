@@ -96,7 +96,7 @@ nav.scrolled a {
 .changechar:hover {
     color: white;
     transform: scale(1.1);
-    background-color: orangered;
+    background-color: #7350f4;
 }
 
 .changechar.scrolled {
@@ -366,6 +366,7 @@ nav.scrolled a {
     overflow: hidden;
     margin-bottom: 30px;
     transition: transform 300ms;
+    cursor: pointer;
 
 }
 

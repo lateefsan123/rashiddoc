@@ -721,3 +721,67 @@ nav.scrolled a {
 .handscar {
     background-image: url("images/handscar.jpg");
 }
+
+.videoplayer {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.8); /* dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 15px;
+    border: 4px solid lightgrey;
+  }
+
+.videoplayer iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.fa-twitch.live {
+    color: purple;
+    animation: twitchlive 2s infinite alternate;
+  }
+
+  @keyframes twitchlive {
+    10% {
+        color: #00CED1;
+    }
+
+    20% {
+        color: #32CD32;
+    }
+
+    30% {
+        color: red;
+    }
+    50% {
+        color: #7350f4;
+        transform: scale(-10px);
+    }
+
+    60% {
+        color: #00CED1;
+    }
+
+    70% {
+        color: #32CD32;
+    }
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: #8A2BE2;
+        transform: translateY(10px);
+    }
+    
+  }
+

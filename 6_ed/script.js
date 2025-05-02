@@ -149,43 +149,8 @@ window.addEventListener("scroll", function() {
 next.addEventListener("click", changecarrosel) 
 
   
-setInterval(changecarrosel, 8000 )
+setInterval(changecarrosel, 8000 );
 
-function updateTornadoWidth() {
-  const top = document.querySelector('.top');
-  const description = document.querySelector('.description');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
-
-  const topWidth = top.offsetWidth;
-  const descriptionWidth = description.offsetWidth;
-
-  const resultWidth = topWidth - descriptionWidth;
-  tornadoContainer.style.width = `${resultWidth}px`;
-}
-
-// Run it on load
-updateTornadoWidth();
-
-// Optional: also update on window resize
-window.addEventListener('resize', updateTornadoWidth);
-
-function moveTornado() {
-  const tornadoImg = document.querySelector('.tornado img');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
-
-  if (tornadoImg && tornadoContainer) {
-    const containerWidth = tornadoContainer.offsetWidth;
-    const imgWidth = tornadoImg.offsetWidth;
-    const travelDistance = containerWidth - imgWidth;
-
-    tornadoImg.style.transform = `translateX(${travelDistance}px)`;
-
-    // Optional: Reset after it finishes, to repeat
-    setTimeout(() => {
-      tornadoImg.style.transform = `translateX(0px)`;
-    }, 8000); // match duration of transition
-  }
-}
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     const clientSecret = "gl4v4exjfj9sr225q0ep9llxax6y8q";
@@ -242,4 +207,29 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 
     init();
 // Run it on load
+
+
+const box = document.querySelectorAll(".combopiece");
+const video = document.querySelector(".videoplayer");
+const iframe = document.querySelector("#popupVideo")
+
+box.forEach((boxes) =>  {
+  boxes.addEventListener("click", function(event) {
+    console.log("working")
+    event.stopPropagation();
+    video.style.display = "flex";
+    let link = boxes.getAttribute("data-link");
+    iframe.src = link;
+  })
+  
+  
+})
+
+
+
+document.addEventListener("click", function () {
+  video.style.display = "none";
+  iframe.src = "";
+});
+
 

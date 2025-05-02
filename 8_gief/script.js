@@ -97,7 +97,7 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX', '_blank')" style="cursor: pointer;">
+      <div onclick="window.open('https://youtu.be/6kR_V3urgGU?si=loXCaQHWGt_ZE2vP', '_blank')" style="cursor: pointer;">
         <h2 class="redbull">Itazan East Coast Throwdown</h2>
       </div>
     `;
@@ -116,7 +116,7 @@ window.addEventListener("scroll", function () {
       desc.innerHTML = `
         <div class = 'leftthird'>
         <h3>Watch High Level Zangief Replays</h3>
-        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9Jlu2BBhSkTAqj2SiIMGKdv&si=9JUnKpEmTaRTKw0P" target = "_blank">
+        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9KpPsQ_3ZRylSI7esoYKk-x" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>

@@ -13,7 +13,7 @@ a {
 
 main {
     background-color: #330200;
-    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    background-image: url("imag");
     position: relative;
     top: 0%;
     
@@ -439,4 +439,65 @@ nav.scrolled a {
     width: 700px;
     height: 400px;
 }
+
+.videoplayer {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 800px;
+    background: rgba(0, 0, 0, 0.8); /* dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+.videoplayer iframe {
+    width: 700px;
+    height: 400px;
+}
   
+
+.fa-twitch.live {
+    color: purple;
+    animation: twitchlive 2s infinite alternate;
+  }
+
+  @keyframes twitchlive {
+    10% {
+        color: #00CED1;
+    }
+
+    20% {
+        color: #32CD32;
+    }
+
+    30% {
+        color: red;
+    }
+    50% {
+        color: #7350f4;
+        transform: scale(-10px);
+    }
+
+    60% {
+        color: #00CED1;
+    }
+
+    70% {
+        color: #32CD32;
+    }
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: #8A2BE2;
+        transform: translateY(10px);
+    }
+    
+  }
+
