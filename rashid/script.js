@@ -249,7 +249,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     init();
 // Run it on load
 
-const box = document.querySelectorAll(".combopiece");
+const box = document.querySelectorAll(".piece");
 const video = document.querySelector(".videoplayer");
 const iframe = document.querySelector("#popupVideo")
 
