@@ -32,18 +32,25 @@ nav {
     grid-template-columns: 4.5fr 1fr 1fr 1fr 2fr;
     grid-template-rows: 1fr;
     height: 5rem;
-    background-color: white;
+    background-color: transparent;
     align-items: center;
     position: fixed;
     width: 100%;
     overflow: hidden;
-    transition: all 300ms ease-in-out;
+    color: black;
 }
 
 .hub {
     margin-left: 10px;
     color: rgb(10, 67, 27);
 }
+
+.nav {
+    grid-column: 2/5;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 span.center {
     color: rgb(10, 67, 27);
@@ -701,3 +708,4 @@ nav.scrolled a {
     width: 700px;
     height: 400px;
 }
+

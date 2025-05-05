@@ -34,12 +34,21 @@ nav {
     grid-template-columns: 4.5fr 1fr 1fr 1fr 2fr;
     grid-template-rows: 1fr;
     height: 5rem;
-    background-color: white;
+    background-color: transparent;
     align-items: center;
     position: fixed;
     width: 100%;
     overflow: hidden;
+    color: black;
 }
+
+.nav {
+    grid-column: 2/5;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 .first.scrolled {
     color: #7350f4;
@@ -226,7 +235,7 @@ nav.scrolled a {
 .replay h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color:red;
+    color:rgb(93, 33, 231);
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
 }
@@ -651,5 +660,12 @@ nav.scrolled a {
 .videoplayer iframe {
     width: 700px;
     height: 400px;
+}
+
+.japan {
+    background-image: url("images/OLhDTBLA_400x400.jpg");
+    background-position: center;
+    background-size: contain;
+
 }
   
