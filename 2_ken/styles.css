@@ -21,7 +21,7 @@ main {
     background-image: url("images/background.webp");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
     position: relative;
     top: 0%;
     
@@ -261,6 +261,7 @@ nav.scrolled a {
     margin-bottom: 15px;
     align-self: center;
 }
+
 
 #playBtn i {
     color: rgb(6, 123, 232);

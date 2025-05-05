@@ -56,12 +56,25 @@ window.addEventListener("scroll", function () {
     if (music.paused) {
       music.play()
       btn.innerHTML = "<i class='fa-solid fa-volume-xmark'></i>"
+      btn.classList.add("play");
+
 
     } else {
       music.pause()
       btn.innerHTML = "<i class='fa-solid fa-play'></i>"
+      btn.classList.remove("play");
     }
   });
+
+  btn.addEventListener("mouseover", function() {
+    btn.classList.add("yo");
+
+  })
+
+  btn.addEventListener("mouseout", function() {
+    btn.classList.remove("yo");
+    
+  })
 
   let carousel = document.querySelector(".classic");
   let next = document.querySelector(".fa-arrow-right");
