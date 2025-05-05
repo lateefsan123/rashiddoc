@@ -84,9 +84,9 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Zangief <span class='hub'>Centre</span></h3>
+        <h3>Ken <span class='hub'>Centre</span></h3>
         <p>
-         Welcome to the ultimate Zangief hub! Whether you're new or experienced, this site helps you master Zangief in Street Fighter 6 with tips, strategies, combo guides, and insights. Get ready to take your Zangief gameplay to the next level!
+         Welcome to the Ken hub! Whether you're new or experienced, this site helps you master Ken in Street Fighter 6 with tips, combos, and strategies to level up your rushdown game.
         </p>
       `;
       desc.classList.add("firstone")
@@ -97,8 +97,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://youtu.be/6kR_V3urgGU?si=loXCaQHWGt_ZE2vP', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Itazan East Coast Throwdown</h2>
+      <div onclick="window.open('https://www.youtube.com/playlist?list=PLYHo76jk0RQK-15cNRsI1j4MasxQ3bcDv', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Tokido japan premiere</h2>
       </div>
     `;
 
@@ -115,7 +115,7 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Zangief Replays</h3>
+        <h3>Watch High Level Ken Replays</h3>
         <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9KpPsQ_3ZRylSI7esoYKk-x" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
