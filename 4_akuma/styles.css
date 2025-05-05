@@ -48,6 +48,11 @@ nav {
     justify-content: space-around;
 }
 
+.links.twoman {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 
 .first.scrolled {
