@@ -1,24 +1,18 @@
 const navbar = document.querySelector("nav");
 const titletop = document.querySelector(".center")
 const navitems = document.querySelectorAll("nav span")
-const change = document.querySelector(".changechar");
-const first = document.querySelector(".first");
 let scrolltop = 0;
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
     titletop.classList.add("scrolled");
-    change.classList.add("scrolled");
-    first.classList.add("scrolled");
     navitems.forEach(function(item) {
         item.classList.add("scrolled")
     })
   } else {
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
-    change.classList.remove("scrolled");
-    first.classList.remove("scrolled");
     navitems.forEach(function(item) {
         item.classList.remove("scrolled")
     })
@@ -84,9 +78,9 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Zangief <span class='hub'>Centre</span></h3>
+        <h3>Akuma <span class='hub'>Centre</span></h3>
         <p>
-         Welcome to the ultimate Zangief hub! Whether you're new or experienced, this site helps you master Zangief in Street Fighter 6 with tips, strategies, combo guides, and insights. Get ready to take your Zangief gameplay to the next level!
+          Welcome to the ultimate Rashid hub! Whether you're a newcomer or a seasoned fighter, this site is designed to help you master Rashid in Street Fighter 6. Here, you'll find tips, strategies, combo guides, and character insights to elevate your gameplay and make the most of Rashid’s unique speed and mix-up potential. Get ready to take your Rashid skills to the next level!
         </p>
       `;
       desc.classList.add("firstone")
@@ -97,8 +91,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://youtu.be/6kR_V3urgGU?si=loXCaQHWGt_ZE2vP', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Itazan East Coast Throwdown</h2>
+      <div onclick="window.open('https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Big Bird Red Bull Kumite</h2>
       </div>
     `;
 
@@ -115,8 +109,8 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Zangief Replays</h3>
-        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9KpPsQ_3ZRylSI7esoYKk-x" target = "_blank">
+        <h3>Watch High Level Rashid Replays</h3>
+        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9Jlu2BBhSkTAqj2SiIMGKdv&si=9JUnKpEmTaRTKw0P" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>
@@ -141,7 +135,41 @@ next.addEventListener("click", changecarrosel)
   
 setInterval(changecarrosel, 8000 )
 
+function updateTornadoWidth() {
+  const top = document.querySelector('.top');
+  const description = document.querySelector('.description');
+  const tornadoContainer = document.querySelector('.tornadocontainer');
 
+  const topWidth = top.offsetWidth;
+  const descriptionWidth = description.offsetWidth;
+
+  const resultWidth = topWidth - descriptionWidth;
+  tornadoContainer.style.width = `${resultWidth}px`;
+}
+
+// Run it on load
+updateTornadoWidth();
+
+// Optional: also update on window resize
+window.addEventListener('resize', updateTornadoWidth);
+
+function moveTornado() {
+  const tornadoImg = document.querySelector('.tornado img');
+  const tornadoContainer = document.querySelector('.tornadocontainer');
+
+  if (tornadoImg && tornadoContainer) {
+    const containerWidth = tornadoContainer.offsetWidth;
+    const imgWidth = tornadoImg.offsetWidth;
+    const travelDistance = containerWidth - imgWidth;
+
+    tornadoImg.style.transform = `translateX(${travelDistance}px)`;
+
+    // Optional: Reset after it finishes, to repeat
+    setTimeout(() => {
+      tornadoImg.style.transform = `translateX(0px)`;
+    }, 8000); // match duration of transition
+  }
+}
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     const clientSecret = "gl4v4exjfj9sr225q0ep9llxax6y8q";
@@ -188,7 +216,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 
     async function init() {
       const token = await getAccessToken();
-      const buttons = document.querySelectorAll(".livebuttonn");
+      const buttons = document.querySelectorAll(".livebutton");
 
       buttons.forEach(button => {
         const streamerName = button.getAttribute("data-streamer");
@@ -205,7 +233,6 @@ const iframe = document.querySelector("#popupVideo")
 
 box.forEach((boxes) =>  {
   boxes.addEventListener("click", function(event) {
-    console.log("working")
     event.stopPropagation();
     video.style.display = "flex";
     let link = boxes.getAttribute("data-link");
