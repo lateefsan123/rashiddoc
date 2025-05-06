@@ -681,7 +681,13 @@ nav span {
 
 
 
-
+.bnb {
+    background-image: url("bnb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #daddfa ;
+}
 
 
 
