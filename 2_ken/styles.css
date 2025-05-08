@@ -62,7 +62,7 @@ nav span:hover {
 }
 
 nav.scrolled {
-    background-color: rgba(7, 81, 55, 0.5);
+    background-color: rgba(7, 81, 55, 0.7);
     color: white;
 
 }
