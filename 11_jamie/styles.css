@@ -4,7 +4,6 @@
     text-decoration: none;
     font-family: "Poppins";
     box-sizing: border-box;
-    color: #333333;
     
 }
 
@@ -195,7 +194,7 @@ nav.scrolled a {
 
 
 .achievement {
-    background-image: url("images/itazan.jpg");
+    background-image: url("images/jaimes-bond-art-is-kinda-cool-v0-442mq0zjl15b1.webp");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -518,6 +517,10 @@ nav.scrolled a {
     color: black
 }
 
+.first.scrolled {
+    color: yellow;
+}
+
 .streamerpiece {
     width: 16rem;
     height: 16rem;
@@ -637,7 +640,6 @@ nav.scrolled a {
     padding: 50px;
     background-color: white;
     cursor: pointer;
-    filter: grayscale(100%);
     transition: transform 200ms;
     transition: filter 200ms ease-in-out;
     margin-top: 10px;
@@ -647,7 +649,6 @@ nav.scrolled a {
 }
 
 .labberpiece:hover {
-    filter: grayscale(0%);
     box-shadow: 2px 4px 10px 0px rgba(199, 3, 3, 0.855);
 
 }
@@ -657,6 +658,10 @@ nav.scrolled a {
     opacity: 0%;
     color: rgba(228, 57, 85, 0.9);
     transition: opacity 300ms ease-in;
+}
+
+.lynku {
+    background-image: url("images/lynku.jpg");
 }
 
 .kaiyohte {

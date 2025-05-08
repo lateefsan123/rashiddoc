@@ -114,7 +114,7 @@ window.addEventListener("scroll", function () {
       
       desc.innerHTML = `
       <div onclick="window.open('https://youtu.be/ZoiviSOEbHM?si=57bM5yyz-He20ega', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Punk Evo Vegas</h2>
+        <h2 class="redbull">Punk Tns win with Jamie</h2>
       </div>
     `;
 
