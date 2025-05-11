@@ -12,11 +12,14 @@ a {
 }
 
 main {
-    background-color: #1c2600;
-    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+    background-color: #330200;
+    background-image: url("images/stage.webp");
     position: relative;
     top: 0%;
-    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
