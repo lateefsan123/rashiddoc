@@ -57,7 +57,7 @@ nav span:hover {
 }
 
 nav.scrolled {
-    background-color: rgba(252, 177, 109, 0.7);
+    background-color: rgba(110, 22, 22, 0.9);
     color: white;
 
 }
@@ -501,6 +501,11 @@ nav.scrolled a {
     background-color: #FF4500; /* Orange Red */
 }
 
+.postlvl3 {
+    background-image: url("images/lvl3.png");
+    background-color: #1e78c2;
+    
+}
 
 
 

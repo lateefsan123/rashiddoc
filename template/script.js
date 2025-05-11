@@ -1,32 +1,24 @@
 const navbar = document.querySelector("nav");
 const titletop = document.querySelector(".center")
 const navitems = document.querySelectorAll("nav span")
-const change = document.querySelector(".changechar");
-const first = document.querySelector(".first");
 let scrolltop = 0;
-
-
-
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
     titletop.classList.add("scrolled");
-    change.classList.add("scrolled");
-    first.classList.add("scrolled");
     navitems.forEach(function(item) {
         item.classList.add("scrolled")
     })
   } else {
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
-    change.classList.remove("scrolled");
-    first.classList.remove("scrolled");
     navitems.forEach(function(item) {
         item.classList.remove("scrolled")
     })
   }
 });
+
 
 
 
@@ -100,9 +92,9 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Bison <span class='hub'>Centre</span></h3>
+        <h3>Akuma <span class='hub'>Centre</span></h3>
         <p>
-        Whether you're new to Street Fighter or a seasoned warrior, this site is your go-to resource for mastering Bison in Street Fighter 6. Dive into tips, strategies, combo guides, and in-depth character insights designed to elevate your gameplay. Learn how to dominate with Bison’s unique speed, pressure, and mix-up potential. Get ready to take your Bison skills to the next level and crush the competition!
+          Welcome to the ultimate Rashid hub! Whether you're a newcomer or a seasoned fighter, this site is designed to help you master Rashid in Street Fighter 6. Here, you'll find tips, strategies, combo guides, and character insights to elevate your gameplay and make the most of Rashid’s unique speed and mix-up potential. Get ready to take your Rashid skills to the next level!
         </p>
       `;
       desc.classList.add("firstone")
@@ -113,8 +105,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://www.youtube.com/embed/videoseries?si=y-_GUrKzWeSjZef0&amp;list=PLYHo76jk0RQJ_32ESbjjWjQ9d2X2qNibh', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Xiaohai Esports World Cup</h2>
+      <div onclick="window.open('https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Big Bird Red Bull Kumite</h2>
       </div>
     `;
 
@@ -131,8 +123,8 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Bison Replays</h3>
-        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9J-xymYoQkZ8tRiMOIwZc_Q&si=JI6tFJ2UK6PxVIcx" target = "_blank">
+        <h3>Watch High Level Rashid Replays</h3>
+        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9Jlu2BBhSkTAqj2SiIMGKdv&si=9JUnKpEmTaRTKw0P" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>
@@ -157,7 +149,41 @@ next.addEventListener("click", changecarrosel)
   
 setInterval(changecarrosel, 8000 )
 
+function updateTornadoWidth() {
+  const top = document.querySelector('.top');
+  const description = document.querySelector('.description');
+  const tornadoContainer = document.querySelector('.tornadocontainer');
 
+  const topWidth = top.offsetWidth;
+  const descriptionWidth = description.offsetWidth;
+
+  const resultWidth = topWidth - descriptionWidth;
+  tornadoContainer.style.width = `${resultWidth}px`;
+}
+
+// Run it on load
+updateTornadoWidth();
+
+// Optional: also update on window resize
+window.addEventListener('resize', updateTornadoWidth);
+
+function moveTornado() {
+  const tornadoImg = document.querySelector('.tornado img');
+  const tornadoContainer = document.querySelector('.tornadocontainer');
+
+  if (tornadoImg && tornadoContainer) {
+    const containerWidth = tornadoContainer.offsetWidth;
+    const imgWidth = tornadoImg.offsetWidth;
+    const travelDistance = containerWidth - imgWidth;
+
+    tornadoImg.style.transform = `translateX(${travelDistance}px)`;
+
+    // Optional: Reset after it finishes, to repeat
+    setTimeout(() => {
+      tornadoImg.style.transform = `translateX(0px)`;
+    }, 8000); // match duration of transition
+  }
+}
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     const clientSecret = "gl4v4exjfj9sr225q0ep9llxax6y8q";
@@ -204,7 +230,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 
     async function init() {
       const token = await getAccessToken();
-      const buttons = document.querySelectorAll(".livebuttonn");
+      const buttons = document.querySelectorAll(".livebutton");
 
       buttons.forEach(button => {
         const streamerName = button.getAttribute("data-streamer");
@@ -218,42 +244,9 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 const box = document.querySelectorAll(".combopiece");
 const video = document.querySelector(".videoplayer");
 const iframe = document.querySelector("#popupVideo")
-const divekick = document.querySelector(".diveki");
-const imageviewer = document.querySelector(".imageviewer")
-
-
-function colour() {
-  box.forEach((boxes) =>  {
-    boxes.addEventListener("mouseover", function(event) {
-      let col = boxes.getAttribute("data-colour");
-      boxes.style.boxShadow = `2px 4px 10px 0px ${col}`;
-    })
-    
-    
-  })
-
-  box.forEach((boxes) =>  {
-    boxes.addEventListener("mouseout", function(event) {
-      let col = boxes.getAttribute("data-colour");
-      boxes.style.boxShadow = `none`;
-    })
-    
-    
-  })
-  
-
-
-
-
-
-    
-}
-
-colour();
 
 box.forEach((boxes) =>  {
   boxes.addEventListener("click", function(event) {
-    console.log("working")
     event.stopPropagation();
     video.style.display = "flex";
     let link = boxes.getAttribute("data-link");
@@ -268,18 +261,5 @@ box.forEach((boxes) =>  {
 document.addEventListener("click", function () {
   video.style.display = "none";
   iframe.src = "";
-  imageviewer.style.display = "none";
 });
-
-
-
-
-
-divekick.addEventListener("click", function(event) {
-  document.querySelector(".videoplayer").style.display = "none";
-  event.stopPropagation();
-  imageviewer.style.display = "flex";
-  imageviewer.style.background
-
-})
 

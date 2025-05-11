@@ -197,7 +197,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 
     async function init() {
       const token = await getAccessToken();
-      const buttons = document.querySelectorAll(".livebutton");
+      const buttons = document.querySelectorAll(".livebuttonn");
 
       buttons.forEach(button => {
         const streamerName = button.getAttribute("data-streamer");
