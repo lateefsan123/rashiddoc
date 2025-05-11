@@ -58,6 +58,12 @@ nav.scrolled {
 
 }
 
+.changechar.scrolled:hover {
+    background-color: transparent;
+    color: white;
+
+}
+
 nav.scrolled a {
     color: white;
 
