@@ -14,12 +14,16 @@ a {
 
 main {
     background-color: #330200;
-    background-image: url("images/background.png");
+    background-image: url("images/stage.webp");
     position: relative;
     top: 0%;
     background-attachment: fixed;
-    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+
 
 
 nav {
