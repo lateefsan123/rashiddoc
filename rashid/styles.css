@@ -424,6 +424,19 @@ body {
 }
 
 
+main {
+    background-color: #330200;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), 
+    url("old-town-market.avif");
+    position: relative;
+    top: 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 .leftthird button:hover {
     transform: scale(1.1);
