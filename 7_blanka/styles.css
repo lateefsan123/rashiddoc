@@ -184,8 +184,8 @@ nav.scrolled a {
 }
 
 .achievement {
-    background-image: url("images/replayed.webp");
-    background-position: center center;
+    background-image: url("images/achievement.jpg");
+    background-position: 50% 70%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
