@@ -184,7 +184,7 @@ nav.scrolled a {
 
 .achievement {
     background-image: url("images/evowin.webp");
-    background-position: center center;
+    background-position: 50% 10%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

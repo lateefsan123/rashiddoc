@@ -197,7 +197,7 @@ nav.scrolled a {
 
 .achievement {
     background-image: url("images/jaimes-bond-art-is-kinda-cool-v0-442mq0zjl15b1.webp");
-    background-position: center center;
+    background-position: 50% 10%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

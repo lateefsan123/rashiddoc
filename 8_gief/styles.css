@@ -169,7 +169,7 @@ nav.scrolled a {
 
 .achievement {
     background-image: url("images/itazan.jpg");
-    background-position: center center;
+    background-position: 50% 20%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

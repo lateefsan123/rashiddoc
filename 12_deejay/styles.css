@@ -192,7 +192,7 @@ nav.scrolled a {
 
 .achievement {
     background-image: url("images/fuudo.jpg_large");
-    background-position: center center;
+    background-position: 50% 20%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
