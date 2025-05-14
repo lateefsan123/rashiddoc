@@ -115,7 +115,7 @@ window.addEventListener("scroll", function () {
       
       desc.innerHTML = `
       <div onclick="window.open('https://youtu.be/tH9H6FFV1Ys?si=VIe2w8BxmekDH8RQ', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Hamad Texas Showdown Masterclass</h2>
+        <h2 class="redbull">Hamad Texas Showdown run</h2>
       </div>
     `;
 
