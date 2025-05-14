@@ -606,6 +606,9 @@ nav.scrolled a {
     background-image: url("images/hibiki.png");
 }
 
+.kouji {
+    background-image: url("images/kouji.png");
+}
 
 .labbers {
     box-sizing: border-box;
