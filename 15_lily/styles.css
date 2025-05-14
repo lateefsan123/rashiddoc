@@ -238,7 +238,7 @@ nav.scrolled a {
 .replay h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #d3c2a1;
+    color: #d2a27c;
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
 }
@@ -250,8 +250,8 @@ nav.scrolled a {
 .leftthird button {
     width: 40%;
     height: 20%;
-    background-color: #e7dfca;
-    color: black;
+    background-color: #d2a27c;
+    color: white;
     cursor: pointer;
     border-radius: 15px;
     
