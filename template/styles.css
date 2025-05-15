@@ -12,15 +12,17 @@ a {
     color: inherit;
 }
 
+
+
 main {
-    background-color: #330200;
-    background-image: url("images/");
+    background-color: rgb(97, 176, 196);
+    background-image: url("https://www.transparenttextures.com/patterns/redox-01.png");
     position: relative;
     top: 0%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: 50% 0%;
+    background-size: contain;
 }
 
 
