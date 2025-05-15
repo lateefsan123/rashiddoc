@@ -388,8 +388,7 @@ nav.scrolled a {
 .streamerpiece {
     width: 16rem;
     height: 16rem;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgb(10, 67, 27);
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
@@ -399,9 +398,8 @@ nav.scrolled a {
     
 .streamerpiece:hover {
     transform: scale(1.1);
-    box-shadow: 2px 4px 10px 0px rgb(10, 67, 27);
+    box-shadow: 2px 4px 10px 0px black;
 }
-    
 .bottom h3 {
     color: white;
 }
