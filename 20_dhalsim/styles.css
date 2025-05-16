@@ -533,13 +533,18 @@ nav.scrolled a {
 
 .stun {
     background-color: #FF7F50;
-    background-image: url("images/stun.png");
+    background-image: url("images/stuncombo.png");
 }
 
 .trade-combos {
     background-color: #6A5ACD;
-    background-image: url("images/.png");
+    background-image: url("images/image_2025-05-16_180219665-removebg-preview.png");
 }
+
+.first.scrolled {
+    color: #FDB31C;
+}
+
 
 .holding-ground {
     background-color: #B8860B;
