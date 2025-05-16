@@ -101,9 +101,9 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Marisa <span class='hub'>Centre</span></h3>
+        <h3>Dhalsim <span class='hub'>Centre</span></h3>
         <p>
-          Welcome to the ultimate Marisa hub in Street Fighter 6! Whether you're new to the arena or a battle-hardened warrior, you'll find tips, combos, and strategies to unleash her raw power and armored pressure. Get ready to dominate and elevate your game!
+        Welcome to the ultimate Dhalsim hub in Street Fighter 6! Whether you're new or experienced, you'll find tips, combos, and strategies to master his long-range zoning, teleportation, and unorthodox pressure. Control the space and outsmart the competition.
         </p>
       `;
       desc.classList.add("firstone")
@@ -114,8 +114,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://www.youtube.com/playlist?list=PLTcrgFgof0WSaH5LJZicKA9LUy7gYpE5Q', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Bigbird Red Bull Kumite</h2>
+      <div onclick="window.open('https://www.youtube.com/live/YeOVD-X-v-o?si=XLTrVKI75RaEammB', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">YHC-Mochi SFL Win</h2>
       </div>
     `;
 
@@ -132,8 +132,8 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Marisa Replays</h3>
-        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9IJBQHLmW30RBGgCkATRCmD" target = "_blank">
+        <h3>Watch High Level Dhalsim Replays</h3>
+        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9Jcr7KeG-f7nXN1pYdpBZjs" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>

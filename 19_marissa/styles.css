@@ -205,8 +205,24 @@ nav.scrolled a {
     -webkit-text-stroke-width: 1px;
 }
 
+
 .redbull {
+    
 }
+
+@keyframes flicker {
+    50% {
+        -webkit-text-stroke-color: #5d0707;
+    }
+    
+}
+
+.redbull:hover {
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 0.2px;
+    transform: scale(1.05);
+}
+
 
 
 @keyframes glitch {
