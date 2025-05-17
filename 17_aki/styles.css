@@ -94,6 +94,13 @@ nav.scrolled a {
     letter-spacing: 0.2em;
 }
 
+#google_translate_element {
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
 
 
 .changechar {

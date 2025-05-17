@@ -609,6 +609,10 @@ nav.scrolled a {
     
 }
 
+.rikeman {
+    background-image: url("images/rikeman.png");
+}
+
 .hikaru {
     background-image: url("images/hikaru.png");
 }
