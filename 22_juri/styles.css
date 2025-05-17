@@ -457,7 +457,6 @@ nav.scrolled a {
     --base-color: #B76EFF;
     --dark-color: #9c5bcc;
     background-color: var(--base-color);
-    background-size: cover;
     background-position: center;
   }
   
