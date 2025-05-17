@@ -491,8 +491,7 @@ nav.scrolled a {
 .streamerpiece {
     width: 16rem;
     height: 16rem;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(225, 83, 44, 0.3);
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
@@ -502,7 +501,7 @@ nav.scrolled a {
     
 .streamerpiece:hover {
     transform: scale(1.1);
-    box-shadow: 2px 4px 10px 0px rgb(255, 0, 0);
+    box-shadow: 2px 4px 10px 0px black;
 }
     
 .bottom h3 {
@@ -586,6 +585,10 @@ nav.scrolled a {
     
   }
 
+  .links.twoman {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .fa-x-twitter {
     font-size: 2rem;
@@ -615,6 +618,10 @@ nav.scrolled a {
     background-image: url("images/itazani.png");
 }
 
+.k4lle {
+    background-image: url("images/k4lle.png");
+}
+
 .bolado {
     background-image: url("images/bolado.png");
 }
@@ -633,6 +640,10 @@ nav.scrolled a {
 
 .veggey {
     background-image: url("images/veggey.png");
+}
+
+.siberianlab {
+    background-image: url("images/siberianlab.png");
 }
 
 .junior {
