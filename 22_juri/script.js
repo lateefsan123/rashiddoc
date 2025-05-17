@@ -101,9 +101,9 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Chun-Li <span class='hub'>Centre</span></h3>
+        <h3>Juri <span class='hub'>Centre</span></h3>
         <p>
-          Welcome to the ultimate Chun-Li hub in Street Fighter 6! Whether you're new or a pro, find tips, combos, and strategies to master her speed and mix-ups. Get ready to level up your game!
+        Welcome to the ultimate Juri hub in Street Fighter 6! Whether you're new or a pro, find tips, combos, and strategies to master her mind games, speed, and deadly pressure. Get ready to level up your game!
         </p>
       `;
       desc.classList.add("firstone")
@@ -114,8 +114,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://www.youtube.com/watch?v=Q04vYZd7JTs', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Valmaster France Regional Final</h2>
+      <div onclick="window.open('https://youtu.be/EO46PsOLJiA?si=5xN2Z1dE9IIy_cyg', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Uma Capcom Cup Win</h2>
       </div>
     `;
 
@@ -132,9 +132,9 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Chun-Li Replays</h3>
-        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9KkaAhDfFZMpdHMbPtQPWcP&si=glciHl3qTshuxQTr" target = "_blank">
-        <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
+        <h3>Watch High Level Juri Replays</h3>
+        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9JTBBhI0EMZ8GqLQ9c3UnaC" target = "_blank">
+        <button>WATCH NOW</button>
         </div>
         </a>
         <div class="rightthird"></div>
