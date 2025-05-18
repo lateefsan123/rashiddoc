@@ -5,6 +5,9 @@ const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
 let scrolltop = 0;
 
+
+
+
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
@@ -76,6 +79,7 @@ window.addEventListener("scroll", function () {
     
   })
 
+
   let carousel = document.querySelector(".classic");
   let next = document.querySelector(".fa-arrow-right");
   let desc = document.querySelector(".description");
@@ -97,9 +101,10 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Akuma <span class='hub'>Centre</span></h3>
+        <h3>Manon <span class='hub'>Centre</span></h3>
         <p>
-          Welcome to the ultimate Akuma hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Akuma in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Akuma gameplay to new heights!
+        Welcome to the ultimate Akuma hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Akuma in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Akuma gameplay to new heights!
+       
         </p>
       `;
       desc.classList.add("firstone")
@@ -111,7 +116,7 @@ window.addEventListener("scroll", function () {
       
       desc.innerHTML = `
       <div onclick="window.open('https://www.youtube.com/playlist?list=PLYHo76jk0RQKhQciPpySOPb4-E55GYu5Y', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Shuto cpt singapore win</h2>
+        <h2 class="redbull">Shuto CPT Singapore Win</h2>
       </div>
     `;
 
@@ -129,8 +134,7 @@ window.addEventListener("scroll", function () {
       desc.innerHTML = `
         <div class = 'leftthird'>
         <h3>Watch High Level Akuma Replays</h3>
-        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9I2rratnrITg5QYh4msNl8y
-" target = "_blank">
+        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9I2rratnrITg5QYh4msNl8y" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>
@@ -153,7 +157,7 @@ window.addEventListener("scroll", function () {
 next.addEventListener("click", changecarrosel) 
 
   
-setInterval(changecarrosel, 8000 );
+setInterval(changecarrosel, 8000 )
 
 
 
@@ -216,6 +220,38 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 const box = document.querySelectorAll(".combopiece");
 const video = document.querySelector(".videoplayer");
 const iframe = document.querySelector("#popupVideo")
+const divekick = document.querySelector(".diveki");
+const imageviewer = document.querySelector(".imageviewer")
+
+
+function colour() {
+  box.forEach((boxes) =>  {
+    boxes.addEventListener("mouseover", function(event) {
+      let col = boxes.getAttribute("data-colour");
+      boxes.style.boxShadow = `2px 4px 10px 0px ${col}`;
+    })
+    
+    
+  })
+
+  box.forEach((boxes) =>  {
+    boxes.addEventListener("mouseout", function(event) {
+      let col = boxes.getAttribute("data-colour");
+      boxes.style.boxShadow = `none`;
+    })
+    
+    
+  })
+  
+
+
+
+
+
+    
+}
+
+colour();
 
 box.forEach((boxes) =>  {
   boxes.addEventListener("click", function(event) {
@@ -234,7 +270,18 @@ box.forEach((boxes) =>  {
 document.addEventListener("click", function () {
   video.style.display = "none";
   iframe.src = "";
+  imageviewer.style.display = "none";
 });
 
 
+
+
+
+divekick.addEventListener("click", function(event) {
+  document.querySelector(".videoplayer").style.display = "none";
+  event.stopPropagation();
+  imageviewer.style.display = "flex";
+  imageviewer.style.background
+
+})
 

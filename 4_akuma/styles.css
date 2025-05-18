@@ -554,8 +554,51 @@ nav.scrolled a {
 .fa-twitch {
     color: rgb(138, 78, 201);
     font-size: 2rem;
+}
+
+.fa-twitch.live {
+    color: rgb(138, 78, 201);
+    font-size: 2rem;
     animation: twitchflash  2s  infinite alternate;
 }
+
+@keyframes twitchflash {
+    10% {
+        color: #00CED1;
+    }
+
+    20% {
+        color: #32CD32;
+    }
+
+    30% {
+        color: red;
+    }
+    50% {
+        color: #7350f4;
+        transform: scale(-10px);
+    }
+
+    60% {
+        color: #00CED1;
+    }
+
+    70% {
+        color: #32CD32;
+    }
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: #8A2BE2;
+        transform: translateY(10px);
+    }
+    
+  }
+
+
 
 .fa-x-twitter {
     font-size: 2rem;
@@ -591,6 +634,10 @@ nav.scrolled a {
 
 .shuto {
     background-image: url("images/shuto.png");
+}
+
+.kami {
+    background-image: url("images/kami.png");
 }
 
 .thunder {
