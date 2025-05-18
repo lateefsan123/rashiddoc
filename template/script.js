@@ -101,9 +101,10 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Chun-Li <span class='hub'>Centre</span></h3>
+        <h3>Manon <span class='hub'>Centre</span></h3>
         <p>
-          Welcome to the ultimate Chun-Li hub in Street Fighter 6! Whether you're new or a pro, find tips, combos, and strategies to master her speed and mix-ups. Get ready to level up your game!
+        Welcome to the ultimate Akuma hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Akuma in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Akuma gameplay to new heights!
+       
         </p>
       `;
       desc.classList.add("firstone")
@@ -114,8 +115,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://www.youtube.com/watch?v=Q04vYZd7JTs', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Valmaster France Regional Final</h2>
+      <div onclick="window.open('https://www.youtube.com/playlist?list=PLYHo76jk0RQKhQciPpySOPb4-E55GYu5Y', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Shuto CPT Singapore Win</h2>
       </div>
     `;
 
@@ -132,8 +133,8 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Chun-Li Replays</h3>
-        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9KkaAhDfFZMpdHMbPtQPWcP&si=glciHl3qTshuxQTr" target = "_blank">
+        <h3>Watch High Level Akuma Replays</h3>
+        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9I2rratnrITg5QYh4msNl8y" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>
@@ -194,6 +195,14 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
         const data = await res.json();
         if (data.data && data.data.length > 0) {
           console.log(`${streamerName} is live`);
+          const container = button.closest(".streamerpiece");
+
+  // Find the islive <p> inside this specific streamer block
+          const isLiveIndicator = container.querySelector(".islive");
+
+          if (isLiveIndicator) {
+            isLiveIndicator.style.display = "flex";
+          }
           button.classList.add("live");
         } else {
           console.log(`${streamerName} is offline`);

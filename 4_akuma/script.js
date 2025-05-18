@@ -195,6 +195,14 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
         const data = await res.json();
         if (data.data && data.data.length > 0) {
           console.log(`${streamerName} is live`);
+          const container = button.closest(".streamerpiece");
+
+  // Find the islive <p> inside this specific streamer block
+          const isLiveIndicator = container.querySelector(".islive");
+
+          if (isLiveIndicator) {
+            isLiveIndicator.style.display = "flex";
+          }
           button.classList.add("live");
         } else {
           console.log(`${streamerName} is offline`);

@@ -691,22 +691,18 @@ nav.scrolled a {
 
 
 .labberpiece {
-    width: 15rem;
-    height: 15rem;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
     background-color: white;
-    cursor: pointer;
-    filter: grayscale(100%);
-    transition: transform 200ms;
-    transition: filter 200ms ease-in-out;
-    margin-top: 10px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    transition: transform 200ms ease-in-out;
+}
+
+.kail {
+    background-image: url('images/kail.png');
 }
 
 .labberpiece:hover {
