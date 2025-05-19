@@ -14,7 +14,8 @@
             url("images/white-wall-3-2.png");
         background-size: contain;
         background-blend-mode: overlay; /* optional, try multiply or darken too */
-        overflow: hidden;
+        overflow: auto;
+        margin: 0;
 }
 
 .behind {
@@ -37,6 +38,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    overflow: auto;
 
 }
 
@@ -48,6 +50,7 @@
     gap: 10px;
     width: 40vw;
     box-sizing: border-box;
+    padding: 20px;
 }
 
 .top {
@@ -290,8 +293,7 @@ a {
 
 .left .middle {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 5px;
     height: 80%;
     width: 100%;
