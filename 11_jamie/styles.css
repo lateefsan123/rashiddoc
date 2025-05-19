@@ -59,7 +59,7 @@ nav span:hover {
 }
 
 nav.scrolled {
-    background-color: rgba(188, 137, 236, 0.9);
+    background-color: rgba(74,44,113, 0.7);
     color: white;
 
 }
@@ -313,13 +313,21 @@ nav.scrolled a {
 
 #ctitle, #ltitle, #stitle {
     font-size: 3rem;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     color: white;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
     text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    /* Stronger text shadow to pop against brightness */
+    text-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.4), 
+        0 2px 10px rgba(0, 0, 0, 0.6);
 }
+
 
 /* sidebar */
 
@@ -621,8 +629,12 @@ nav.scrolled a {
     background-image: url("images/freeseff.png");
 }
 
-.boltstrike {
-    background-image: url("images/boltstrike.png");
+.kayne {
+    background-image: url("images/kayne.png");
+}
+
+.zaferino {
+    background-image: url("images/zaferino.png");
 }
 
 /* labbers section */

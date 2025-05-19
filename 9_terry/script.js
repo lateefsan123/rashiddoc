@@ -1,18 +1,27 @@
 const navbar = document.querySelector("nav");
 const titletop = document.querySelector(".center")
 const navitems = document.querySelectorAll("nav span")
+const change = document.querySelector(".changechar");
+const first = document.querySelector(".first");
 let scrolltop = 0;
+
+
+
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
     titletop.classList.add("scrolled");
+    change.classList.add("scrolled");
+    first.classList.add("scrolled");
     navitems.forEach(function(item) {
         item.classList.add("scrolled")
     })
   } else {
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
+    change.classList.remove("scrolled");
+    first.classList.remove("scrolled");
     navitems.forEach(function(item) {
         item.classList.remove("scrolled")
     })
@@ -50,12 +59,26 @@ window.addEventListener("scroll", function () {
     if (music.paused) {
       music.play()
       btn.innerHTML = "<i class='fa-solid fa-volume-xmark'></i>"
+      btn.classList.add("play");
+
 
     } else {
       music.pause()
       btn.innerHTML = "<i class='fa-solid fa-play'></i>"
+      btn.classList.remove("play");
     }
   });
+
+  btn.addEventListener("mouseover", function() {
+    btn.classList.add("yo");
+
+  })
+
+  btn.addEventListener("mouseout", function() {
+    btn.classList.remove("yo");
+    
+  })
+
 
   let carousel = document.querySelector(".classic");
   let next = document.querySelector(".fa-arrow-right");
@@ -78,9 +101,10 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Akuma <span class='hub'>Centre</span></h3>
+        <h3>Terry <span class='hub'>Centre</span></h3>
         <p>
-          Welcome to the ultimate Rashid hub! Whether you're a newcomer or a seasoned fighter, this site is designed to help you master Rashid in Street Fighter 6. Here, you'll find tips, strategies, combo guides, and character insights to elevate your gameplay and make the most of Rashid’s unique speed and mix-up potential. Get ready to take your Rashid skills to the next level!
+        Welcome to the ultimate Terry Bogard hub in Street Fighter 6! Whether you're new to the game or a seasoned fighter, this is your go-to spot for combos, pressure setups, and hard-hitting tactics. Learn how to channel Terry’s raw power and explosive style to dominate your matches. Are you okay? Let’s go!
+       
         </p>
       `;
       desc.classList.add("firstone")
@@ -91,8 +115,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Big Bird Red Bull Kumite</h2>
+      <div onclick="window.open('https://youtu.be/T_tyAGF8RFc?si=yDcScyQKPMeeiwKe', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Oil King Quals For CPT</h2>
       </div>
     `;
 
@@ -109,8 +133,8 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Rashid Replays</h3>
-        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9Jlu2BBhSkTAqj2SiIMGKdv&si=9JUnKpEmTaRTKw0P" target = "_blank">
+        <h3>Watch High Level Terry Replays</h3>
+        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9J6edj8FFcp5Oh11TRENEfi" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>
@@ -135,41 +159,7 @@ next.addEventListener("click", changecarrosel)
   
 setInterval(changecarrosel, 8000 )
 
-function updateTornadoWidth() {
-  const top = document.querySelector('.top');
-  const description = document.querySelector('.description');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
 
-  const topWidth = top.offsetWidth;
-  const descriptionWidth = description.offsetWidth;
-
-  const resultWidth = topWidth - descriptionWidth;
-  tornadoContainer.style.width = `${resultWidth}px`;
-}
-
-// Run it on load
-updateTornadoWidth();
-
-// Optional: also update on window resize
-window.addEventListener('resize', updateTornadoWidth);
-
-function moveTornado() {
-  const tornadoImg = document.querySelector('.tornado img');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
-
-  if (tornadoImg && tornadoContainer) {
-    const containerWidth = tornadoContainer.offsetWidth;
-    const imgWidth = tornadoImg.offsetWidth;
-    const travelDistance = containerWidth - imgWidth;
-
-    tornadoImg.style.transform = `translateX(${travelDistance}px)`;
-
-    // Optional: Reset after it finishes, to repeat
-    setTimeout(() => {
-      tornadoImg.style.transform = `translateX(0px)`;
-    }, 8000); // match duration of transition
-  }
-}
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     const clientSecret = "gl4v4exjfj9sr225q0ep9llxax6y8q";
@@ -205,6 +195,14 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
         const data = await res.json();
         if (data.data && data.data.length > 0) {
           console.log(`${streamerName} is live`);
+          const container = button.closest(".streamerpiece");
+
+  // Find the islive <p> inside this specific streamer block
+          const isLiveIndicator = container.querySelector(".islive");
+
+          if (isLiveIndicator) {
+            isLiveIndicator.style.display = "flex";
+          }
           button.classList.add("live");
         } else {
           console.log(`${streamerName} is offline`);
@@ -216,7 +214,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 
     async function init() {
       const token = await getAccessToken();
-      const buttons = document.querySelectorAll(".livebutton");
+      const buttons = document.querySelectorAll(".livebuttonn");
 
       buttons.forEach(button => {
         const streamerName = button.getAttribute("data-streamer");
@@ -230,9 +228,42 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 const box = document.querySelectorAll(".combopiece");
 const video = document.querySelector(".videoplayer");
 const iframe = document.querySelector("#popupVideo")
+const divekick = document.querySelector(".diveki");
+const imageviewer = document.querySelector(".imageviewer")
+
+
+function colour() {
+  box.forEach((boxes) =>  {
+    boxes.addEventListener("mouseover", function(event) {
+      let col = boxes.getAttribute("data-colour");
+      boxes.style.boxShadow = `2px 4px 10px 0px ${col}`;
+    })
+    
+    
+  })
+
+  box.forEach((boxes) =>  {
+    boxes.addEventListener("mouseout", function(event) {
+      let col = boxes.getAttribute("data-colour");
+      boxes.style.boxShadow = `none`;
+    })
+    
+    
+  })
+  
+
+
+
+
+
+    
+}
+
+colour();
 
 box.forEach((boxes) =>  {
   boxes.addEventListener("click", function(event) {
+    console.log("working")
     event.stopPropagation();
     video.style.display = "flex";
     let link = boxes.getAttribute("data-link");
@@ -247,5 +278,18 @@ box.forEach((boxes) =>  {
 document.addEventListener("click", function () {
   video.style.display = "none";
   iframe.src = "";
+  imageviewer.style.display = "none";
 });
+
+
+
+
+
+divekick.addEventListener("click", function(event) {
+  document.querySelector(".videoplayer").style.display = "none";
+  event.stopPropagation();
+  imageviewer.style.display = "flex";
+  imageviewer.style.background
+
+})
 

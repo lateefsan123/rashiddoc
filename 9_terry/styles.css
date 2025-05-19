@@ -12,13 +12,31 @@ a {
     color: inherit;
 }
 
+.islive {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
 main {
-    background-color: #330200;
-    background-image: url("imag");
+    background-color: rgb(97, 176, 196);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+        url("images/MetroCityBayArea_taller.png");
     position: relative;
     top: 0%;
-    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain;
+    width: 100%;
 }
+
+
 
 
 nav {
@@ -28,19 +46,35 @@ nav {
     grid-template-columns: 4.5fr 1fr 1fr 1fr 2fr;
     grid-template-rows: 1fr;
     height: 5rem;
-    background-color: white;
+    background-color: transparent;
     align-items: center;
     position: fixed;
     width: 100%;
     overflow: hidden;
+    color: black;
+}
+
+
+.nav {
+    grid-column: 2/5;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav span:hover {
-    border-bottom: 6px solid #330200;
+    border-bottom: 6px solid #FFD166;
+}
+
+nav span.scrolled:hover {
+    border-bottom: 6px solid #FFD166;
+}
+
+.center, .hub {
+    color: rgb(220,64,41);
 }
 
 nav.scrolled {
-    background-color: rgba(228, 57, 85, 0.9);
+    background-color: rgba(31, 42, 58, 0.8);
     color: white;
 
 }
@@ -64,10 +98,8 @@ nav.scrolled a {
     letter-spacing: 0.2em;
 }
 
-.center {
-    color: #330200;
-    border: none;
-    
+.first.scrolled {
+    color: rgb(220,64,41);
 }
 
 
@@ -75,9 +107,40 @@ nav.scrolled a {
     border: 3px solid black;
     padding: 10px;
     width: 50%;
-    background-color: white;
+    background-color: transparent;
     cursor: pointer;
 }
+
+.changechar.scrolled {
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    animation: change 3s ease-in-out infinite;
+}
+
+@keyframes change {
+    50% {
+        border: 3px solid #FFD166;
+    }
+}
+.changechar:hover {
+    background-color: #FFD166;
+    color: white;
+    transform: scale(1.1);
+}
+
+.changechar.scrolled:hover {
+    background-color: transparent;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+
 
 .change:hover {
     background-color: black;
@@ -99,7 +162,7 @@ nav.scrolled a {
 .profilepic {
     height: 50%;
     width: 20%;
-    background-image: url("RashidCropLateef.png");
+    background-image: url("images/terr.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -127,6 +190,8 @@ nav.scrolled a {
 
 }
 
+
+
 .description h3 {
     font-size: 3rem;
     color: black;
@@ -135,6 +200,111 @@ nav.scrolled a {
     margin: 0%;
     padding: 0%;
 }
+
+.achievement {
+    background-image: url("images/OILER.avif");
+    background-position: 50% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    opacity: 100%;
+
+    color: white;
+    font-size: 1.5rem;
+    -webkit-text-stroke: #2a2727;
+    -webkit-text-stroke-width: 1px;
+}
+
+.redbull {
+}
+
+.redbull:hover {
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 0.2px;
+    transform: scale(1.05);
+}
+
+
+
+@keyframes glitch {
+    50% {
+      transform: skew(180deg);
+      color: white;
+    }
+  }
+
+
+  @keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000, 0 0 80px #000000;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+.description.replay {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    opacity: 100%;
+    transition: opacity, 400ms ease-in;
+    
+}
+
+.replay div {
+    height: 100%;
+    width: 50%;
+    margin: none;
+    background-color: transparent;
+}
+.replay h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 1px;
+}
+
+.leftthird {
+    padding: 10px;
+}
+
+.leftthird button {
+    width: 40%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    
+    
+    
+}
+
+
+
+.leftthird button:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: -5px 5px 0px 0px rgb(220,64,41);
+    transform: translateY(-2px);
+    transition: transform 200ms ease-in;
+    animation: moveit 1s infinite alternate;
+    
+    
+}
+
+
+.rightthird {
+    background-image: url("images/replay.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 
 
@@ -152,13 +322,22 @@ nav.scrolled a {
 
 #ctitle, #ltitle, #stitle {
     font-size: 3rem;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     color: white;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
     text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    /* Stronger text shadow to pop against brightness */
+    text-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.4), 
+        0 2px 10px rgba(0, 0, 0, 0.6);
 }
+
+
 
 /* sidebar */
 
@@ -210,7 +389,7 @@ nav.scrolled a {
 }
 
 .fa-file-word {
-    color: green;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     margin-bottom: 15px;
     align-self: center;
@@ -277,11 +456,139 @@ nav.scrolled a {
 
 }
 
+.upper {
+    height: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+
+
 .combopiece.lower {
     box-sizing: border-box;
     height: 50%;
 
 }
+
+@keyframes pulseBg {
+    0%, 100% {
+      background-color: var(--base-color);
+    }
+    50% {
+      background-color: var(--dark-color);
+    }
+  }
+  
+  .upper.intro {
+    --base-color: #9A66C4;     /* Skyline purple */
+    --dark-color: #7b4fa1;     /* Brick shadows */
+    --light-color: #FFD447;    /* Neon flare */
+    background-image: url('images/intro.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.combos {
+    --base-color: #2AA7DE;
+    --dark-color: #1f84b0;
+    --light-color: #6BFFFF;    /* Electric blue highlight */
+    background-image: url('images/combos.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.stuncombo {
+    --base-color: #D62828;
+    --dark-color: #aa1f1f;
+    --light-color: #FF7C7C;    /* Trail flame red */
+    background-image: url('images/stun combo.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.burnout {
+    --base-color: #6D4C6D;
+    --dark-color: #573a57;
+    --light-color: #EFB9FF;    /* Violet neon edge */
+    background-image: url('images/burnout.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.sideswitch {
+    --base-color: #D5A03C;
+    --dark-color: #b6852e;
+    --light-color: #FFE775;    /* Warm LED yellow */
+    background-image: url('images/sideswitch.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.safejump {
+    --base-color: #4F5A65;
+    --dark-color: #3c464f;
+    --light-color: #A0C8FF;    /* Streetlight cyan */
+    background-image: url('images/safejump.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.terryresets {
+    --base-color: #1A1A1A;
+    --dark-color: #000000;
+    --light-color: #FFD447;    /* Terry energy yellow */
+    background-image: url('images/resets.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.overheadsetup {
+    --base-color: #D66D28;
+    --dark-color: #aa5720;
+    --light-color: #FFBD72;    /* Amber spark */
+    background-image: url('images/overhead.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.oki {
+    --base-color: #406B80;
+    --dark-color: #2f5162;
+    --light-color: #8CF3FF;    /* Cool mist edge */
+    background-image: url('images/oki.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.spacetrap {
+    --base-color: #7A5E88;
+    --dark-color: #5d4869;
+    --light-color: #FF8AD6;    /* Pink glitch highlight */
+    background-image: url('images/spaceing traps.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.kintyorutips {
+    --base-color: #E05E9C;
+    --dark-color: #b34c7d;
+    --light-color: #FFC4EC;    /* Light neon pink */
+    background-image: url('images/tips.png');
+    background-color: var(--base-color);
+  }
+  
+  .upper.howtobeatterry {
+    --base-color: #A02020;
+    --dark-color: #701515;
+    --light-color: #FF6A6A;    /* Heated clash red */
+    background-image: url('images/antiterry.png');
+    background-color: var(--base-color);
+  }
+  
+  
+ 
+  
+  .upper:hover {
+    animation: pulseBg 2s infinite ease-in-out;
+  }
+  
+
+
 
 /* streamers section */
 
@@ -311,8 +618,7 @@ nav.scrolled a {
 .streamerpiece:hover {
     transform: scale(1.1);
     box-shadow: 2px 4px 10px 0px black;
-}
-    
+}  
 .bottom h3 {
     color: white;
 }
@@ -368,14 +674,44 @@ nav.scrolled a {
 .face {
     height: 60%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     
 }
 
-/* labbers section */
+.kintyo {
+    background-image: url("images/kintyo.png");
+}
 
+.riddles {
+    background-image: url("images/riddles.png");
+}
 
+.leshar {
+    background-image: url("images/leshar.png");
+}
+
+.oilking {
+    background-image: url("images/oilking.png");
+}
+
+.booce {
+    background-image: url("images/booce.png");
+}
+
+.punk {
+    background-image: url("images/ppunk.png");
+}
+.spaceboy {
+    background-image: url("images/spaceboy.png");
+}
+
+.chriscch {
+    background-image: url("images/chriscch.png");
+}
+
+.jabhim {
+    background-image: url("images/jabhim.png");}
 .labbers {
     box-sizing: border-box;
     display: grid;
@@ -501,3 +837,102 @@ nav.scrolled a {
     
   }
 
+  #playBtn {
+    position: relative;
+    background-color: transparent;
+    color: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 7px double rgba(255, 255, 255, 0.7);
+    box-shadow: black 0px 54px 55px, 
+            black 0px -12px 30px, 
+            black 0px 4px 6px, 
+            black 0px 12px 13px, 
+            black 0px -3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    z-index: 1; /* Button stays above pulse */
+  }
+
+  #playBtn.play {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black
+    ;
+    
+  }
+  
+  #playBtn .fa {
+    font-size: 1.3rem;
+  }
+
+  #playBtn.yo {
+    background-color: rgba(255, 255, 255, 0.7);
+
+  }
+  
+  #playBtn.yo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Start with a wide circle */
+    height: 120%;
+    background: radial-gradient(circle, rgba(135, 8, 125, 0.6), rgba(255, 255, 255, 0.4) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+     /* Apply pulse animation */
+    z-index: -1; /* Ensure the pulse stays behind the button */
+    animation: pulse 4s infinite;
+  }
+
+  /* Outer pulse effect */
+  #playBtn.play::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Start with a wide circle */
+    height: 120%;
+    background: radial-gradient(circle, rgba(135, 8, 125, 0.6), rgba(255, 255, 255, 0.4) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+     /* Apply pulse animation */
+    z-index: -1; /* Ensure the pulse stays behind the button */
+    animation: pulse 4s infinite;
+
+  }
+  
+  /* Keyframes for the pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.5;
+
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.4); /* Grow the pulse */
+      opacity: 0.5;
+      border: 1px solid white;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Shrink the pulse */
+      opacity: 1;
+
+    }
+  }
+  
+  #playBtn:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  #playBtn:active {
+    transform: scale(0.95); /* Slight scale effect on click */
+  }
+  
