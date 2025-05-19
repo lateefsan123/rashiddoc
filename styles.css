@@ -79,6 +79,7 @@
 
     filter: grayscale(99%);
     cursor: not-allowed;
+    min-height: 70px;
   }
   
   .fighter:hover {
