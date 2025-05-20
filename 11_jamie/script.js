@@ -113,8 +113,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://youtu.be/ZoiviSOEbHM?si=57bM5yyz-He20ega', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Punk Tns win with Jamie</h2>
+      <div onclick="window.open('https://youtu.be/BTBWFAUvC6Y?si=YOeqMLYNL7BofFwn', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Kayne Brussells Challenge Run</h2>
       </div>
     `;
 

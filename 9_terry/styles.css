@@ -26,7 +26,7 @@ main {
     background-color: rgb(97, 176, 196);
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
-        url("images/MetroCityBayArea_taller.png");
+        url("images/test.jpeg");
     position: relative;
     top: 0%;
     background-attachment: fixed;
@@ -162,7 +162,7 @@ nav.scrolled a {
 .profilepic {
     height: 50%;
     width: 20%;
-    background-image: url("images/terr.png");
+    background-image: url("images/bogard.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -396,7 +396,7 @@ nav.scrolled a {
 }
 
 #playBtn i {
-    color: white;
+    color: rgb(220,64,41);
     font-size: 2rem;
     align-self: center;
     opacity: 100%;
@@ -910,10 +910,12 @@ nav.scrolled a {
   
   #playBtn .fa {
     font-size: 1.3rem;
+    color: red;
   }
 
   #playBtn.yo {
     background-color: rgba(255, 255, 255, 0.7);
+    
 
   }
   

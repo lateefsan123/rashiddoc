@@ -656,6 +656,10 @@ nav.scrolled a {
     
 }
 
+.breezy {
+    background-image: url("images/breezy.png");
+}
+
 .crimson {
     background-image: url("images/crimson.png");
 }

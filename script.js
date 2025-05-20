@@ -262,6 +262,16 @@ let character = {
         num: "no25",
         background: "url('images/maii.png')"
 
+    },
+
+    char26: {
+        name: "Elena",
+        weight: "129",
+        height: "6'1",
+        archetype: "Footsies",
+        num: "no26",
+        background: "url('images/elenaback.webp')"
+
     }
 
   

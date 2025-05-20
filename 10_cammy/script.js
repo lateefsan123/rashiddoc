@@ -1,5 +1,7 @@
 const navbar = document.querySelector("nav");
 const titletop = document.querySelector(".center")
+const title = document.querySelector(".titletop")
+
 const navitems = document.querySelectorAll("nav span")
 const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
@@ -12,6 +14,7 @@ window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
     titletop.classList.add("scrolled");
+    title.classList.add("scrolled");
     change.classList.add("scrolled");
     first.classList.add("scrolled");
     navitems.forEach(function(item) {
@@ -20,6 +23,7 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
+    title.classList.remove("scrolled");
     change.classList.remove("scrolled");
     first.classList.remove("scrolled");
     navitems.forEach(function(item) {

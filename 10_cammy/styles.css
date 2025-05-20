@@ -49,15 +49,18 @@ nav {
 }
 
 .first.scrolled {
-    color: #004d40;
+    color: #5B68F4;
+  
+  
+
 }
 
 nav span:hover {
-    border-bottom: 6px solid #004d40;
+    border-bottom: 6px solid #5B68F4;
 }
 
 nav.scrolled {
-    background-color: rgba(206, 206, 206, 0.9);
+    background-color: rgba(68, 74, 100, 0.7);
     color: white;
 
 }
@@ -85,16 +88,27 @@ nav.scrolled a {
     color: black;
     font-size: 1.90em;
     letter-spacing: 0.2em;
+    font-weight: 700;
+
+    /* Stronger text shadow to pop against brightness */
+    
+}
+
+.titletop.scrolled {
+    text-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.4), 
+        0 2px 10px rgba(0, 0, 0, 0.6);
+    color: red;
 }
 
 .center {
-    color: #0d6349;
+    color: #5B68F4;
     border: none;
     
 }
 
 .hub {
-    color: #0d6349;
+    color: #5B68F4;
     border: none;
     
 }
@@ -138,7 +152,7 @@ nav.scrolled a {
 .profilepic {
     height: 50%;
     width: 20%;
-    background-image: url("images/profilepic.png");
+    background-image: url("images/camms.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -242,7 +256,7 @@ nav.scrolled a {
 .replay h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #168b68;
+    color: transparent;
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
 }
@@ -254,7 +268,7 @@ nav.scrolled a {
 .leftthird button {
     width: 40%;
     height: 20%;
-    background-color: #e7dfca;
+    background-color: transparent;
     color: black;
     cursor: pointer;
     border-radius: 15px;
@@ -269,7 +283,7 @@ nav.scrolled a {
     transform: scale(1.1);
     -webkit-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: -5px 5px 0px 0px #0d6349;
+    box-shadow: -5px 5px 0px 0px red;
     transform: translateY(-2px);
     transition: transform 200ms ease-in;
     animation: moveit 1s infinite alternate;
@@ -279,7 +293,7 @@ nav.scrolled a {
 
 
 .rightthird {
-    background-image: url("images/replay.png");
+    background-image: url("images/ca3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
