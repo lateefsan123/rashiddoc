@@ -214,9 +214,12 @@ nav.scrolled a {
 }
 
 .redbull {
-    animation: glitch 0.9s infinite;
+    animation: all 200ms ease-in-out;
 }
 
+.redbull:hover {
+    transform: scale(1.1);
+}
 
 @keyframes glitch {
     50% {

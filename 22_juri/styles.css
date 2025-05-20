@@ -532,7 +532,7 @@ nav.scrolled a {
   }
   
   .upper.anti-juri {
-    background-image: url('images/invalid.png');
+    background-image: url('images/antijuri.png');
     --base-color: #C2B280;
     --dark-color: #a59569;
     background-color: var(--base-color);
