@@ -14,6 +14,8 @@ a {
 
 
 
+
+
 main {
     background-color: rgb(97, 176, 196);
     background-image: url("https://www.transparenttextures.com/patterns/redox-01.png");
@@ -24,6 +26,63 @@ main {
     background-position: 50% 0%;
     background-size: contain;
 }
+
+nav {
+    background-color: #2B2E3A; /* or your chosen nav color */
+    color: white;
+    padding: 1rem;
+  }
+  
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    display: none; /* visible on mobile */
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .changechar {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* MOBILE STYLES */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  }
+  
 
 
 
@@ -749,3 +808,62 @@ nav.scrolled a {
     transform: scale(0.95); /* Slight scale effect on click */
   }
   
+footer {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  /* Show title bar layout */
+  nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 1rem 1rem;
+    height: auto;
+   
+  }
+
+  .changechar {
+    width: auto !important;
+  }
+
+  .nav {
+    display: none !important;
+  }
+
+  .top {
+    display: none !important;
+  }
+
+  /* Add space below fixed nav */
+  #ctitle, #stitle, #ltitle {
+    margin-top: 80px;
+  }
+
+  /* Show footer ONLY on mobile */
+  footer {
+    display: flex !important;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
