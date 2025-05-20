@@ -78,8 +78,6 @@
     width: 100%;
     text-decoration: none;    filter: grayscale(99%);
     cursor: not-allowed;
-    min-height: 50px;
-    min-width: 50px;
   }
   
   .fighter:hover {
