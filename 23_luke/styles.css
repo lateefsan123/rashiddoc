@@ -17,7 +17,7 @@ a {
 main {
     background-color: rgb(97, 176, 196);
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)),
         url("images/background.webp");
     position: relative;
     top: 0%;
@@ -156,7 +156,7 @@ nav.scrolled a {
 .profilepic {
     height: 50%;
     width: 20%;
-    background-image: url("images/profilepic.png");
+    background-image: url("images/replay.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -194,7 +194,7 @@ nav.scrolled a {
 }
 
 .achievement {
-    background-image: url("images/achievement.jpeg");
+    background-image: url("images/blink.jpg");
     background-position: 50% 20%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -295,7 +295,7 @@ nav.scrolled a {
 
 
 .rightthird {
-    background-image: url("images/replay.png");
+    background-image: url("images/rep.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -316,15 +316,24 @@ nav.scrolled a {
     
 }
 
+
 #ctitle, #ltitle, #stitle {
     font-size: 3rem;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     color: white;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
     text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    /* Stronger text shadow to pop against brightness */
+    text-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.4), 
+        0 2px 10px rgba(0, 0, 0, 0.6);
 }
+
 
 /* sidebar */
 
@@ -376,14 +385,14 @@ nav.scrolled a {
 }
 
 .fa-file-word {
-    color: green;
+    color: black;
     font-size: 2rem;
     margin-bottom: 15px;
     align-self: center;
 }
 
 #playBtn i {
-    color: rgb(201,103,14);
+    color: black;
     font-size: 2rem;
     align-self: center;
     opacity: 100%;
@@ -766,8 +775,8 @@ nav.scrolled a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 400px;
-    width: 800px;
+    height: 50%;
+    width: 50%;
     background: rgba(0, 0, 0, 0.8); /* dark background */
     justify-content: center;
     align-items: center;

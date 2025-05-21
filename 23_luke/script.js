@@ -115,8 +115,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://www.youtube.com/playlist?list=PLYHo76jk0RQKhQciPpySOPb4-E55GYu5Y', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Noah Blink Respawn Win</h2>
+      <div onclick="window.open('https://www.youtube.com/playlist?list=PLYHo76jk0RQJj1PAVDovluQAcbT4gyKH6', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Noah Capcom Cup run</h2>
       </div>
     `;
 
