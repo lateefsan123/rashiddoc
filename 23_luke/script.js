@@ -101,10 +101,10 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Manon <span class='hub'>Centre</span></h3>
+        <h3>Luke <span class='hub'>Centre</span></h3>
         <p>
-        Welcome to the ultimate Akuma hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Akuma in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Akuma gameplay to new heights!
-       
+        Welcome to the ultimate Luke hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Luke in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Luke gameplay to new heights!
+      
         </p>
       `;
       desc.classList.add("firstone")
@@ -116,7 +116,7 @@ window.addEventListener("scroll", function () {
       
       desc.innerHTML = `
       <div onclick="window.open('https://www.youtube.com/playlist?list=PLYHo76jk0RQKhQciPpySOPb4-E55GYu5Y', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Shuto CPT Singapore Win</h2>
+        <h2 class="redbull">Noah Blink Respawn Win</h2>
       </div>
     `;
 
@@ -133,8 +133,8 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Akuma Replays</h3>
-        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9I2rratnrITg5QYh4msNl8y" target = "_blank">
+        <h3>Watch High Level Luke Replays</h3>
+        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9I7Orfcz6s3OjEdyexIGahH" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>
