@@ -210,11 +210,11 @@ nav.scrolled a {
 }
 
 .redbull {
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 0.2px;
 }
 
 .redbull:hover {
-    -webkit-text-stroke-color: red;
-    -webkit-text-stroke-width: 0.2px;
     transform: scale(1.05);
 }
 
@@ -265,12 +265,14 @@ nav.scrolled a {
 }
 
 .leftthird button {
-    width: 40%;
+    width: auto;
     height: 20%;
     background-color: transparent;
     color: black;
     cursor: pointer;
     border-radius: 15px;
+    text-align: center;
+    padding: 10px;
     
     
     
