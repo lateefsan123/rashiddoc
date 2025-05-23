@@ -16,7 +16,7 @@ a {
 
 main {
     background-color: rgb(97, 176, 196);
-    background-image: url("images/background.webp");
+    background-image:url("images/background.webp");
     position: relative;
     top: 0%;
     background-attachment: fixed;
@@ -330,12 +330,12 @@ nav.scrolled a {
     display: none;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: #FDB31C;
     right: 20px;
     bottom: 80px;
     width: auto;
     height: auto;
-    border: 2px solid red;
+    border: 2px solid #FDB31C;
     position: fixed;
     background-color: white;
     padding: 10px;
@@ -377,7 +377,7 @@ nav.scrolled a {
 }
 
 .footer a:hover {
-  color: crimson;
+  color: #FDB31C;
 }
 
 
@@ -388,7 +388,7 @@ nav.scrolled a {
     border: none;
     transition: all ease-in-out 300ms;
     cursor: pointer;
-    color: red;
+    color: #FDB31C;
     z-index: 2;
     animation: rotate 3s ease-in-out 1;
 
@@ -533,12 +533,12 @@ nav.scrolled a {
     display: none;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: #FDB31C;
     right: 20px;
     bottom: 80px;
     width: auto;
     height: auto;
-    border: 2px solid red;
+    border: 2px solid #FDB31C;
     position: fixed;
     background-color: white;
     padding: 10px;
@@ -580,7 +580,7 @@ nav.scrolled a {
 }
 
 .footer a:hover {
-  color: crimson;
+  color: #FDB31C;
 }
 
 
@@ -591,7 +591,7 @@ nav.scrolled a {
     border: none;
     transition: all ease-in-out 300ms;
     cursor: pointer;
-    color: red;
+    color: #FDB31C;
     z-index: 2;
     animation: rotate 3s ease-in-out 1;
 

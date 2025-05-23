@@ -105,7 +105,7 @@ nav.scrolled a {
     }
 }
 .changechar:hover {
-    background-color: rgb(13, 71, 161);
+    background-color: transparent;
     color: white;
     transform: scale(1.1);
 }
@@ -305,12 +305,12 @@ nav.scrolled a {
     display: none;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: rgb(13, 71, 161);
     right: 20px;
     bottom: 80px;
     width: auto;
     height: auto;
-    border: 2px solid red;
+    border: 2px solid rgb(13, 71, 161);
     position: fixed;
     background-color: white;
     padding: 10px;
@@ -352,7 +352,7 @@ nav.scrolled a {
 }
 
 .footer a:hover {
-  color: crimson;
+  color: rgb(13, 71, 161);
 }
 
 
@@ -363,7 +363,7 @@ nav.scrolled a {
     border: none;
     transition: all ease-in-out 300ms;
     cursor: pointer;
-    color: red;
+    color: rgb(13, 71, 161);
     z-index: 2;
     animation: rotate 3s ease-in-out 1;
 

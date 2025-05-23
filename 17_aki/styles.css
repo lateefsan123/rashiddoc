@@ -333,19 +333,19 @@ nav.scrolled a {
     display: none;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: #9b59b6;
     right: 20px;
     bottom: 80px;
     width: auto;
     height: auto;
-    border: 2px solid red;
+    border: 2px solid #9b59b6;
     position: fixed;
     background-color: white;
     padding: 10px;
     cursor: pointer;
     z-index: 3;
     box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
-    animation: rotate 3s ease-in-out 1;
+  
     
 }
 
@@ -380,7 +380,7 @@ nav.scrolled a {
 }
 
 .footer a:hover {
-  color: crimson;
+  color: #9b59b6;
 }
 
 
@@ -391,21 +391,13 @@ nav.scrolled a {
     border: none;
     transition: all ease-in-out 300ms;
     cursor: pointer;
-    color: red;
+    color: #9b59b6;
     z-index: 2;
-    animation: rotate 3s ease-in-out 1;
+ 
 
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    
-}
+
 
 .sidebar {
     display: none;
@@ -535,19 +527,19 @@ nav.scrolled a {
     display: none;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: #9b59b6;
     right: 20px;
     bottom: 80px;
     width: auto;
     height: auto;
-    border: 2px solid red;
+    border: 2px solid #9b59b6;
     position: fixed;
     background-color: white;
     padding: 10px;
     cursor: pointer;
     z-index: 3;
     box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
-    animation: rotate 3s ease-in-out 1;
+
     
 }
 
@@ -582,7 +574,7 @@ nav.scrolled a {
 }
 
 .footer a:hover {
-  color: crimson;
+  color: #9b59b6;
 }
 
 
@@ -593,21 +585,12 @@ nav.scrolled a {
     border: none;
     transition: all ease-in-out 300ms;
     cursor: pointer;
-    color: red;
+    color: #9b59b6;
     z-index: 2;
-    animation: rotate 3s ease-in-out 1;
+ 
 
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    
-}
 
 .sidebar {
     display: none;

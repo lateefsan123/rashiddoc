@@ -307,12 +307,12 @@ nav.scrolled a {
     display: none;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: rgb(233,139,182);
     right: 20px;
     bottom: 80px;
     width: auto;
     height: auto;
-    border: 2px solid red;
+    border: 2px solid rgb(233,139,182);
     position: fixed;
     background-color: white;
     padding: 10px;
@@ -354,7 +354,7 @@ nav.scrolled a {
 }
 
 .footer a:hover {
-  color: crimson;
+  color: rgb(233,139,182);
 }
 
 
@@ -365,21 +365,12 @@ nav.scrolled a {
     border: none;
     transition: all ease-in-out 300ms;
     cursor: pointer;
-    color: red;
+    color: rgb(233,139,182);
     z-index: 2;
-    animation: rotate 3s ease-in-out 1;
-
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
     
+
 }
+
 
 .sidebar {
     display: none;
