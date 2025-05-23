@@ -5,6 +5,13 @@ const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
 let scrolltop = 0;
 
+const toggleit = document.querySelector(".toggle");
+const sidebarit = document.querySelector(".sidebar");
+
+toggleit.addEventListener("click", function() {
+  sidebarit.classList.toggle("active");
+});
+
 
 
 
@@ -293,3 +300,11 @@ divekick.addEventListener("click", function(event) {
 
 })
 
+const toggle = document.querySelector(".toggle");
+const sidebar = document.querySelector(".sidebar");
+
+toggle.addEventListener("click", function() {
+  sidebar.style.backgroundColor = "red";
+  console.log(toggle);
+  console.log(sidebar);
+});
