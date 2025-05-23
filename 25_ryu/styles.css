@@ -345,6 +345,7 @@ nav.scrolled a {
     
 
     font-size: 40px; 
+    border: none;
 
 }
 
@@ -415,6 +416,11 @@ nav.scrolled a {
 
     .titletop {
         font-size: 2rem;
+    }
+
+    .changechar {
+        color: white;
+        border-color: white; 
     }
 
 
