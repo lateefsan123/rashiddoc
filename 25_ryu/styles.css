@@ -378,7 +378,22 @@ nav.scrolled a {
 
     font-size: 40px; 
     border: none;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+    color: red;
+    z-index: 2;
+    animation: rotate 300ms ease-in-out 1;
 
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
 }
 
 .sidebar {
@@ -390,11 +405,12 @@ nav.scrolled a {
     width: 80%;
     background-color: white;
     color: black;
-    border: 2px solid black;
+    border: 1px solid lightgray;
     bottom: 80px;
     right: 20px;
     z-index: 2;
     transition: all ease-in-out 300ms;
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
 
 }
 
