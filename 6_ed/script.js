@@ -6,6 +6,26 @@ const change = document.querySelector(".changechar");
 const edd = document.querySelector(".edd");
 let scrolltop = 0;
 
+
+const toggleit = document.querySelector(".toggle");
+const icon = toggleit.querySelector("i"); // Get the <i> inside the toggle
+const sidebar = document.querySelector(".sidebar");
+
+toggleit.addEventListener("click", function () {
+  // Toggle sidebar visibility
+  sidebar.classList.toggle("active");
+
+  // Change icon based on state
+  if (sidebar.classList.contains("active")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-x");
+  } else {
+    icon.classList.remove("fa-x");
+    icon.classList.add("fa-bars");
+  }
+});
+
+
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     navbar.classList.add("scrolled");

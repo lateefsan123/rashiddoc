@@ -1013,28 +1013,11 @@ nav.scrolled a {
   }
 
 .videoplayer iframe {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
 }
 
-.videoplayer {
-    display: none; /* hidden by default */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 50%;
-    width: 50%;
-    background: rgba(0, 0, 0, 0.8); /* dark background */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
 
-.videoplayer iframe {
-    width: 700px;
-    height: 400px;
-}
   
 
 .fa-twitch.live {
