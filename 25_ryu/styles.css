@@ -397,6 +397,7 @@ nav.scrolled a {
 
     .nav {
         display: none !important;
+        height: 10% !important;
     }
 
     nav {
@@ -415,7 +416,7 @@ nav.scrolled a {
     }
 
     .titletop {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .changechar {
@@ -428,6 +429,8 @@ nav.scrolled a {
     #ctitle, #ltitle, #stitle {
         font-size: 2em !important;
     }
+
+ 
 }
 
 
@@ -922,8 +925,8 @@ nav.scrolled a {
   }
 
 .videoplayer iframe {
-    width: 700px;
-    height: 400px;
+    height: 50%;
+    width: 50%;
 }
 
 .videoplayer {
@@ -932,8 +935,8 @@ nav.scrolled a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 400px;
-    width: 800px;
+    height: 50%;
+    width: 50%;
     background: rgba(0, 0, 0, 0.8); /* dark background */
     justify-content: center;
     align-items: center;
