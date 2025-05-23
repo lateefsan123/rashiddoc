@@ -336,10 +336,12 @@ nav.scrolled a {
     cursor: pointer;
     z-index: 3;
     box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+    animation: rotate 3s ease-in-out 1;
     
 }
 
 .footer {
+    display: none;
 
   position: fixed;
   bottom: 0;
@@ -382,7 +384,7 @@ nav.scrolled a {
     cursor: pointer;
     color: red;
     z-index: 2;
-    animation: rotate 300ms ease-in-out 1;
+    animation: rotate 3s ease-in-out 1;
 
 }
 
@@ -416,6 +418,7 @@ nav.scrolled a {
 
 .sidebar.active {
     display: flex;
+    right: 0%;
 }
 
 
@@ -427,12 +430,17 @@ nav.scrolled a {
     justify-content: left;
     align-items: center;
     cursor: pointer;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
     cursor: pointer;
+}
+
+.sidebar a:hover {
+    background-color: lightgray;
 }
 
 .sidebar span {
     margin-left: 10px;
+    font-weight: 600;
 }
 
 .sidebar span:hover {
@@ -504,6 +512,10 @@ nav.scrolled a {
 
     #ctitle, #ltitle, #stitle {
         font-size: 2em !important;
+    }
+
+    .footer {
+        display: block;
     }
 
  

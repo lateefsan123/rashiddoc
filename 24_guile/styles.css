@@ -314,6 +314,245 @@ nav.scrolled a {
     
 }
 
+
+.toggle {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    right: 20px;
+    bottom: 80px;
+    width: auto;
+    height: auto;
+    border: 2px solid red;
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 3;
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+    animation: rotate 3s ease-in-out 1;
+    
+}
+
+.footer {
+    display: none;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  z-index: 2;
+
+}
+
+.holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: crimson;
+}
+
+
+.fa-bars, .fa-x {
+    
+
+    font-size: 40px; 
+    border: none;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+    color: red;
+    z-index: 2;
+    animation: rotate 3s ease-in-out 1;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column; /* FIXED */
+    justify-content: center;
+    position: fixed;
+    height: 60%;
+    width: 80%;
+    background-color: white;
+    color: black;
+    border: 1px solid lightgray;
+    bottom: 80px;
+    right: 20px;
+    z-index: 2;
+    transition: all ease-in-out 300ms;
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+
+}
+
+.sidebar.active {
+    display: flex;
+    right: 0%;
+}
+
+
+.sidebar a {
+    width: 100%;
+    height: 20%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.sidebar a:hover {
+    background-color: lightgray;
+}
+
+.sidebar span {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.sidebar span:hover {
+    color: grey;
+}
+
+
+.topofpage {
+    display: none;
+    height: 100px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+
+    .first {
+        color: black;
+    }
+
+    .center {
+        color: white;
+    }
+
+    .topofpage {
+        display: block;
+    }
+    .toggle {
+        display: flex;
+    }
+
+    .section {
+        display: none !important;
+    }
+    
+    .top {
+        display: none !important;
+    }
+
+    .nav {
+        display: none !important;
+        height: 10% !important;
+    }
+
+    nav {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center;
+        padding: 1rem 1rem;
+        height: auto;
+        background-color: transparent;
+
+        position: fixed;
+    }
+
+    .first {
+        color: white;
+    }
+
+    .titletop {
+        font-size: 1rem;
+    }
+
+    .changechar {
+        color: white;
+        border-color: white; 
+    }
+
+
+
+    #ctitle, #ltitle, #stitle {
+        font-size: 2em !important;
+    }
+
+    .footer {
+        display: block;
+    }
+
+ 
+}
+
+
+#ctitle, #ltitle, #stitle {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    /* Stronger text shadow to pop against brightness */
+    text-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.4), 
+        0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+/* sidebar */
+
+.section {
+    position: fixed;
+    top: 50%;
+    right: 	20px;
+    width: 70px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
 #ctitle, #ltitle, #stitle {
     font-size: 3rem;
     font-family: "Poppins", sans-serif;
@@ -800,29 +1039,10 @@ nav.scrolled a {
   }
 
 .videoplayer iframe {
-    width: 700px;
-    height: 400px;
+    width: 50%;
+    height: 50%;
 }
 
-.videoplayer {
-    display: none; /* hidden by default */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 400px;
-    width: 800px;
-    background: rgba(0, 0, 0, 0.8); /* dark background */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-.videoplayer iframe {
-    width: 700px;
-    height: 400px;
-}
-  
 
 .fa-twitch.live {
     color: purple;

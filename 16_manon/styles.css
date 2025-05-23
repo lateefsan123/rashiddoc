@@ -86,7 +86,7 @@ nav.scrolled a {
 .changechar {
     border: 3px solid black;
     padding: 10px;
-    width: 50%;
+    width: auto;
     background-color: transparent;
     cursor: pointer;
 }
@@ -95,7 +95,7 @@ nav.scrolled a {
     border: 3px solid white;
     color: white;
     padding: 10px;
-    width: 50%;
+    width: auto;
     background-color: transparent;
     cursor: pointer;
     animation: change 3s ease-in-out infinite;
