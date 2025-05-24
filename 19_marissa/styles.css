@@ -336,7 +336,7 @@ nav.scrolled a {
     cursor: pointer;
     z-index: 3;
     box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
-    animation: rotate 3s ease-in-out 1;
+
     
 }
 
@@ -530,7 +530,6 @@ nav.scrolled a {
     cursor: pointer;
     z-index: 3;
     box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
-    animation: rotate 3s ease-in-out 1;
     
 }
 
@@ -578,19 +577,10 @@ nav.scrolled a {
     cursor: pointer;
     color: #D4BB65;
     z-index: 2;
-    animation: rotate 3s ease-in-out 1;
 
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    
-}
+
 
 .sidebar {
     display: none;
@@ -612,7 +602,6 @@ nav.scrolled a {
 
 .sidebar.active {
     display: flex;
-    right: 0%;
 }
 
 
@@ -739,7 +728,7 @@ nav.scrolled a {
 .section {
     position: fixed;
     top: 50%;
-    left: 95%;
+    right: 	20px;
     width: 70px;
     height: auto;
     display: flex;

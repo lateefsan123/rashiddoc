@@ -401,7 +401,6 @@ nav.scrolled a {
 
 .sidebar.active {
     display: flex;
-    right: 0%;
 }
 
 
@@ -524,7 +523,7 @@ nav.scrolled a {
 .section {
     position: fixed;
     top: 50%;
-    left: 95%;
+    right: 	20px;
     width: 70px;
     height: auto;
     display: flex;
