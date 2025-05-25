@@ -260,7 +260,7 @@ let character = {
         height: "5'5",
         archetype: "Rushdown",
         num: "no25",
-        background: "url('images/maiGif.gif')"
+        background: "url('images/MaiGif.gif')"
 
     },
 
