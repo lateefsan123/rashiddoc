@@ -5,6 +5,26 @@ const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
 let scrolltop = 0;
 
+const toggle = document.querySelector(".toggle");
+const icon = toggle.querySelector("i"); // Get the <i> inside the toggle
+const sidebar = document.querySelector(".sidebar");
+
+toggle.addEventListener("click", function () {
+  // Toggle sidebar visibility
+  sidebar.classList.toggle("active");
+
+  // Change icon based on state
+  if (sidebar.classList.contains("active")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-x");
+  } else {
+    icon.classList.remove("fa-x");
+    icon.classList.add("fa-bars");
+  }
+});
+
+
+
 
 
 
@@ -101,9 +121,9 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Manon <span class='hub'>Centre</span></h3>
+        <h3>JP <span class='hub'>Center</span></h3>
         <p>
-        Welcome to the ultimate Akuma hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Akuma in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Akuma gameplay to new heights!
+        Welcome to the ultimate JP hub in Street Fighter 6! Whether you're just starting or a seasoned player, this is your go-to resource for mastering his portals, pressure, and mind-bending setplay. Discover tips, combos, and strategies to dominate with JP’s unique tools and control the pace of every match. Get ready to elevate your game!
        
         </p>
       `;
@@ -115,8 +135,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://www.youtube.com/playlist?list=PLYHo76jk0RQKhQciPpySOPb4-E55GYu5Y', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Shuto CPT Singapore Win</h2>
+      <div onclick="window.open('https://www.youtube.com/playlist?list=PLvZ5t8JLwU9LbwkD0PuYR767hU5atia62', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Kakeru Capcom CUP XI</h2>
       </div>
     `;
 
@@ -133,8 +153,8 @@ window.addEventListener("scroll", function () {
     if (number == 3) {
       desc.innerHTML = `
         <div class = 'leftthird'>
-        <h3>Watch High Level Akuma Replays</h3>
-        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9I2rratnrITg5QYh4msNl8y" target = "_blank">
+        <h3>Watch High Level JP Replays</h3>
+        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9LbwkD0PuYR767hU5atia62" target = "_blank">
         <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
         </div>
         </a>
