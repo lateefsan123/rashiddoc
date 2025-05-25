@@ -310,7 +310,7 @@ nav.scrolled a {
     color: rgb(233,139,182);
     right: 20px;
     bottom: 80px;
-    width: auto;
+    width: 60px;
     height: auto;
     border: 2px solid rgb(233,139,182);
     position: fixed;
