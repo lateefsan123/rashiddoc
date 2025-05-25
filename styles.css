@@ -395,6 +395,7 @@ a {
     filter: contrast(100%);
     background-image: url("images/kimgif.gif");
     
+    
 }
 
 .right .middle {
@@ -404,7 +405,7 @@ a {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     
 }
-@media (max-width: 1400px) {
+@media (max-width: 100px) {
     .right {
         display: none;
     }

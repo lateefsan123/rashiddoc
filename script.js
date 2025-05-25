@@ -170,7 +170,7 @@ let character = {
         height: "5'9",
         archetype: "Shoto",
         num: "no16",
-        background: "url('images/ryu.png')"
+        background: "url('images/ryu.gif')"
 
     },
 
@@ -180,7 +180,7 @@ let character = {
         height: "6'0",
         archetype: "Shoto",
         num: "no17",
-        background: "url('images/terry.png')"
+        background: "url('images/terrygif.gif')"
 
     },
 
@@ -190,7 +190,7 @@ let character = {
         height: "7'0",
         archetype: "Grappler",
         num: "no18",
-        background: "url('images/zangief.png')"
+        background: "url('images/gief.gif')"
 
     },
 
@@ -200,7 +200,7 @@ let character = {
         height: "5'8",
         archetype: "Trickster",
         num: "no19",
-        background: "url('images/aki.png')"
+        background: "url('images/akigif.gif')"
 
     },
 
@@ -210,7 +210,7 @@ let character = {
         height: "5'3",
         archetype: "Grappler",
         num: "no20",
-        background: "url('images/lily.png')"
+        background: "url('images/lily.gif')"
 
     },
 
@@ -220,7 +220,7 @@ let character = {
         height: "6'1",
         archetype: "Grappler",
         num: "no21",
-        background: "url('images/manon\ \(3\).png')"
+        background: "url('images/ManonGif.gif')"
 
     },
 
@@ -230,7 +230,7 @@ let character = {
         height: "6'1",
         archetype: "Shoto",
         num: "no22",
-        background: "url('images/luke.png')"
+        background: "url('images/luke.gif')"
 
     },
 
@@ -240,7 +240,7 @@ let character = {
         height: "6'0",
         archetype: "Zoner",
         num: "no23",
-        background: "url('images/guile.png')"
+        background: "url('images/newguile.gif')"
 
     },
 
@@ -250,7 +250,7 @@ let character = {
         height: "6'8",
         archetype: "Big Body",
         num: "no24",
-        background: "url('images/marisa.png')"
+        background: "url('images/MarissaGif.gif')"
 
     },
 
@@ -260,7 +260,7 @@ let character = {
         height: "5'5",
         archetype: "Rushdown",
         num: "no25",
-        background: "url('images/maii.png')"
+        background: "url('images/maiGif.gif')"
 
     },
 
