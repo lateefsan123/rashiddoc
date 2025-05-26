@@ -68,7 +68,7 @@ let character = {
         name: "Blanka",
         weight: "216",
         height: "6'4",
-        archetype: "Rushdown",
+        archetype: "Trickster",
         num: "no7",
         background: "url('images/blankagif.gif')"
 
@@ -98,7 +98,7 @@ let character = {
         name: "Dee jay",
         weight: "203",
         height: "6'0",
-        archetype: "Rushdown",
+        archetype: "Trickster",
         num: "no9",
         background: "url('images/deejaygif.gif')"
 
@@ -128,7 +128,7 @@ let character = {
         name: "Ed",
         weight: "190",
         height: "6'0",
-        archetype: "Rushdown",
+        archetype: "Shoto",
         num: "no12",
         background: "url('images/edgif.gif')"
 
@@ -158,7 +158,7 @@ let character = {
         name: "Juri",
         weight: "126",
         height: "5'5",
-        archetype: "Trickster",
+        archetype: "Rushdown",
         num: "no15",
         background: "url('images/jurigif.gif')"
 
@@ -198,7 +198,7 @@ let character = {
         name: "Aki",
         weight: "126",
         height: "5'8",
-        archetype: "Trickster",
+        archetype: "Rushdown",
         num: "no19",
         background: "url('images/akigif.gif')"
 
@@ -268,7 +268,7 @@ let character = {
         name: "Elena",
         weight: "129",
         height: "6'1",
-        archetype: "Footsies",
+        archetype: "Defensive",
         num: "no26",
         background: "url('images/elenaback.webp')"
 

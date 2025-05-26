@@ -905,6 +905,10 @@ nav.scrolled a {
     font-size: 2rem;
 }
 
+.fa-patreon {
+    font-size: 2rem;
+}
+
 .fa-brands {
     transition: transform 200ms ease-in;
 }
@@ -943,6 +947,15 @@ nav.scrolled a {
 .jimmy {
     background-image: url("images/jimmy.png");
 }
+
+.harouto {
+    background-image: url("images/horouto.png");
+}
+
+.nikotaro {
+    background-image: url("images/niko.png");
+}
+
 .labbers {
     box-sizing: border-box;
     display: grid;
