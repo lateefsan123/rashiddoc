@@ -152,7 +152,7 @@ nav {
     box-sizing: border-box;
     overflow: auto;
     filter: grayscale(0%);
-    transition: all 200ms ease-in-out
+    transition: all 200ms ease-in-out;
     ;
 
 }

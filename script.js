@@ -128,7 +128,7 @@ let character = {
         name: "Ed",
         weight: "190",
         height: "6'0",
-        archetype: "Shoto",
+        archetype: "Defensive",
         num: "no21",
         background: "url('images/edgif.gif')"
 
@@ -303,6 +303,7 @@ info.addEventListener("click", function(event) {
     event.stopPropagation();
     about.style.display = "flex";
     mains.style.filter = "grayscale(100%)";
+    mains.style.filter = "(100%)";
     
 })
 
