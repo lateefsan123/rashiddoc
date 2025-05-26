@@ -442,7 +442,7 @@ nav.scrolled a {
     width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1136px) {
 
     .first {
         color: black;
