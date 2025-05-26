@@ -511,6 +511,16 @@ nav.scrolled a {
         display: block;
     }
 
+    .videoplayer {
+        width: 80% !important;
+        
+    }
+
+    .videoplayer {
+        width: 80% !important;
+        
+    }
+
  
 }
 
@@ -1159,7 +1169,7 @@ nav.scrolled a {
 
 .videoplayer iframe {
     width: 100%;
-    height: 4100%;
+    height: 100%;
 }
 
 

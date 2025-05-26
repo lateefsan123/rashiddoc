@@ -489,6 +489,11 @@ nav.scrolled a {
         display: block;
     }
 
+    .videoplayer {
+        width: 80% !important;
+        
+    }
+
  
 }
 

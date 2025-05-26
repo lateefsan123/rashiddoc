@@ -504,6 +504,10 @@ nav.scrolled a {
     .footer {
         display: block;
     }
+    .videoplayer {
+        width: 80% !important;
+        
+    }
 
  
 }
