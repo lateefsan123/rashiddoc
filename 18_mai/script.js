@@ -138,8 +138,8 @@ window.addEventListener("scroll", function () {
     if (number == 2) {
       
       desc.innerHTML = `
-      <div onclick="window.open('https://www.youtube.com/live/OnzHjbZxxA8?si=RV6xkU6lHrB-LI8M', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Killzyou saltmine win</h2>
+      <div onclick="window.open('https://youtu.be/siOjz_vHKoI?si=AlZKkKZvdwyNTZ5A', '_blank')" style="cursor: pointer;">
+        <h2 class="redbull">Leshar Combo Breaker</h2>
       </div>
     `;
 

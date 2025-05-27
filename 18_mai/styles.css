@@ -190,12 +190,13 @@ nav.scrolled a {
 .achievement {
     background-image: url("images/achievement.jpg");
     background-position: 50% 20%;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     justify-content: end;
     align-items: center;
     opacity: 100%;
+    background-color: #000000;
 
     color: white;
     font-size: 1.5rem;
