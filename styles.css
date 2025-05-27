@@ -470,7 +470,17 @@ a {
     letter-spacing: 3px;
     margin: 0px;
     text-shadow: -2px 3px 1px rgba(255,0,0,0.66);
+    animation: changename 5s infinite alternate ease-in-out;
 }
+
+@keyframes changename {
+    10% {
+        text-shadow: #00CED1;
+    }
+
+    20% {
+        text-shadow: #cd3254;
+    }}
 
 .charnumber {
     letter-spacing: 3px;

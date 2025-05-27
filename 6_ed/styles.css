@@ -54,7 +54,7 @@ nav {
 
 
 nav span:hover {
-    border-bottom: 6px solid #6b8db5;
+    border-bottom: 6px solid rgb(160, 74, 76);
 }
 
 
@@ -75,7 +75,7 @@ nav.scrolled {
 }
 
 nav span.scrolled:hover {
-    border-bottom: 6px solid white;
+    border-bottom: 6px solid rgb(160, 74, 76);
 }
 
 nav.scrolled a {
@@ -83,8 +83,8 @@ nav.scrolled a {
 
 }
 
-.center {
-    color: #4a5d7e;
+.center, .hub {
+    color: rgb(160, 74, 76);
 }
 
 .center.scrolled {
@@ -95,6 +95,10 @@ nav.scrolled a {
     color: white;
 }
 
+
+.first.scrolled {
+    color: rgb(160, 74, 76);
+}
 
 .titletop {
     grid-column: 1;
@@ -109,7 +113,6 @@ nav.scrolled a {
 
 .center {
     margin-left: 10px;
-    color: #6b8db5;
     border: none;
     
 }
@@ -132,7 +135,7 @@ nav.scrolled a {
     cursor: pointer;
 }
 .changechar:hover {
-    background-color: #6D9A90;
+    background-color: rgb(160, 74, 76);
     color: white;
     transform: scale(1.1);
 }
@@ -174,8 +177,7 @@ nav.scrolled a {
     width: 45%;
     height: 45%;
     /*border: 3px solid black;*/
-    outline: 5px solid #e7dfca;
-    border: 5px solid rgba(107, 141, 181, 0.7);
+    border: 4px solid black;
     opacity: 1;
     transition: opacity 0.5s ease;
 
@@ -213,13 +215,24 @@ nav.scrolled a {
     -webkit-text-stroke-width: 1px;
 }
 
+
 .redbull {
-    animation: all 200ms ease-in-out;
+    
+}
+
+@keyframes flicker {
+    50% {
+        -webkit-text-stroke-color: #5d0707;
+    }
+    
 }
 
 .redbull:hover {
-    transform: scale(1.1);
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 0.2px;
+    transform: scale(1.05);
 }
+
 
 @keyframes glitch {
     50% {
@@ -256,7 +269,7 @@ nav.scrolled a {
 .replay h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #d3c2a1;
+    color: white;
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
 }
@@ -268,7 +281,7 @@ nav.scrolled a {
 .leftthird button {
     width: 40%;
     height: 20%;
-    background-color: #e7dfca;
+    background-color: transparent;
     color: black;
     cursor: pointer;
     border-radius: 15px;
@@ -293,7 +306,7 @@ nav.scrolled a {
 
 
 .rightthird {
-    background-image: url("images/replayed.png");
+    background-image: url("images/replay.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -572,8 +585,13 @@ nav.scrolled a {
     transform: scale(1.2);
 }
 
+.fist.scrolled {
+    color: white;
+    transition: all 150ms ease-in-out;
+}
+
 .fa-file-word {
-    color: green;
+    color: rgb(29, 105, 97);
     font-size: 2rem;
     margin-bottom: 15px;
     align-self: center;
@@ -663,54 +681,97 @@ nav.scrolled a {
 
 }
 
+
+@keyframes pulseBg {
+  0%, 100% {
+    background-color: var(--base-color);
+  }
+  50% {
+    background-color: var(--dark-color);
+  }
+}
+
 .neutral {
-    background-image: url("images/neutral.png");
-    background-color: #990F02;
+  background-image: url("images/neutral.png");
+  --base-color: #990F02;
+  --dark-color: #7a0c01;
+  background-color: var(--base-color);
 }
 
 .oki {
-    background-image: url("images/oki.png");
-    background-color: #5D3A9B;
+  background-image: url("images/oki.png");
+  --base-color: #5D3A9B;
+  --dark-color: #472d79;
+  background-color: var(--base-color);
 }
 
 .combo {
-    background-image: url("images/combo.png");
-    background-color: #8B008B;
+  background-image: url("images/combo.png");
+  --base-color: #8B008B;
+  --dark-color: #6e006e;
+  background-color: var(--base-color);
 }
 
 .flicker {
-    background-image: url("images/flicker.png");
-    background-color: #191970;
+  background-image: url("images/flicker.png");
+  --base-color: #191970;
+  --dark-color: #131357;
+  background-color: var(--base-color);
 }
 
 .zoning {
-    background-image: url("images/zoning.png");
-    background-color: #CC3300;
+  background-image: url("images/zoning.png");
+  --base-color: #CC3300;
+  --dark-color: #a42800;
+  background-color: var(--base-color);
 }
 
 .sa2 {
-    background-image: url("images/sa2.png");
-    background-color: #008080;
+  background-image: url("images/sa2.png");
+  --base-color: #008080;
+  --dark-color: #006666;
+  background-color: var(--base-color);
 }
 
 .shindream {
-    background-color: lightgray;
-    background-image: url("images/shindream.png");
+  background-image: url("images/shindream.png");
+  --base-color: lightgray;
+  --dark-color: #b0b0b0;
+  background-color: var(--base-color);
 }
 
 .gimicks {
-    background-image: url("images/gimicks.png");
-    background-color: #00BFFF;
+  background-image: url("images/gimicks.png");
+  --base-color: #00BFFF;
+  --dark-color: #009acd;
+  background-color: var(--base-color);
 }
 
 .sideswitch {
-    background-image: url("images/sideswitch.png");
-    background-color: #DC143C;
+  background-image: url("images/sideswitch.png");
+  --base-color: #DC143C;
+  --dark-color: #b01030;
+  background-color: var(--base-color);
 }
 
 .safejump {
-    background-image: url("images/safejump.png");
-    background-color: #6F00FF;
+  background-image: url("images/safejump.png");
+  --base-color: #6F00FF;
+  --dark-color: #5600cc;
+  background-color: var(--base-color);
+}
+
+.neutral:hover,
+.oki:hover,
+.combo:hover,
+.flicker:hover,
+.zoning:hover,
+.sa2:hover,
+.shindream:hover,
+.gimicks:hover,
+.sideswitch:hover,
+.safejump:hover {
+  animation: pulseBg 2s infinite ease-in-out;
 }
 
 
@@ -734,7 +795,7 @@ nav.scrolled a {
 .streamerpiece {
     width: 16rem;
     height: 16rem;
-    box-shadow: 0 4px 8px rgb(136, 12, 218);
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
@@ -870,7 +931,7 @@ nav.scrolled a {
 }
 
 .yamaguchi {
-    background-image: url("images/image_2025-04-26_192913249-removebg-preview.png");
+    background-image: url("images/yamaguchi.png");
 
 }
 
@@ -891,44 +952,29 @@ nav.scrolled a {
 }
 
 
-.labberpiece {
-    width: 15rem;
-    height: 15rem;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
+.streamerpiece {
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
     background-color: white;
-    cursor: pointer;
-    filter: grayscale(100%);
-    transition: transform 200ms;
-    transition: filter 200ms ease-in-out;
-    margin-top: 10px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    transition: transform 200ms ease-in-out;
 }
-
-.labberpiece:hover {
-    filter: grayscale(0%);
-    box-shadow: 2px 4px 10px 0px rgba(199, 3, 3, 0.855);
-
+    
+.streamerpiece:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 4px 10px 0px rgb(188, 21, 217);
 }
+    
 
-.labbers h2{
-    text-align: center;
-    opacity: 0%;
-    color: rgba(228, 57, 85, 0.9);
-    transition: opacity 300ms ease-in;
-}
-
-.nezs {
+.nesz {
     background-image: url("images/nezs.jpg");
 }
 
 .handscar {
-    background-image: url("images/handscar.jpg");
+    background-image: url("images/handscar.png");
 }
 
 .videoplayer {
@@ -994,3 +1040,102 @@ nav.scrolled a {
     
   }
 
+ #playBtn {
+    position: relative;
+    background-color: transparent;
+    color: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 7px double rgba(255, 255, 255, 0.7);
+    box-shadow: #B7D7CA 0px 54px 55px, 
+            #B7D7CA 0px -12px 30px, 
+            #B7D7CA 0px 4px 6px, 
+            #B7D7CA 0px 12px 13px, 
+            #B7D7CA 0px -3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    z-index: 1; /* Button stays above pulse */
+  }
+
+  #playBtn.play {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black
+    ;
+    
+  }
+  
+  #playBtn .fa {
+    font-size: 1.3rem;
+  }
+
+  #playBtn.yo {
+    background-color: rgba(255, 255, 255, 0.7);
+
+  }
+  
+  #playBtn.yo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Start with a wide circle */
+    height: 120%;
+    background: radial-gradient(circle, rgba(135, 8, 125, 0.6), rgba(255, 255, 255, 0.4) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+     /* Apply pulse animation */
+    z-index: -1; /* Ensure the pulse stays behind the button */
+    animation: pulse 4s infinite;
+  }
+
+  /* Outer pulse effect */
+  #playBtn.play::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Start with a wide circle */
+    height: 120%;
+    background: radial-gradient(circle, rgba(135, 8, 125, 0.6), rgba(255, 255, 255, 0.4) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+     /* Apply pulse animation */
+    z-index: -1; /* Ensure the pulse stays behind the button */
+    animation: pulse 4s infinite;
+
+  }
+  
+  /* Keyframes for the pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.5;
+
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.4); /* Grow the pulse */
+      opacity: 0.5;
+      border: 1px solid white;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Shrink the pulse */
+      opacity: 1;
+
+    }
+  }
+  
+  #playBtn:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  #playBtn:active {
+    transform: scale(0.95); /* Slight scale effect on click */
+  }
+  

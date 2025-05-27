@@ -656,72 +656,121 @@ nav.scrolled a {
 
 }
 
+@keyframes pulseBg {
+  0%, 100% {
+    background-color: var(--base-color);
+  }
+  50% {
+    background-color: var(--dark-color);
+  }
+}
+
 .neutral {
-    background-color: #FF4500;
-    background-image: url("images/neutral.png");
+  background-image: url("images/neutral.png");
+  --base-color: #FF4500;
+  --dark-color: #cc3700;
+  background-color: var(--base-color);
 }
 
 .oki {
-    background-color: #7851A9;
-    background-image: url("images/oki.png");
+  background-image: url("images/oki.png");
+  --base-color: #7851A9;
+  --dark-color: #5d3e82;
+  background-color: var(--base-color);
 }
 
-
 .meterless {
-    background-color: #FFD700;
-    background-image: url("images/meterless.png");
+  background-image: url("images/meterless.png");
+  --base-color: #FFD700;
+  --dark-color: #ccac00;
+  background-color: var(--base-color);
 }
 
 .overdrive {
-    background-color: #5C3B1B;
-    background-image: url("images/overdrive.png");
+  background-image: url("images/overdrive.png");
+  --base-color: #5C3B1B;
+  --dark-color: #402a14;
+  background-color: var(--base-color);
 }
 
 .driveimpact {
-    background-color: #CBAACB;
-    background-image: url("images/driveimpact.png");
+  background-image: url("images/driveimpact.png");
+  --base-color: #CBAACB;
+  --dark-color: #a185a1;
+  background-color: var(--base-color);
 }
 
 .pressure {
-    background-color: #BFFF00;
-    background-image: url("images/pressure.png");
+  background-image: url("images/pressure.png");
+  --base-color: #BFFF00;
+  --dark-color: #95cc00;
+  background-color: var(--base-color);
 }
 
 .safejump {
-    background-color: #00FFFF;
-    background-image: url("images/safejump.png");
+  background-image: url("images/safejump.png");
+  --base-color: #00FFFF;
+  --dark-color: #00cccc;
+  background-color: var(--base-color);
 }
 
 .dolls {
-    background-color: #7BB661;
-    background-image: url("images/chan.png");
+  background-image: url("images/chan.png");
+  --base-color: #7BB661;
+  --dark-color: #62924d;
+  background-color: var(--base-color);
 }
 
 .sa2 {
-    background-color: #EDC9AF;
-    background-image: url("images/sa2.png");
+  background-image: url("images/sa2.png");
+  --base-color: #EDC9AF;
+  --dark-color: #c2a186;
+  background-color: var(--base-color);
 }
 
 .advanced {
-    background-color: #FF7F7F;
-    background-image: url("images/lightning.png");
+  background-image: url("images/lightning.png");
+  --base-color: #FF7F7F;
+  --dark-color: #cc6666;
+  background-color: var(--base-color);
 }
 
 .drivechip {
-    background-color: #7350f4;
-    background-image: url("images/drivechip.png");
+  background-image: url("images/drivechip.png");
+  --base-color: #7350f4;
+  --dark-color: #5b40c2;
+  background-color: var(--base-color);
 }
 
 .hop {
-    background-color: #FFBF00;
-    background-image: url("images/hop.png");
+  background-image: url("images/hop.png");
+  --base-color: #FFBF00;
+  --dark-color: #cc9900;
+  background-color: var(--base-color);
 }
 
 .matchup {
-    background-color: #1C1C1C;
-    background-image: url("images/gimicks.png");
+  background-image: url("images/gimicks.png");
+  --base-color: #1C1C1C;
+  --dark-color: #000000;
+  background-color: var(--base-color);
 }
 
+.neutral:hover,
+.oki:hover,
+.meterless:hover,
+.overdrive:hover,
+.driveimpact:hover,
+.pressure:hover,
+.safejump:hover,
+.dolls:hover,
+.sa2:hover,
+.advanced:hover,
+.drivechip:hover,
+.hop:hover,
+.matchup:hover {
+  animation: pulseBg 2s infinite ease-in-out;
+}
 
 /* streamers section */
 

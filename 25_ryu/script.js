@@ -5,6 +5,13 @@ const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
 let scrolltop = 0;
 
+let chatbot = document.querySelector(".chatbot");
+let chat = document.querySelector(".chat");
+chat.addEventListener("click", function(event) {
+  event.stopPropagation();
+  chatbot.style.display = "flex";
+})
+
 const toggle = document.querySelector(".toggle");
 const icon = toggle.querySelector("i"); // Get the <i> inside the toggle
 const sidebar = document.querySelector(".sidebar");
@@ -296,6 +303,7 @@ box.forEach((boxes) =>  {
 
 document.addEventListener("click", function () {
   video.style.display = "none";
+  chatbot.style.display = "none";
   iframe.src = "";
   imageviewer.style.display = "none";
 });

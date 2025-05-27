@@ -1009,6 +1009,32 @@ nav.scrolled a {
 }
 
 
+.chatbot {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 50%;
+    border-radius: 15px solid black;
+    background: rgba(0, 0, 0, 0.8); /* dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .chatbot.active {
+    display: flex;
+  }
+
+.chatbot iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px solid black;
+}
+
+
   
 
 .fa-twitch.live {
@@ -1151,3 +1177,62 @@ nav.scrolled a {
     transform: scale(0.95); /* Slight scale effect on click */
   }
   
+
+  .chat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    z-index: 9999;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    animation: flash 2s infinite ease-in-out alternate;
+    animation: bounce 1s infinite;
+  }
+
+  @keyframes flash {
+    0% {
+      opacity: 1;
+      color: white;
+    }
+    50% {
+      opacity: 1;
+      color: lightblue;
+    }
+    100% {
+      opacity: 1;
+      color: turquoise;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+    
+  }
+
+
+  
+  .fa-headset {
+    font-size: 50px;
+  }
+  .chat:hover {
+    transform: scale(1.1); /* Slight scale effect on hover */
+  }
+  
+  .chat:active {
+    transform: scale(0.95); /* Slight scale effect on click */
+  }

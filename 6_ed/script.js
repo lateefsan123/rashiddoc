@@ -4,6 +4,7 @@ const navitems = document.querySelectorAll("nav span")
 const btn = document.getElementById("playBtn");
 const change = document.querySelector(".changechar");
 const edd = document.querySelector(".edd");
+const first = document.querySelector(".first");
 let scrolltop = 0;
 
 
@@ -28,6 +29,7 @@ toggleit.addEventListener("click", function () {
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
+    first.classList.add("scrolled");
     navbar.classList.add("scrolled");
     titletop.classList.add("scrolled");
     change.classList.add("scrolled")
@@ -36,6 +38,7 @@ window.addEventListener("scroll", function () {
         item.classList.add("scrolled")
     })
   } else {
+    first.classList.remove("scrolled");
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
     change.classList.remove("scrolled")
@@ -52,6 +55,8 @@ window.addEventListener("scroll", function() {
     btn.classList.add("scrolled")
   }
 })
+
+
 
 
 
