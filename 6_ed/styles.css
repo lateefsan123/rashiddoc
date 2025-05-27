@@ -124,6 +124,7 @@ nav.scrolled a {
     width: auto;
     background-color: white;
     cursor: pointer;
+    transition: all ease-in-out 300ms;
 }
 
 .changechar.scrolled {
@@ -136,6 +137,12 @@ nav.scrolled a {
 }
 .changechar:hover {
     background-color: rgb(160, 74, 76);
+    color: white;
+    transform: scale(1.1);
+}
+
+.changechar.scrolled:hover {
+    background-color: transparent;
     color: white;
     transform: scale(1.1);
 }
@@ -281,7 +288,7 @@ nav.scrolled a {
 .leftthird button {
     width: 40%;
     height: 20%;
-    background-color: transparent;
+    background-color: tr;
     color: black;
     cursor: pointer;
     border-radius: 15px;
