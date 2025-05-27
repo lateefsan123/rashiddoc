@@ -527,8 +527,7 @@ a {
 .details .header {
     color: blueviolet;
     padding: 2px 5px 2px;
-    border-left: 5px solid lightgrey;
-    width: 40%;
+    width: auto;
     text-align: end;
     background-color: black;
     transition: all  200ms ease-in-out ;
