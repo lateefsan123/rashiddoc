@@ -432,7 +432,7 @@ a {
 .left .middle {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 5px;
+    gap: 10px;
     height: 100%;
     width: 100%;
 }
