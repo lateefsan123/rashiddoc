@@ -24,7 +24,7 @@ main {
         rgba(0, 0, 0, 0.2) 30%,
         rgba(0, 0, 0, 0.2) 70%,
         rgba(0, 0, 0, 0.6) 100%
-    ), url("images/background.webp");
+    ), url("images/GMgVo_EWEAESUR8.jpg_large");
     position: relative;
     top: 0%;
     background-attachment: fixed;
@@ -70,7 +70,6 @@ nav {
   
   .changechar {
     padding: 0.5rem 1rem;
-    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
@@ -848,7 +847,7 @@ nav.scrolled a {
 }
 
 .upper.anti-jp-zoning-without-portal {
-    background-image: url('images/zoning.png');
+    background-image: url('images/antizone.png');
     --base-color: #bcb7b7;
     --dark-color: #999393;
     background-color: var(--base-color);
