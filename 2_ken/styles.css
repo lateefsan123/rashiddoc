@@ -332,6 +332,10 @@ nav.scrolled a {
     width: 100%;
 }
 
+.blanks {
+    margin-left: 20px;
+}
+
 @media (max-width: 1136px) {
 
     .first {
