@@ -628,7 +628,7 @@ nav.scrolled a {
 }
 
 .fa-file-word {
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 2rem;
     margin-bottom: 15px;
     align-self: center;
@@ -729,127 +729,127 @@ nav.scrolled a {
 
 .upper.neutral {
     background-image: url('images/neutral.png');
-    --base-color: #737171;
-    --dark-color: #5a5959;
+    --base-color: #1c1f2b;  /* deep space blue */
+    --dark-color: #14161f;
     background-color: var(--base-color);
 }
 
 .upper.pressuresetups {
     background-image: url('images/pressuresetups.png');
-    --base-color: #b99e91;
-    --dark-color: #927c73;
+    --base-color: #8f3b76;  /* nebula rose */
+    --dark-color: #6b2d5b;
     background-color: var(--base-color);
 }
 
 .upper.combo {
     background-image: url('images/combos.png');
-    --base-color: #44999b;
-    --dark-color: #347879;
+    --base-color: #00bcd4;  /* bright cyan */
+    --dark-color: #0096a6;
     background-color: var(--base-color);
 }
 
 .upper.portal-application {
     background-image: url('images/portal.png');
-    --base-color: #b478a8;
-    --dark-color: #925e86;
+    --base-color: #b478a8;  /* mystic magenta */
+    --dark-color: #8e5c83;
     background-color: var(--base-color);
 }
 
 .upper.sa2-application {
-    background-image: url('images/sa2.png');
-    --base-color: #867166;
-    --dark-color: #67574f;
+    background-image: url('images/sa1.png');
+    --base-color: #ff9800;  /* glowing comet orange */
+    --dark-color: #cc7a00;
     background-color: var(--base-color);
 }
 
 .upper.oki {
     background-image: url('images/oki.png');
-    --base-color: #a95a68;
-    --dark-color: #874650;
+    --base-color: #4caf50;  /* vibrant aurora green */
+    --dark-color: #3b8e40;
     background-color: var(--base-color);
 }
 
 .upper.corner-oki {
     background-image: url('images/corneroki.png');
-    --base-color: #afc4a0;
-    --dark-color: #8ca080;
+    --base-color: #3f51b5;  /* indigo moonlight */
+    --dark-color: #2e3e91;
     background-color: var(--base-color);
 }
 
 .upper.sideswitch {
     background-image: url('images/sideswitch.png');
-    --base-color: #bcb7b7;
-    --dark-color: #999393;
+    --base-color: #cddc39;  /* radiant lime nebula */
+    --dark-color: #a7b42e;
     background-color: var(--base-color);
 }
 
 .upper.drive-impact-combos {
     background-image: url('images/driveimpact.png');
-    --base-color: #e0aa91;
-    --dark-color: #b38673;
+    --base-color: #e91e63;  /* galaxy pink */
+    --dark-color: #b4164f;
     background-color: var(--base-color);
 }
 
 .upper.stun-combos {
     background-image: url('images/stuncombo.png');
-    --base-color: #9a1b21;
-    --dark-color: #7a151a;
+    --base-color: #9c27b0;  /* cosmic violet */
+    --dark-color: #7a1e8b;
     background-color: var(--base-color);
 }
 
 .upper.setplay {
     background-image: url('images/setplay.png');
-    --base-color: #2bc2b6;
-    --dark-color: #219990;
+    --base-color: #2196f3;  /* electric blue star */
+    --dark-color: #1976d2;
     background-color: var(--base-color);
 }
 
 .upper.anti-air-combos {
     background-image: url('images/antiaircombos.png');
-    --base-color: #c15c41;
-    --dark-color: #984835;
+    --base-color: #ff5722;  /* meteor red-orange */
+    --dark-color: #cc451b;
     background-color: var(--base-color);
 }
 
 .upper.amnesia {
     background-image: url('images/amnesia.png');
-    --base-color: #737171;
-    --dark-color: #5a5959;
+    --base-color: #607d8b;  /* cold planet grey-blue */
+    --dark-color: #4a626c;
     background-color: var(--base-color);
 }
 
 .upper.safe-jumps {
     background-image: url('images/safejumps.png');
-    --base-color: #44999b;
-    --dark-color: #347879;
+    --base-color: #03a9f4;  /* ice star blue */
+    --dark-color: #0288d1;
     background-color: var(--base-color);
 }
 
 .upper.resets-meaty-di {
     background-image: url('images/reset.png');
-    --base-color: #867166;
-    --dark-color: #67574f;
+    --base-color: #795548;  /* dusty crater brown */
+    --dark-color: #5d4238;
     background-color: var(--base-color);
 }
 
 .upper.matchups {
     background-image: url('images/gimicks.png');
-    --base-color: #a95a68;
-    --dark-color: #874650;
+    --base-color: #ffeb3b;  /* solar flare yellow */
+    --dark-color: #d6c833;
     background-color: var(--base-color);
 }
 
 .upper.anti-jp {
     background-image: url('images/invalid.png');
-    --base-color: #afc4a0;
-    --dark-color: #8ca080;
+    --base-color: #673ab7;  /* nebula purple */
+    --dark-color: #523091;
     background-color: var(--base-color);
 }
 
 .upper.anti-jp-zoning-without-portal {
     background-image: url('images/antizone.png');
-    --base-color: #bcb7b7;
-    --dark-color: #999393;
+    --base-color: #009688;  /* teal starfire */
+    --dark-color: #007369;
     background-color: var(--base-color);
 }
 
