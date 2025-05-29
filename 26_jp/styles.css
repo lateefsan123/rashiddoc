@@ -261,6 +261,7 @@ nav.scrolled a {
     font-size: 1.5rem;
     -webkit-text-stroke: #2a2727;
     -webkit-text-stroke-width: 1px;
+    transition: opacity, 400ms ease-in;
 }
 
 .redbull {
@@ -991,6 +992,10 @@ nav.scrolled a {
 }
 
 .linknova {
+    background-image: url("images/replay.png");
+}
+
+.pingutaro {
     background-image: url("images/linknova.png");
 }
 
