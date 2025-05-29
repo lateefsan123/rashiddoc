@@ -15,7 +15,7 @@ import {
   chunliStreamers, deejayStreamers, hondaStreamers, jamieStreamers, lilyStreamers,
   manonStreamers, akiStreamers, maiStreamers, marisaStreamers, dhalsimStreamers,
   guileStreamers, ryuStreamers, jpStreamers
-} from "/streamerData.js";
+} from "./streamerdata.js";
 
 
 
