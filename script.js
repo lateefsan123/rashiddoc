@@ -9,7 +9,6 @@ let chararchetype = document.querySelector(".chararchetype");
 let charnumber = document.querySelector(".charnumber");
 let render = document.querySelector(".preview")
 
-
 import {
   juriStreamers, kenStreamers, lukeStreamers, akumaStreamers, edStreamers,
   bisonStreamers, blankaStreamers, zangiefStreamers, terryStreamers, cammyStreamers,
@@ -17,6 +16,8 @@ import {
   manonStreamers, akiStreamers, maiStreamers, marisaStreamers, dhalsimStreamers,
   guileStreamers, ryuStreamers, jpStreamers
 } from "/streamerData.js";
+
+
 
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
