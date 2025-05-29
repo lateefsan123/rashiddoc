@@ -176,7 +176,7 @@ next.addEventListener("click", changecarrosel)
   
 setInterval(changecarrosel, 8000 )
 
-
+export let jurilivecount;
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     const clientSecret = "gl4v4exjfj9sr225q0ep9llxax6y8q";
@@ -213,6 +213,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
         if (data.data && data.data.length > 0) {
           console.log(`${streamerName} is live`);
           button.classList.add("live");
+          jurilivecount += 1;
         } else {
           console.log(`${streamerName} is offline`);
         }
