@@ -316,7 +316,7 @@ document.addEventListener("click", function () {
   });
 
 
-closebtn = document.querySelector(".close-button");
+let closebtn = document.querySelector(".close-button");
 closebtn.addEventListener("click", function(event) {
     event.stopPropagation();
     about.style.display = "none";

@@ -18,6 +18,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>JP center</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      once: false, // <- THIS is the key line
+      duration: 600, // optional: animation duration
+      easing: 'ease-in-out', // optional
+    });
+  });
+</script>
 </head>
 <body>
     <!-- this is for the navbar -->
@@ -49,13 +60,13 @@
          <div class="topofpage"></div>
 
          <div class="combotitle">
-            <h2 id="ctitle">Combos and oki</h2>
+            <h2 id="ctitle" data-aos="zoom-in">Combos and oki</h2>
          </div>
 
          <!-- combos and oki section -->
-          <div class="combos">
+          <div class="combos" >
 
-            <div class="combopiece" data-link="https://www.youtube.com/embed/MdBKdgVgvf4?si=M2jR20b1S1nIjaBV" data-colour="#4B0082">
+            <div class="combopiece" data-link="https://www.youtube.com/embed/MdBKdgVgvf4?si=M2jR20b1S1nIjaBV" data-colour="#4B0082" data-aos="zoom-in">
     <div class="upper neutral"></div>
     <div class="lower">
         <h3>neutral</h3>
@@ -63,7 +74,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/0mfvoTEXHxI?si=ecnHvBkuWHqvszgX&amp;start=502" data-colour="#8B0000">
+<div class="combopiece" data-link="https://www.youtube.com/embed/0mfvoTEXHxI?si=ecnHvBkuWHqvszgX&amp;start=502" data-colour="#8B0000" data-aos="zoom-in">
     <div class="upper pressuresetups"></div>
     <div class="lower">
         <h3>pressure/setups</h3>
@@ -71,7 +82,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/0mfvoTEXHxI?si=tAYOCcHbloS75Zs2&amp;start=117" data-colour="#006400">
+<div class="combopiece" data-link="https://www.youtube.com/embed/0mfvoTEXHxI?si=tAYOCcHbloS75Zs2&amp;start=117" data-colour="#006400" data-aos="zoom-in">
     <div class="upper combo"></div>
     <div class="lower">
         <h3>combo</h3>
@@ -79,7 +90,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/vs3cd_GCyMI?si=RznlecnowiPqBBEB&amp;start=749" data-colour="#FF8C00">
+<div class="combopiece" data-link="https://www.youtube.com/embed/vs3cd_GCyMI?si=RznlecnowiPqBBEB&amp;start=749" data-colour="#FF8C00" data-aos="zoom-in">
     <div class="upper portal-application"></div>
     <div class="lower">
         <h3>portal application</h3>
@@ -87,7 +98,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/jrYrmIntHw0?si=-8qf4l0eqsxrb6Wf" data-colour="#4682B4">
+<div class="combopiece" data-link="https://www.youtube.com/embed/jrYrmIntHw0?si=-8qf4l0eqsxrb6Wf" data-colour="#4682B4" data-aos="zoom-in">
     <div class="upper sa2-application"></div>
     <div class="lower">
         <h3>sa2 application</h3>
@@ -95,7 +106,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/8LrNzztwWLk?si=YT-pfgt3ki40BRCb&amp;start=1" data-colour="#DA70D6">
+<div class="combopiece" data-link="https://www.youtube.com/embed/8LrNzztwWLk?si=YT-pfgt3ki40BRCb&amp;start=1" data-colour="#DA70D6" data-aos="zoom-in">
     <div class="upper oki"></div>
     <div class="lower">
         <h3>oki</h3>
@@ -103,7 +114,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/jrYrmIntHw0?si=WEXheSMPS5XIv_P3&amp;start=245" data-colour="#2E8B57">
+<div class="combopiece" data-link="https://www.youtube.com/embed/jrYrmIntHw0?si=WEXheSMPS5XIv_P3&amp;start=245" data-colour="#2E8B57" data-aos="zoom-in">
     <div class="upper corner-oki"></div>
     <div class="lower">
         <h3>corner oki</h3>
@@ -111,7 +122,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/1VyR3xnCtkM?si=DjZw2pFvIbjrHP8L&amp;start=192" data-colour="#DC143C">
+<div class="combopiece" data-link="https://www.youtube.com/embed/1VyR3xnCtkM?si=DjZw2pFvIbjrHP8L&amp;start=192" data-colour="#DC143C" data-aos="zoom-in">
     <div class="upper sideswitch"></div>
     <div class="lower">
         <h3>sideswitch</h3>
@@ -119,7 +130,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/x5FrEpiVY2c?si=G76Ag2nqzxngBjub&amp;start=456" data-colour="#20B2AA">
+<div class="combopiece" data-link="https://www.youtube.com/embed/x5FrEpiVY2c?si=G76Ag2nqzxngBjub&amp;start=456" data-colour="#20B2AA" data-aos="zoom-in" >
     <div class="upper drive-impact-combos"></div>
     <div class="lower">
         <h3>drive impact combos</h3>
@@ -127,7 +138,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/hJQ2Im1F0aM?si=8a43bO7PV4A_z31X" data-colour="#FF1493">
+<div class="combopiece" data-link="https://www.youtube.com/embed/hJQ2Im1F0aM?si=8a43bO7PV4A_z31X" data-colour="#FF1493" data-aos="zoom-in">
     <div class="upper stun-combos"></div>
     <div class="lower">
         <h3>stun combos</h3>
@@ -135,7 +146,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/x5FrEpiVY2c?si=SSCNBJeINP6Kika-&amp;start=835" data-colour="#7FFF00">
+<div class="combopiece" data-link="https://www.youtube.com/embed/x5FrEpiVY2c?si=SSCNBJeINP6Kika-&amp;start=835" data-colour="#7FFF00" data-aos="zoom-in">
     <div class="upper setplay"></div>
     <div class="lower">
         <h3>setplay</h3>
@@ -143,7 +154,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/x5FrEpiVY2c?si=hNPtK_R2sx6av2eT&amp;start=754" data-colour="#B22222">
+<div class="combopiece" data-link="https://www.youtube.com/embed/x5FrEpiVY2c?si=hNPtK_R2sx6av2eT&amp;start=754" data-colour="#B22222" data-aos="zoom-in">
     <div class="upper anti-air-combos"></div>
     <div class="lower">
         <h3>anti air combos</h3>
@@ -151,7 +162,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/x5FrEpiVY2c?si=Oe2UL3gOX1OMf9_4&amp;start=550" data-colour="#9932CC">
+<div class="combopiece" data-link="https://www.youtube.com/embed/x5FrEpiVY2c?si=Oe2UL3gOX1OMf9_4&amp;start=550" data-colour="#9932CC" data-aos="zoom-in">
     <div class="upper amnesia"></div>
     <div class="lower">
         <h3>amnesia</h3>
@@ -159,7 +170,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/8LrNzztwWLk?si=EqjN_z7t1COXEoM2&amp;start=294" data-colour="#3CB371">
+<div class="combopiece" data-link="https://www.youtube.com/embed/8LrNzztwWLk?si=EqjN_z7t1COXEoM2&amp;start=294" data-colour="#3CB371" data-aos="zoom-in">
     <div class="upper safe-jumps"></div>
     <div class="lower">
         <h3>safe jumps</h3>
@@ -167,7 +178,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/8LrNzztwWLk?si=P6i05VVTaikSF2fp&amp;start=354" data-colour="#FF6347">
+<div class="combopiece" data-link="https://www.youtube.com/embed/8LrNzztwWLk?si=P6i05VVTaikSF2fp&amp;start=354" data-colour="#FF6347" data-aos="zoom-in">
     <div class="upper resets-meaty-di"></div>
     <div class="lower">
         <h3>resets/ meaty di</h3>
@@ -175,7 +186,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/0mfvoTEXHxI?si=FlZypJvjiJuUrmhM&amp;start=749" data-colour="#00CED1">
+<div class="combopiece" data-link="https://www.youtube.com/embed/0mfvoTEXHxI?si=FlZypJvjiJuUrmhM&amp;start=749" data-colour="#00CED1" data-aos="zoom-in">
     <div class="upper matchups"></div>
     <div class="lower">
         <h3>matchups</h3>
@@ -183,7 +194,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/rDLG7OIqRm4?si=E7LzddjEqxxwXcj-" data-colour="#FFD700">
+<div class="combopiece" data-link="https://www.youtube.com/embed/rDLG7OIqRm4?si=E7LzddjEqxxwXcj-" data-colour="#FFD700" data-aos="zoom-in">
     <div class="upper anti-jp"></div>
     <div class="lower">
         <h3>anti jp</h3>
@@ -191,7 +202,7 @@
     </div>
 </div>
 
-<div class="combopiece" data-link="https://www.youtube.com/embed/sndGUhz-Uyo?si=XEM8gfLkBnLSAUW4" data-colour="#008080">
+<div class="combopiece" data-link="https://www.youtube.com/embed/sndGUhz-Uyo?si=XEM8gfLkBnLSAUW4" data-colour="#008080" data-aos="zoom-in">
     <div class="upper anti-jp-zoning-without-portal"></div>
     <div class="lower">
         <h3>anti jp zoning without portal</h3>
