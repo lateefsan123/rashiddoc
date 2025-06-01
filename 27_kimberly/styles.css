@@ -168,13 +168,14 @@ nav.scrolled a {
     }
 }
 .changechar:hover {
-    background-color: rgb(13, 71, 161);
-    color: white;
+    background-color: palegoldenrod;
+    color: black;
     transform: scale(1.1);
 }
 
 .changechar.scrolled:hover {
     background-color: transparent;
+    color: white;
 }
 
 
