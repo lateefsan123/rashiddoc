@@ -215,6 +215,7 @@ nav.scrolled a {
     -webkit-text-stroke-color: #2a2727;
     -webkit-text-stroke-width: 1.5px;
     animation: flicker 2s ease-in-out infinite;
+    transition: all, 400ms ease-in;
 }
 
 .redbull {
