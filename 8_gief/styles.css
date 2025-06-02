@@ -966,3 +966,44 @@ nav.scrolled a {
 .hub, .center {
     color: orangered;
 }
+
+ .tourneywins {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.topanga {
+    background-image: url("images/topanga.png");
+    
+}
+
+.creamcity {
+    background-image: url("images/creamcity.png");
+    
+}
+
+.eastcoast {
+    background-image: url("images/eastcoast.png");
+    
+}
+
+
+.tourney {
+    width: 15rem;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid gold;
+    padding: 20px;
+    background-position: center center;
+    border: none;
+    transition: transform 300ms ease-in-out;
+}
+
+.tourney:hover {
+    transform: scale(1.1);
+}
