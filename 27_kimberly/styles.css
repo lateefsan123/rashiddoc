@@ -1308,7 +1308,9 @@ footer {
     margin: 0 auto; /* center the whole grid in the parent container */
 }
 
-
+.super {
+    background-image: url("images/super.png");
+}
 
 
 .bam {

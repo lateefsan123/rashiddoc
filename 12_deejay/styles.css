@@ -211,7 +211,9 @@ nav.scrolled a {
 }
 
 .redbull:hover {
-    transform: scale(1.1);
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 0.2px;
+    transform: scale(1.05);
 }
 
 
@@ -248,9 +250,9 @@ nav.scrolled a {
 }
 
 .replay h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
-    color: rgb(223,185,9);
+    color: white;
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
 }
@@ -284,6 +286,7 @@ nav.scrolled a {
     
     
 }
+
 
 
 .rightthird {
@@ -672,83 +675,128 @@ nav.scrolled a {
     height: 50%;
 
 }
-
-.intro {
-    background-color: #00c896;
-    background-image: url("images/intro.png");
+@keyframes pulseBg {
+  0% {
+    background-color: var(--base-color);
+  }
+  33% {
+    background-color: var(--dark-color);
+  }
+  66% {
+    background-color: var(--light-color);
+  }
+  100% {
+    background-color: var(--base-color);
+  }
 }
 
 
-.combo {
-    background-color: #ffcc00;
-    background-image: url("images/combo.png");
-
+.upper.intro {
+  --base-color: #00c896;
+  --dark-color: #009e75;
+  --light-color: #6effd0;
+  background-color: var(--base-color);
+  background-image: url("images/intro.png");
 }
 
-.oki {
-    background-color: #ff6f61;
-    background-image: url("images/oki.png");
-
+.upper.combo {
+  --base-color: #ffcc00;
+  --dark-color: #c9a300;
+  --light-color: #fff066;
+  background-color: var(--base-color);
+  background-image: url("images/combo.png");
 }
 
-.pressure {
-    background-color: #ff914d;
-    background-image: url("images/pressure.png");
-
+.upper.oki {
+  --base-color: #ff6f61;
+  --dark-color: #cc574c;
+  --light-color: #ffaaa2;
+  background-color: var(--base-color);
+  background-image: url("images/oki.png");
 }
 
-.drivechip {
-    background-color: #0099cc;
-    background-image: url("images/drivechip.png");
-
+.upper.pressure {
+  --base-color: #ff914d;
+  --dark-color: #cc733d;
+  --light-color: #ffc699;
+  background-color: var(--base-color);
+  background-image: url("images/pressure.png");
 }
 
-.spacingtraps {
-    background-color: #34d399;
-    background-image: url("images/spacing.png");
-
+.upper.drivechip {
+  --base-color: #0099cc;
+  --dark-color: #0076a0;
+  --light-color: #66d3ff;
+  background-color: var(--base-color);
+  background-image: url("images/drivechip.png");
 }
 
-.blockstring {
-    background-color: #ff4db8;
-    background-image: url("images/blockstrings.png");
-
+.upper.spacingtraps {
+  --base-color: #34d399;
+  --dark-color: #26a97a;
+  --light-color: #8ef3cd;
+  background-color: var(--base-color);
+  background-image: url("images/spacing.png");
 }
 
-.safejumps {
-    background-color: #ffaa00;
-    background-image: url("images/safejumps.png");
-
+.upper.blockstring {
+  --base-color: #ff4db8;
+  --dark-color: #c13c8f;
+  --light-color: #ffa9dc;
+  background-color: var(--base-color);
+  background-image: url("images/blockstrings.png");
 }
 
-.sideswitch {
-    background-color: #1e90ff;
-    background-image: url("images/sideswitch.png");
-
+.upper.safejumps {
+  --base-color: #ffaa00;
+  --dark-color: #cc8800;
+  --light-color: #ffd966;
+  background-color: var(--base-color);
+  background-image: url("images/safejumps.png");
 }
 
-.stuncombo {
-    background-color: #20c997;
-    background-image: url("images/stun.png");
-
+.upper.sideswitch {
+  --base-color: #1e90ff;
+  --dark-color: #166cc2;
+  --light-color: #75c6ff;
+  background-color: var(--base-color);
+  background-image: url("images/sideswitch.png");
 }
 
-.driveimpact {
-    background-color: #e63946;
-    background-image: url("images/driveimpact.png");
-
+.upper.stuncombo {
+  --base-color: #20c997;
+  --dark-color: #1a9e76;
+  --light-color: #7ff7d1;
+  background-color: var(--base-color);
+  background-image: url("images/stun.png");
 }
 
-.burnout {
-    background-color: #00b894;
-    background-image: url("images/burnout.png");
-
+.upper.driveimpact {
+  --base-color: #e63946;
+  --dark-color: #b32d38;
+  --light-color: #ff7a84;
+  background-color: var(--base-color);
+  background-image: url("images/driveimpact.png");
 }
 
-.resets {
-    background-color: #f9c74f;
-    background-image: url("images/resets.png");
+.upper.burnout {
+  --base-color: #00b894;
+  --dark-color: #008a6f;
+  --light-color: #62f3cf;
+  background-color: var(--base-color);
+  background-image: url("images/burnout.png");
+}
 
+.upper.resets {
+  --base-color: #f9c74f;
+  --dark-color: #c7a03f;
+  --light-color: #ffec99;
+  background-color: var(--base-color);
+  background-image: url("images/resets.png");
+}
+
+.upper:hover {
+  animation: pulseBg 2s infinite ease-in-out;
 }
 
 /* streamers section */
@@ -1091,3 +1139,44 @@ nav.scrolled a {
     transform: scale(0.95); /* Slight scale effect on click */
   }
   
+  .tourneywins {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center; /* center items in their grid cell */
+    justify-content: center; /* center the grid layout */
+    background-repeat: no-repeat;
+    padding: 100px;
+
+    max-width: 1200px; /* set a max width for the grid */
+    margin: 0 auto; /* center the whole grid in the parent container */
+}
+
+
+
+
+.super {
+    background-image: url("images/super.png");
+    
+}
+
+
+
+
+.tourney {
+    width: 15rem;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid gold;
+    padding: 20px;
+    background-position: center center;
+    border: none;
+    transition: transform 300ms ease-in-out;
+}
+
+.tourney:hover {
+    transform: scale(1.1);
+}
