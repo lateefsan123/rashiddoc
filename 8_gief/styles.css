@@ -661,54 +661,87 @@ nav.scrolled a {
 
 }
 
-.neutral {
-    background-image: url("images/neutral.png");
-    background-color: #9C2A2F;
+@keyframes pulseBg {
+  0%, 100% {
+    background-color: var(--base-color);
+  }
+  50% {
+    background-color: var(--dark-color);
+  }
 }
 
-.oki {
-    background-image: url("images/oki.png");
-    background-color: #E57B3C;
+.upper.neutral {
+  --base-color: #9C2A2F;
+  --dark-color: #721e22;
+  background-color: var(--base-color);
+  background-image: url("images/neutral.png");
 }
 
-.combo {
-    background-image: url("images/combo.png");
-    background-color: #F1C232;
+.upper.oki {
+  --base-color: #E57B3C;
+  --dark-color: #b85e2d;
+  background-color: var(--base-color);
+  background-image: url("images/oki.png");
 }
 
-.driveimpact {
-    background-image: url("images/driveimpact.png");
-    background-color: #4C9A2A;
+.upper.combo {
+  --base-color: #F1C232;
+  --dark-color: #c19b25;
+  background-color: var(--base-color);
+  background-image: url("images/combo.png");
 }
 
-.stuncombo {
-    background-image: url("images/stuncombo.png");
-    background-color: #E34A33;
+.upper.driveimpact {
+  --base-color: #4C9A2A;
+  --dark-color: #39741f;
+  background-color: var(--base-color);
+  background-image: url("images/driveimpact.png");
 }
 
-.frametraps {
-    background-image: url("images/frametrap.png");
-    background-color: #D90000;
+.upper.stuncombo {
+  --base-color: #E34A33;
+  --dark-color: #aa3424;
+  background-color: var(--base-color);
+  background-image: url("images/stuncombo.png");
 }
 
-.safejumps {
-    background-image: url("images/safejumps.png");
-    background-color: #7F3A8C;
+.upper.frametraps {
+  --base-color: #D90000;
+  --dark-color: #a00000;
+  background-color: var(--base-color);
+  background-image: url("images/frametrap.png");
 }
 
-.burnout {
-    background-image: url("images/burnout.png");
-    background-color: #5A2D42;
+.upper.safejumps {
+  --base-color: #7F3A8C;
+  --dark-color: #5a2a63;
+  background-color: var(--base-color);
+  background-image: url("images/safejumps.png");
 }
 
-.sideswitch {
-    background-image: url("images/sideswitch.png");
-    background-color: #F2A900;
+.upper.burnout {
+  --base-color: #5A2D42;
+  --dark-color: #3f2030;
+  background-color: var(--base-color);
+  background-image: url("images/burnout.png");
 }
 
-.siberian {
-    background-image: url("images/siberian.png");
-    background-color: #4E4A2A;
+.upper.sideswitch {
+  --base-color: #F2A900;
+  --dark-color: #b97f00;
+  background-color: var(--base-color);
+  background-image: url("images/sideswitch.png");
+}
+
+.upper.siberian {
+  --base-color: #4E4A2A;
+  --dark-color: #36341c;
+  background-color: var(--base-color);
+  background-image: url("images/siberian.png");
+}
+
+.upper:hover {
+  animation: pulseBg 2s infinite ease-in-out;
 }
 
 
@@ -966,3 +999,152 @@ nav.scrolled a {
 .hub, .center {
     color: orangered;
 }
+
+.tourneywins {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center; /* center items in their grid cell */
+    justify-content: center; /* center the grid layout */
+    background-repeat: no-repeat;
+    padding: 100px;
+
+    max-width: 2000px; /* set a max width for the grid */
+    margin: 0 auto; /* center the whole grid in the parent container */
+}
+
+
+.topanga {
+    background-image: url("images/topanga.png");
+    
+}
+
+.creamcity {
+    background-image: url("images/creamcity.png");
+    
+}
+
+.eastcoast {
+    background-image: url("images/eastcoast.png");
+    
+}
+
+
+.tourney {
+    width: 15rem;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid gold;
+    padding: 20px;
+    background-position: center center;
+    border: none;
+    transition: transform 300ms ease-in-out;
+}
+
+.tourney:hover {
+    transform: scale(1.1);
+}
+
+
+  #playBtn {
+    position: relative;
+    background-color: transparent;
+    color: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 7px double rgba(255, 255, 255, 0.7);
+    box-shadow: rgb(126, 11, 11) 0px 54px 55px, 
+            rgb(126, 11, 11) 0px -12px 30px, 
+            rgb(126, 11, 11) 0px 4px 6px, 
+            rgb(126, 11, 11) 0px 12px 13px, 
+        rgb(126, 11, 11) 0px -3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    z-index: 1; /* Button stays above pulse */
+  }
+
+  #playBtn.play {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black
+    ;
+    
+  }
+  
+  #playBtn .fa {
+    font-size: 1.3rem;
+  }
+
+  #playBtn.yo {
+    background-color: rgba(255, 255, 255, 0.7);
+
+  }
+  
+  #playBtn.yo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Start with a wide circle */
+    height: 120%;
+    background: radial-gradient(circle, rgba(135, 8, 125, 0.6), rgba(255, 255, 255, 0.4) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+     /* Apply pulse animation */
+    z-index: -1; /* Ensure the pulse stays behind the button */
+    animation: pulse 4s infinite;
+  }
+
+  /* Outer pulse effect */
+  #playBtn.play::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Start with a wide circle */
+    height: 120%;
+    background: radial-gradient(circle, rgba(135, 8, 125, 0.6), rgba(255, 255, 255, 0.4) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+     /* Apply pulse animation */
+    z-index: -1; /* Ensure the pulse stays behind the button */
+    animation: pulse 4s infinite;
+
+  }
+  
+  /* Keyframes for the pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.5;
+
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.4); /* Grow the pulse */
+      opacity: 0.5;
+      border: 1px solid white;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Shrink the pulse */
+      opacity: 1;
+
+    }
+  }
+  
+  #playBtn:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  #playBtn:active {
+    transform: scale(0.95); /* Slight scale effect on click */
+  }
+  

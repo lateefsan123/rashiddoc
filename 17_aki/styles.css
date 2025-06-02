@@ -879,84 +879,129 @@ nav.scrolled a {
 
 }
 
-.intro {
-    background-color: #5c3d79;
-    background-image: url("images/intro.png");
+@keyframes pulseBg {
+  0%, 100% {
+    background-color: var(--base-color);
+  }
+  50% {
+    background-color: var(--dark-color);
+  }
 }
 
-.guide {
-    background-color: #243b40;
-    background-image: url("images/fullaki.png");
+.upper.intro {
+  --base-color: #5c3d79;
+  --dark-color: #412b57;
+  background-color: var(--base-color);
+  background-image: url("images/intro.png");
 }
 
-.poison {
-    background-color: #762da3;
-    background-image: url("images/poison.png");
+.upper.guide {
+  --base-color: #243b40;
+  --dark-color: #162629;
+  background-color: var(--base-color);
+  background-image: url("images/fullaki.png");
 }
 
-.neutral {
-    background-color: #3a6d5d;
-    background-image: url("images/neutral.png");
+.upper.poison {
+  --base-color: #762da3;
+  --dark-color: #531f75;
+  background-color: var(--base-color);
+  background-image: url("images/poison.png");
 }
 
-.specials {
-    background-color: #8b3048;
-    background-image: url("images/specials.png");
+.upper.neutral {
+  --base-color: #3a6d5d;
+  --dark-color: #2a4f45;
+  background-color: var(--base-color);
+  background-image: url("images/neutral.png");
 }
 
-.anti-air {
-    background-color: #926d21;
-    background-image: url("images/antiair.png");
+.upper.specials {
+  --base-color: #8b3048;
+  --dark-color: #641f32;
+  background-color: var(--base-color);
+  background-image: url("images/specials.png");
 }
 
-.stun {
-    background-color: #4a78a3;
-    background-image: url("images/stun.png");
+.upper.anti-air {
+  --base-color: #926d21;
+  --dark-color: #6a5017;
+  background-color: var(--base-color);
+  background-image: url("images/antiair.png");
 }
 
-.overhead {
-    background-color: #4e7b4a;
-    background-image: url("images/overhead.png");
+.upper.stun {
+  --base-color: #4a78a3;
+  --dark-color: #35587a;
+  background-color: var(--base-color);
+  background-image: url("images/stun.png");
 }
 
-.mixups {
-    background-color: #af5e2d;
-    background-image: url("images/mixup.png");
+.upper.overhead {
+  --base-color: #4e7b4a;
+  --dark-color: #385a35;
+  background-color: var(--base-color);
+  background-image: url("images/overhead.png");
 }
 
-.safejumps {
-    background-color: #5f6d73;
-    background-image: url("images/safejump.png");
+.upper.mixups {
+  --base-color: #af5e2d;
+  --dark-color: #823f1e;
+  background-color: var(--base-color);
+  background-image: url("images/mixup.png");
 }
 
-.cmdgrab {
-    background-color: #7c4e91;
-    background-image: url("images/commandgrab.png");
+.upper.safejumps {
+  --base-color: #5f6d73;
+  --dark-color: #424c50;
+  background-color: var(--base-color);
+  background-image: url("images/safejump.png");
 }
 
-.reset {
-    background-color: #45525d;
-    background-image: url("images/reset.png");
+.upper.cmdgrab {
+  --base-color: #7c4e91;
+  --dark-color: #593669;
+  background-color: var(--base-color);
+  background-image: url("images/commandgrab.png");
 }
 
-.oki {
-    background-color: #5f42ab;
-    background-image: url("images/oki.png");
+.upper.reset {
+  --base-color: #45525d;
+  --dark-color: #313a42;
+  background-color: var(--base-color);
+  background-image: url("images/reset.png");
 }
 
-.matchups {
-    background-color: #bfa236;
-    background-image: url("images/gimicks.png");
+.upper.oki {
+  --base-color: #5f42ab;
+  --dark-color: #442f7c;
+  background-color: var(--base-color);
+  background-image: url("images/oki.png");
 }
 
-.antiaki {
-    background-color: #94333c;
-    background-image: url("images/antiaki.png");
+.upper.matchups {
+  --base-color: #bfa236;
+  --dark-color: #8c7827;
+  background-color: var(--base-color);
+  background-image: url("images/gimicks.png");
 }
 
-.burnout {
-    background-color: #36bfaf;
-    background-image: url("images/burnout.png");
+.upper.antiaki {
+  --base-color: #94333c;
+  --dark-color: #6b262c;
+  background-color: var(--base-color);
+  background-image: url("images/antiaki.png");
+}
+
+.upper.burnout {
+  --base-color: #36bfaf;
+  --dark-color: #28968a;
+  background-color: var(--base-color);
+  background-image: url("images/burnout.png");
+}
+
+.upper:hover {
+  animation: pulseBg 2s infinite ease-in-out;
 }
 
 
@@ -1278,3 +1323,47 @@ nav.scrolled a {
     transform: scale(0.95); /* Slight scale effect on click */
   }
   
+  
+  .tourneywins {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center; /* center items in their grid cell */
+    justify-content: center; /* center the grid layout */
+    background-repeat: no-repeat;
+    padding: 100px;
+
+    max-width: 1200px; /* set a max width for the grid */
+    margin: 0 auto; /* center the whole grid in the parent container */
+}
+
+
+
+
+.superoce {
+    background-image: url("images/superoce.png");
+    
+}
+
+.superuk {
+    background-image: url("images/superuk.png");
+}
+
+
+.tourney {
+    width: 15rem;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid gold;
+    padding: 20px;
+    background-position: center center;
+    border: none;
+    transition: transform 300ms ease-in-out;
+}
+
+.tourney:hover {
+    transform: scale(1.1);
+}

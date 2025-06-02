@@ -1,5 +1,4 @@
 let fighters = document.querySelectorAll(".fighter");
-console.log("hello")
 
 // preview selects
 let charactername = document.querySelector(".charname");
@@ -282,7 +281,6 @@ fighters.forEach(function(fighter) {
     fighter.addEventListener("mouseenter", () => {
         let currentfighter = fighter.getAttribute("data-fighter")
         let chardata = character[currentfighter];
-        console.log(chardata)
 
         charheight.textContent = chardata.height;
         charweight.textContent = chardata.weight;
@@ -316,7 +314,7 @@ document.addEventListener("click", function () {
   });
 
 
-closebtn = document.querySelector(".close-button");
+let closebtn = document.querySelector(".close-button");
 closebtn.addEventListener("click", function(event) {
     event.stopPropagation();
     about.style.display = "none";

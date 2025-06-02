@@ -877,95 +877,145 @@ nav.scrolled a {
 
 }
 
-.intro {
-    background-color: #B71C1C; /* Deep Crimson */
-    background-image: url("images/intro.png");
+@keyframes pulseBg {
+  0%, 100% {
+    background-color: var(--base-color);
+  }
+  50% {
+    background-color: var(--dark-color);
+  }
 }
 
-.mai-combos {
-    background-color: #880E4F; /* Deep Rose */
-    background-image: url("images/combo.png");
+.upper.intro {
+  --base-color: #B71C1C;
+  --dark-color: #8B0E0E;
+  background-color: var(--base-color);
+  background-image: url("images/intro.png");
 }
 
-.oki-pressure {
-    background-color: #4A148C; /* Dark Violet */
-    background-image: url("images/oki.png");
+.upper.mai-combos {
+  --base-color: #880E4F;
+  --dark-color: #5C0A36;
+  background-color: var(--base-color);
+  background-image: url("images/combo.png");
 }
 
-.mai-throw-loop {
-    background-color: #1A237E; /* Indigo */
-    background-image: url("images/throwloop.png");
+.upper.oki-pressure {
+  --base-color: #4A148C;
+  --dark-color: #320A61;
+  background-color: var(--base-color);
+  background-image: url("images/oki.png");
 }
 
-.mai-blockstrings {
-    background-color: #004D40; /* Teal Green */
-    background-image: url("images/blockstrings.png");
+.upper.mai-throw-loop {
+  --base-color: #1A237E;
+  --dark-color: #11185A;
+  background-color: var(--base-color);
+  background-image: url("images/throwloop.png");
 }
 
-.behind-fan-pressure {
-    background-color: #0D47A1; /* Royal Blue */
-    background-image: url("images/behindfan.png");
+.upper.mai-blockstrings {
+  --base-color: #004D40;
+  --dark-color: #00332A;
+  background-color: var(--base-color);
+  background-image: url("images/blockstrings.png");
 }
 
-.meaty-ex-fireball-oki {
-    background-color: #6D4C41; /* Smoky Brown */
-    background-image: url("images/exfan.png");
+.upper.behind-fan-pressure {
+  --base-color: #0D47A1;
+  --dark-color: #082D65;
+  background-color: var(--base-color);
+  background-image: url("images/behindfan.png");
 }
 
-.mai-air-to-air-combos {
-    background-color: #AD1457; /* Rich Pink */
-    background-image: url("images/airtoair.png");
+.upper.meaty-ex-fireball-oki {
+  --base-color: #6D4C41;
+  --dark-color: #4A342C;
+  background-color: var(--base-color);
+  background-image: url("images/exfan.png");
 }
 
-.fireball-conversions {
-    background-color: #C62828; /* Brick Red */
-    background-image: url("images/conversions.png");
+.upper.mai-air-to-air-combos {
+  --base-color: #AD1457;
+  --dark-color: #7A0E3C;
+  background-color: var(--base-color);
+  background-image: url("images/airtoair.png");
 }
 
-.stun-combos-no-firestocks {
-    background-color: #EF6C00; /* Burnt Orange */
-    background-image: url("images/stuncombo.png");
+.upper.fireball-conversions {
+  --base-color: #C62828;
+  --dark-color: #911D1D;
+  background-color: var(--base-color);
+  background-image: url("images/conversions.png");
 }
 
-.stun-combos-with-firestocks {
-    background-color: #F9A825; /* Muted Gold */
-    background-image: url("images/stunfirecombo.png");
+.upper.stun-combos-no-firestocks {
+  --base-color: #EF6C00;
+  --dark-color: #B95200;
+  background-color: var(--base-color);
+  background-image: url("images/stuncombo.png");
 }
 
-.drive-impact-punishes {
-    background-color: #6A1B9A; /* Royal Purple */
-    background-image: url("images/driceimpact.png");
+.upper.stun-combos-with-firestocks {
+  --base-color: #F9A825;
+  --dark-color: #C48A1B;
+  background-color: var(--base-color);
+  background-image: url("images/stunfirecombo.png");
 }
 
-.mai-in-burnout {
-    background-color: #37474F; /* Blue-Gray */
-    background-image: url("images/burnout.png");
+.upper.drive-impact-punishes {
+  --base-color: #6A1B9A;
+  --dark-color: #4D1370;
+  background-color: var(--base-color);
+  background-image: url("images/driceimpact.png");
 }
 
-.reset-options {
-    background-color: #3E2723; /* Deep Mocha */
-    background-image: url("images/reset.png");
+.upper.mai-in-burnout {
+  --base-color: #37474F;
+  --dark-color: #263238;
+  background-color: var(--base-color);
+  background-image: url("images/burnout.png");
 }
 
-.safejumps {
-    background-color: #F06292; /* Sakura Pink */
-    background-image: url("images/safejump.png");
+.upper.reset-options {
+  --base-color: #3E2723;
+  --dark-color: #2B1A18;
+  background-color: var(--base-color);
+  background-image: url("images/reset.png");
 }
 
-.advanced-tech {
-    background-color: #5D4037; /* Traditional Brown */
-    background-image: url("images/tech.png");
+.upper.safejumps {
+  --base-color: #F06292;
+  --dark-color: #AD476B;
+  background-color: var(--base-color);
+  background-image: url("images/safejump.png");
 }
 
-.sideswitch-combos {
-    background-color: #283593; /* Bold Blue */
-    background-image: url("images/sideswitch.png");
+.upper.advanced-tech {
+  --base-color: #5D4037;
+  --dark-color: #422E28;
+  background-color: var(--base-color);
+  background-image: url("images/tech.png");
 }
 
-.anti-mai-strategies {
-    background-color: #263238; /* Charcoal Slate */
-    background-image: url("images/antimai.png");
+.upper.sideswitch-combos {
+  --base-color: #283593;
+  --dark-color: #1C2567;
+  background-color: var(--base-color);
+  background-image: url("images/sideswitch.png");
 }
+
+.upper.anti-mai-strategies {
+  --base-color: #263238;
+  --dark-color: #171E22;
+  background-color: var(--base-color);
+  background-image: url("images/antimai.png");
+}
+
+.upper:hover {
+  animation: pulseBg 2s infinite ease-in-out;
+}
+
 
 
 /* streamers section */
@@ -1316,3 +1366,43 @@ nav.scrolled a {
     transform: scale(0.95); /* Slight scale effect on click */
   }
   
+
+.tourneywins {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center; /* center items in their grid cell */
+    justify-content: center; /* center the grid layout */
+    background-repeat: no-repeat;
+    padding: 100px;
+
+    max-width: 1200px; /* set a max width for the grid */
+    margin: 0 auto; /* center the whole grid in the parent container */
+}
+
+
+
+
+.combobreaker {
+    background-image: url("images/combobreaker.png");
+    
+}
+
+
+.tourney {
+    width: 15rem;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid gold;
+    padding: 20px;
+    background-position: center center;
+    border: none;
+    transition: transform 300ms ease-in-out;
+}
+
+.tourney:hover {
+    transform: scale(1.1);
+}

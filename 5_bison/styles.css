@@ -71,7 +71,7 @@ nav.scrolled a {
 }
 
 .center.scrolled {
-    color: white;
+    color: rgb(66, 131, 163);
     
 }
 
@@ -94,13 +94,11 @@ nav.scrolled a {
 .center {
     color: rgb(150, 61, 56);
     border: none;
-    animation: colo 5s ease-in-out infinite;
     
 }
 
 .hub {
     color: rgb(113,58,55);
-    animation: colo 3s ease-in-out infinite;
 }
 
 .changechar {
@@ -675,61 +673,80 @@ nav.scrolled a {
 }
 
 
+@keyframes pulseBg {
+  0%, 100% {
+    background-color: var(--base-color);
+  }
+  50% {
+    background-color: var(--dark-color);
+  }
+}
+
 .upper.intro {
-    background-image: url('images/intro.png');
-    background-color: #4b0f1b; /* deep wine red */
+  --base-color: #4b0f1b;
+  --dark-color: #350a13;
+  background-color: var(--base-color);
+  background-image: url('images/intro.png');
 }
 
 .upper.beginnerstrat {
-    background-image: url('images/beginnerstrat.png');
-    background-color: #003f5c; /* dark ocean blue */
+  --base-color: #003f5c;
+  --dark-color: #002b40;
+  background-color: var(--base-color);
+  background-image: url('images/beginnerstrat.png');
 }
 
 .upper.oki {
-    background-image: url('images/oki.png');
-    background-color: #5c3c0d; /* dark bronze */
+  --base-color: #5c3c0d;
+  --dark-color: #3e2a09;
+  background-color: var(--base-color);
+  background-image: url('images/oki.png');
 }
 
 .upper.burnout {
-    background-image: url('images/burnout.png');
-    background-color: #7a1e1e; /* dark crimson */
+  --base-color: #7a1e1e;
+  --dark-color: #551616;
+  background-color: var(--base-color);
+  background-image: url('images/burnout.png');
 }
 
 .upper.drivechip {
-    background-image: url('images/drivechip.png');
-    background-color: #2e4e1f; /* muted forest green */
+  --base-color: #2e4e1f;
+  --dark-color: #213716;
+  background-color: var(--base-color);
+  background-image: url('images/drivechip.png');
 }
 
 .upper.antiair {
-    background-image: url('images/antiair.png');
-    background-color: #3c3c72; /* twilight blue */
+  --base-color: #3c3c72;
+  --dark-color: #28284e;
+  background-color: var(--base-color);
+  background-image: url('images/antiair.png');
 }
 
 .upper.driveimpact {
-    background-image: url('images/drivechip.png');
-    background-color: #6e1f4f; /* deep raspberry */
+  --base-color: #6e1f4f;
+  --dark-color: #4d1639;
+  background-color: var(--base-color);
+  background-image: url('images/drivechip.png');
 }
 
 .upper.advancestrat {
-    background-image: url('images/advance.png');
-    background-color: #5a2d82; /* royal plum */
+  --base-color: #5a2d82;
+  --dark-color: #3f2160;
+  background-color: var(--base-color);
+  background-image: url('images/advance.png');
 }
 
 .upper.sideswitch {
-    background-image: url('images/sideswitch.png');
-    background-color: #2d3c5a; /* stormy blue */
-    
+  --base-color: #2d3c5a;
+  --dark-color: #1f2a3f;
+  background-color: var(--base-color);
+  background-image: url('images/sideswitch.png');
 }
 
-.upper.sideswitch:hover {
-    animation: side 2s ease-in-out infinite;
-}
-
-
-@keyframes side {
-    50% {
-        background-color: #415b8d;
-    }
+.upper:hover {
+  animation: pulseBg 2s infinite ease-in-out;
 }
 
 
@@ -1079,3 +1096,47 @@ nav.scrolled a {
     transform: scale(0.95); /* Slight scale effect on click */
   }
   
+  
+.tourneywins {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center; /* center items in their grid cell */
+    justify-content: center; /* center the grid layout */
+    background-repeat: no-repeat;
+    padding: 100px;
+
+    max-width: 1200px; /* set a max width for the grid */
+    margin: 0 auto; /* center the whole grid in the parent container */
+}
+
+
+
+
+
+.ewclcq {
+    background-image: url("images/ewclcq_white_text.png");
+    
+}
+
+
+
+
+
+.tourney {
+    width: 15rem;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid gold;
+    padding: 20px;
+    background-position: center center;
+    border: none;
+    transition: transform 300ms ease-in-out;
+}
+
+.tourney:hover {
+    transform: scale(1.1);
+}

@@ -110,6 +110,14 @@ nav.scrolled a {
     transform: scale(1.1);
 }
 
+.changechar.scrolled:hover {
+    background-color: transparent;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
 
 
 
