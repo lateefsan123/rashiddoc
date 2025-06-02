@@ -869,89 +869,129 @@ nav.scrolled a {
 
 }
 
-.intro {
-    background-color: #B22222;
-    background-image: url("images/intro.png");
+@keyframes pulseBg {
+  0%, 100% {
+    background-color: var(--base-color);
+  }
+  50% {
+    background-color: var(--dark-color);
+  }
 }
 
-.fireball {
-    background-color: #D97706;
-    background-image: url("images/fireball.png");
+.upper.intro {
+  --base-color: #B22222;
+  --dark-color: #801818;
+  background-color: var(--base-color);
+  background-image: url("images/intro.png");
 }
 
-.drill {
-    background-color: #4B0082;
-    background-image: url("images/drill.png");
+.upper.fireball {
+  --base-color: #D97706;
+  --dark-color: #a65d05;
+  background-color: var(--base-color);
+  background-image: url("images/fireball.png");
 }
 
-.charged-fireball {
-    background-color: #008080;
-    background-image: url("images/chargedfireball.png");
+.upper.drill {
+  --base-color: #4B0082;
+  --dark-color: #33005b;
+  background-color: var(--base-color);
+  background-image: url("images/drill.png");
 }
 
-.teleport {
-    background-color: #556B2F;
-    background-image: url("images/teleport.png");
+.upper.charged-fireball {
+  --base-color: #008080;
+  --dark-color: #005f5f;
+  background-color: var(--base-color);
+  background-image: url("images/chargedfireball.png");
 }
 
-.ex-yoga-arch {
-    background-color: #9932CC;
-    background-image: url("images/arch.png");
+.upper.teleport {
+  --base-color: #556B2F;
+  --dark-color: #3a4a20;
+  background-color: var(--base-color);
+  background-image: url("images/teleport.png");
 }
 
-.corner-pressure {
-    background-color: #4682B4;
-    background-image: url("images/corner.png");
+.upper.ex-yoga-arch {
+  --base-color: #9932CC;
+  --dark-color: #6e2496;
+  background-color: var(--base-color);
+  background-image: url("images/arch.png");
 }
 
-.throw-loop {
-    background-color: #CD853F;
-    background-image: url("images/throwloop.png");
+.upper.corner-pressure {
+  --base-color: #4682B4;
+  --dark-color: #2f5a7c;
+  background-color: var(--base-color);
+  background-image: url("images/corner.png");
 }
 
-.oki {
-    background-color: #FFD700;
-    background-image: url("images/drive\ rush.png");
+.upper.throw-loop {
+  --base-color: #CD853F;
+  --dark-color: #a06930;
+  background-color: var(--base-color);
+  background-image: url("images/throwloop.png");
 }
 
-.mixups {
-    background-color: #DC143C;
-    background-image: url("images/mixups.png");
+.upper.oki {
+  --base-color: #FFD700;
+  --dark-color: #c2a600;
+  background-color: var(--base-color);
+  background-image: url("images/drive rush.png");
 }
 
-.reset {
-    background-color: #2E8B57;
-    background-image: url("images/reset.png");
+.upper.mixups {
+  --base-color: #DC143C;
+  --dark-color: #a60f2d;
+  background-color: var(--base-color);
+  background-image: url("images/mixups.png");
 }
 
-.burnout {
-    background-color: #A52A2A;
-    background-image: url("images/burnout.png");
+.upper.reset {
+  --base-color: #2E8B57;
+  --dark-color: #206342;
+  background-color: var(--base-color);
+  background-image: url("images/reset.png");
 }
 
-.stun {
-    background-color: #FF7F50;
-    background-image: url("images/stuncombo.png");
+.upper.burnout {
+  --base-color: #A52A2A;
+  --dark-color: #781e1e;
+  background-color: var(--base-color);
+  background-image: url("images/burnout.png");
 }
 
-.trade-combos {
-    background-color: #6A5ACD;
-    background-image: url("images/image_2025-05-16_180219665-removebg-preview.png");
+.upper.stun {
+  --base-color: #FF7F50;
+  --dark-color: #cc6540;
+  background-color: var(--base-color);
+  background-image: url("images/stuncombo.png");
 }
 
-.first.scrolled {
-    color: #FDB31C;
+.upper.trade-combos {
+  --base-color: #6A5ACD;
+  --dark-color: #4e43a0;
+  background-color: var(--base-color);
+  background-image: url("images/image_2025-05-16_180219665-removebg-preview.png");
 }
 
-
-.holding-ground {
-    background-color: #B8860B;
-    background-image: url("images/holding.png");
+.upper.holding-ground {
+  --base-color: #B8860B;
+  --dark-color: #8f6c09;
+  background-color: var(--base-color);
+  background-image: url("images/holding.png");
 }
 
-.strategy {
-    background-color: #800000;
-    background-image: url("images/strategy.png");
+.upper.strategy {
+  --base-color: #800000;
+  --dark-color: #5a0000;
+  background-color: var(--base-color);
+  background-image: url("images/strategy.png");
+}
+
+.upper:hover {
+  animation: pulseBg 2s infinite ease-in-out;
 }
 
 
@@ -1289,7 +1329,7 @@ nav.scrolled a {
     background-repeat: no-repeat;
     padding: 100px;
 
-    max-width: 1200px; /* set a max width for the grid */
+    max-width: 2000px; /* set a max width for the grid */
     margin: 0 auto; /* center the whole grid in the parent container */
 }
 

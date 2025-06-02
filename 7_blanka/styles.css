@@ -53,7 +53,7 @@ nav span.scrolled:hover {
 }
 
 nav.scrolled {
-    background-color: rgba(62, 89, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
 
 }
@@ -126,10 +126,10 @@ nav.scrolled a {
     justify-content: center;
     align-items: center;
     background-color: white;
+    border-radius: 0% 100% 100% 0% / 56% 0% 100% 44% ;
     border: 5px solid white;
     position: relative;
 }
-
 .profilepic {
     height: 50%;
     width: 20%;
@@ -410,6 +410,14 @@ nav.scrolled a {
 .redbull {
 }
 
+.redbull:hover {
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 0.2px;
+    transform: scale(1.05);
+}
+
+
+
 
 @keyframes glitch {
     50% {
@@ -443,10 +451,11 @@ nav.scrolled a {
     background-color: transparent;
 }
 
+
 .replay h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #d3c2a1;
+    color: white;
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
 }
@@ -458,7 +467,7 @@ nav.scrolled a {
 .leftthird button {
     width: 40%;
     height: 20%;
-    background-color: #e7dfca;
+    background-color: white;
     color: black;
     cursor: pointer;
     border-radius: 15px;
@@ -473,7 +482,7 @@ nav.scrolled a {
     transform: scale(1.1);
     -webkit-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: -5px 5px 0px 0px rgba(223, 0, 0, 0.75);
+    box-shadow: -5px 5px 0px 0px orange;
     transform: translateY(-2px);
     transition: transform 200ms ease-in;
     animation: moveit 1s infinite alternate;
@@ -556,7 +565,7 @@ nav.scrolled a {
 }
 
 .fa-file-word {
-    color: green;
+    color: white;
     font-size: 2rem;
     margin-bottom: 15px;
     align-self: center;
@@ -903,6 +912,10 @@ nav.scrolled a {
     
 }
 
+.chuu {
+    background-image: url("images/chuuu.png");
+}
+
 .mena {
     background-image: url("images/mena.png");
 }
@@ -942,29 +955,20 @@ nav.scrolled a {
 
 
 .labberpiece {
-    width: 15rem;
-    height: 15rem;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
     background-color: white;
-    cursor: pointer;
-    filter: grayscale(100%);
-    transition: transform 200ms;
-    transition: filter 200ms ease-in-out;
-    margin-top: 10px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    transition: transform 200ms ease-in-out;
 }
-
+    
 .labberpiece:hover {
-    filter: grayscale(0%);
-    box-shadow: 2px 4px 10px 0px rgba(199, 3, 3, 0.855);
-
-}
+    transform: scale(1.1);
+    box-shadow: 2px 4px 10px 0px black;
+} 
 
 .labbers h2{
     text-align: center;
@@ -973,14 +977,14 @@ nav.scrolled a {
     transition: opacity 300ms ease-in;
 }
 
+
 .slice {
-    background-image: url("images/slice.jpg");
+    background-image: url("images/slice.png");
 }
 
-.chuu {background-image: url("images/7CQIMj4__400x400.jpg");}
 
 .dogoru {
-    background-image: url("images/dogoru.jpg");
+    background-image: url("images/dogoru.png");
 }
 
 .videoplayer {
@@ -1062,3 +1066,106 @@ nav.scrolled a {
 .tourney:hover {
     transform: scale(1.1);
 }
+
+
+  #playBtn {
+    position: relative;
+    background-color: transparent;
+    color: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 7px double rgba(255, 255, 255, 0.7);
+    box-shadow: black 0px 54px 55px, 
+            black 0px -12px 30px, 
+            black 0px 4px 6px, 
+            black 0px 12px 13px, 
+            black 0px -3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    z-index: 1; /* Button stays above pulse */
+  }
+
+  #playBtn.play {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black
+    ;
+    
+  }
+  
+  #playBtn .fa {
+    font-size: 1.3rem;
+    color: red;
+  }
+
+  #playBtn.yo {
+    background-color: rgba(255, 255, 255, 0.7);
+    
+
+  }
+  
+  #playBtn.yo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Start with a wide circle */
+    height: 120%;
+    background: radial-gradient(circle, rgba(135, 8, 125, 0.6), rgba(255, 255, 255, 0.4) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+     /* Apply pulse animation */
+    z-index: -1; /* Ensure the pulse stays behind the button */
+    animation: pulse 4s infinite;
+  }
+
+  /* Outer pulse effect */
+  #playBtn.play::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Start with a wide circle */
+    height: 120%;
+    background: radial-gradient(circle, rgba(135, 8, 125, 0.6), rgba(255, 255, 255, 0.4) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+     /* Apply pulse animation */
+    z-index: -1; /* Ensure the pulse stays behind the button */
+    animation: pulse 4s infinite;
+
+  }
+  
+  /* Keyframes for the pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.5;
+
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.4); /* Grow the pulse */
+      opacity: 0.5;
+      border: 1px solid white;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Shrink the pulse */
+      opacity: 1;
+
+    }
+  }
+  
+  #playBtn:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  #playBtn:active {
+    transform: scale(0.95); /* Slight scale effect on click */
+  }
+  

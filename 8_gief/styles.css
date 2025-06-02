@@ -967,13 +967,20 @@ nav.scrolled a {
     color: orangered;
 }
 
- .tourneywins {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-    margin-bottom: 70px;
+.tourneywins {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center; /* center items in their grid cell */
+    justify-content: center; /* center the grid layout */
+    background-repeat: no-repeat;
+    padding: 100px;
+
+    max-width: 2000px; /* set a max width for the grid */
+    margin: 0 auto; /* center the whole grid in the parent container */
 }
+
 
 .topanga {
     background-image: url("images/topanga.png");
