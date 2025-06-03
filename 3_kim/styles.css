@@ -392,6 +392,7 @@ main {
 }
 
 .combopiece {
+    cursor: pointer;
     width: 20rem;
     height: 20rem;
     border: 7px solid white;
