@@ -816,6 +816,14 @@ nav.scrolled a {
   background-image: url("images/sonicblade.png");
 }
 
+.upper.oki {
+    --base-color: #7752b3;
+    --dark-color: #381d64;
+    --light-color: #a27ae4;
+    background-color: var(--base-color);
+    background-image: url("images/oki.png");
+  }
+
 .upper.sonic-boom {
   --base-color: #1E88E5;
   --dark-color: #0D47A1;
