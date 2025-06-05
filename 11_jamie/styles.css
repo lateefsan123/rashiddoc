@@ -949,6 +949,12 @@ nav.scrolled a {
 
 }
 
+.season3 {
+    background-image: url("images/season3_stacked_cool_full.png");
+    background-color: #0057a8; /* Jade Green */
+}
+
+
 .combo {
     background-image: url("images/combo.png");
     background-color: #00A86B; /* Jade Green */

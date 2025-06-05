@@ -712,6 +712,14 @@ nav.scrolled a {
   }
 }
 
+.season3 {
+    --base-color: #2eab54;
+    --dark-color: #1b663a;
+    --light-color: #6eff92;
+    background-color: var(--base-color);
+    background-image: url("images/season3_stacked_cool_full.png");
+  }
+
 .upper.intro-part-1 {
   --base-color: #2E86AB;
   --dark-color: #1B4F66;

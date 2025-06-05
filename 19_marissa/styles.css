@@ -867,6 +867,11 @@ nav.scrolled a {
 
 }
 
+.season3 {
+    background-color: #10c88b; /* Italian Red */
+    background-image: url("images/season3_stacked_cool_full.png");
+}
+
 .intro {
     background-color: #C8102E; /* Italian Red */
     background-image: url("images/intro.png");

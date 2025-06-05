@@ -732,6 +732,14 @@ nav.scrolled a {
       background-color: var(--dark-color);
     }
   }
+
+  .season3 {
+    --base-color: #D66D28;
+    --dark-color: #aa5720;
+    --light-color: #FFBD72;    /* Amber spark */
+    background-image: url('images/season3_stacked_cool_full.png');
+    background-color: var(--base-color);
+  }
   
   .upper.intro {
     --base-color: #9A66C4;     /* Skyline purple */

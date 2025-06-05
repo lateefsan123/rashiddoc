@@ -671,6 +671,11 @@ nav.scrolled a {
 
 }
 
+.season3 {
+    background-color: #526191; /* Teal Green - balanced and sleek */
+    background-image: url("images/season3_stacked_cool_full.png");
+}
+
 .combo {
     background-color: #00695c; /* Teal Green - balanced and sleek */
     background-image: url("images/bnb.png");

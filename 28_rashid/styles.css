@@ -722,6 +722,15 @@ nav.scrolled a {
   animation: pulseBg 2s infinite ease-in-out;
 }
 
+.upper.season3 {
+    --base-color: #fadaf3;
+    --dark-color: #f5bfec;
+    --light-color: #f5e8f2;
+    background-color: var(--base-color);
+    background-image: url("images/season3_stacked_cool_full.png");
+  }
+  
+
 .upper.bnb {
   --base-color: #daddfa;
   --dark-color: #a6aad8;

@@ -721,6 +721,15 @@ nav.scrolled a {
       background-color: var(--dark-color);
     }
   }
+
+
+  .upper.season3 {
+    background-image: url('images/season3_stacked_cool_full.png');
+    --base-color: #a4edff;  /* soft lavender violet */
+    --dark-color: #7dafd0;
+    background-color: var(--base-color);
+}
+
 .upper.intro {
     background-image: url('images/intro.png');
     --base-color: #cba4ff;  /* soft lavender violet */

@@ -662,6 +662,11 @@ nav.scrolled a {
 
 }
 
+.season3{
+    background-color: #ffcb6b;
+    background-image: url("images/season3_stacked_cool_full.png");
+}
+
 .intro {
     background-color: #FF6B6B;
     background-image: url("images/intro.png");

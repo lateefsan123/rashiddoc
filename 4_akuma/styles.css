@@ -661,6 +661,14 @@ nav.scrolled a {
   }
 }
 
+.season3 {
+  --base-color: #D66D28;
+  --dark-color: #aa5720;
+  --light-color: #FFBD72; 
+  background-image: url('images/season3_stacked_cool_full.png');
+  background-color: var(--base-color);   /* Amber spark */
+}
+
 .upper.neutral {
   --base-color: rgba(65, 0, 103, 0.732);
   --dark-color: rgba(40, 0, 65, 0.85);
