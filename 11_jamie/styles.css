@@ -790,13 +790,13 @@ nav.scrolled a {
 
 
 .framedate {
-    background-image: url("images/ogimage.png");
+    background-image: url("images/fat.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 2.3rem;
     width: 2.3rem;
-    border-radius: 50%;
+    border-radius: 10px;
     align-self: center;
     animation: bounce 5s infinite;
     transition: transform 200ms ease-in-out;
@@ -1154,23 +1154,21 @@ nav.scrolled a {
     box-shadow: 2px 4px 10px 0px black;
 }
 .lynku {
-    background-image: url("images/lynku.jpg");
+    background-image: url("images/lynku.png");
 }
 
-.kaiyohte {
-    background-image: url("images/kaiyohte.jpg");
+.kai {
+    background-image: url("images/kaiyohte\ copy.png");
 }
 
 .automattock {
-    background-image: url("images/automattock.jpg");
+    background-image: url("images/automattoc.png");
 }
 
-.suzaku {
-    background-image: url("images/suzaku.jpg");
-}
+
 
 .kmiyako {
-    background-image: url("images/kmiyako.jpg");
+    background-image: url("images/kmiyako.png");
 }
 
 

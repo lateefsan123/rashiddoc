@@ -565,13 +565,13 @@ nav.scrolled a {
 
 
 .framedate {
-    background-image: url("images/ogimage.png");
+    background-image: url("images/fat.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 2.3rem;
     width: 2.3rem;
-    border-radius: 50%;
+    border-radius: 10px;
     align-self: center;
     animation: bounce 5s infinite;
     transition: transform 200ms ease-in-out;
@@ -802,7 +802,7 @@ nav.scrolled a {
 
 /* streamers section */
 
-.streamers {
+.streamers, .labbers {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
@@ -874,6 +874,11 @@ nav.scrolled a {
     font-size: 2rem;
 }
 
+.fa-bluesky {
+    font-size: 2rem;
+    color: rgb(32, 125, 255);
+}
+
 .fa-brands {
     transition: transform 200ms ease-in;
 }
@@ -925,50 +930,25 @@ nav.scrolled a {
     background-image: url("images/kami.png");
 }
 
-.labbers {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-    gap: 40px;
-    justify-items: center;
-    justify-content: center;
-    align-items: start;
-    padding: 50px;
-    
+.flyingcube {
+    background-image: url("images/flyingcube.png");
 }
 
-
 .labberpiece {
-    width: 15rem;
-    height: 15rem;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
     background-color: white;
-    cursor: pointer;
-    filter: grayscale(100%);
-    transition: transform 200ms;
-    transition: filter 200ms ease-in-out;
-    margin-top: 10px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    transition: transform 200ms ease-in-out;
 }
-
+    
 .labberpiece:hover {
-    filter: grayscale(0%);
-    box-shadow: 2px 4px 10px 0px rgba(199, 3, 3, 0.855);
-
-}
-
-.labbers h2{
-    text-align: center;
-    opacity: 0%;
-    color: rgba(228, 57, 85, 0.9);
-    transition: opacity 300ms ease-in;
-}
+    transform: scale(1.1);
+    box-shadow: 2px 4px 10px 0px black;
+}  
 
 .videoplayer {
     display: none; /* hidden by default */
