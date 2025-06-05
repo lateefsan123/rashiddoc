@@ -1107,6 +1107,10 @@ nav.scrolled a {
     
 }
 
+.azan {
+    background-image: url("images/azan.png");
+}
+
 .kazunoko {
     background-image: url("images/kazunoko.png");
 }
