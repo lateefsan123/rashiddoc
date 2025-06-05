@@ -567,13 +567,13 @@ nav.scrolled a {
 
 
 .framedate {
-    background-image: url("images/ogimage.png");
+    background-image: url("images/fat.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 2.3rem;
     width: 2.3rem;
-    border-radius: 50%;
+    border-radius: 10px;
     align-self: center;
     animation: bounce 5s infinite;
     transition: transform 200ms ease-in-out;
@@ -914,7 +914,24 @@ nav.scrolled a {
     background-image: url("images/tomorock.png");
 }
 /* labbers section */
+.nuckledu {
+    background-image: url("images/nuckledu.png");
+}
 
+.shady {
+    background-image: url("images/shady.png");}
+
+.ixion {
+    background-image: url("images/ixion.png");
+}
+
+.sage {
+    background-image: url("images/sage.png");
+}
+
+.bson {
+    background-image: url("images/bson.png");
+}
 
 .labbers {
     box-sizing: border-box;

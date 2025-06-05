@@ -613,13 +613,13 @@ nav.scrolled a {
 
 
 .framedate {
-    background-image: url("images/ogimage.png");
+    background-image: url("images/fat.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 2.3rem;
     width: 2.3rem;
-    border-radius: 50%;
+    border-radius: 10px;
     align-self: center;
     animation: bounce 5s infinite;
     transition: transform 200ms ease-in-out;
