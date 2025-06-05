@@ -1,20 +1,48 @@
-const navbar = document.querySelector(".uppermiddle");
+const navbar = document.querySelector("nav");
 const titletop = document.querySelector(".center")
-const navitems = document.querySelectorAll(".wild span")
-const highest = document.querySelector(".highest");
-const highestitems = document.querySelectorAll(".highest a");
+const navitems = document.querySelectorAll("nav span")
+const change = document.querySelector(".changechar");
+const first = document.querySelector(".first");
 let scrolltop = 0;
+
+const toggle = document.querySelector(".toggle");
+const icon = toggle.querySelector("i"); // Get the <i> inside the toggle
+const sidebar = document.querySelector(".sidebar");
+
+toggle.addEventListener("click", function () {
+  // Toggle sidebar visibility
+  sidebar.classList.toggle("active");
+
+  // Change icon based on state
+  if (sidebar.classList.contains("active")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-x");
+  } else {
+    icon.classList.remove("fa-x");
+    icon.classList.add("fa-bars");
+  }
+});
+
+
+
+
+
+
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
     titletop.classList.add("scrolled");
+    change.classList.add("scrolled");
+    first.classList.add("scrolled");
     navitems.forEach(function(item) {
         item.classList.add("scrolled")
     })
   } else {
     navbar.classList.remove("scrolled");
     titletop.classList.remove("scrolled");
+    change.classList.remove("scrolled");
+    first.classList.remove("scrolled");
     navitems.forEach(function(item) {
         item.classList.remove("scrolled")
     })
@@ -24,26 +52,6 @@ window.addEventListener("scroll", function () {
 
 
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 0) {
-      highest.classList.add("scrolled");
-      highestitems.forEach(function(item) {
-          item.classList.add("scrolled")
-      })
-    } else {
-      highest.classList.remove("scrolled");
-      highestitems.forEach(function(item) {
-          item.classList.remove("scrolled")
-      })
-    }
-  });
-  
-  window.addEventListener("scroll", function () {
-    let currentscroll = window.pageYOffset;
-    if (currentscroll < scrolltop) {
-        
-    }
-  });
 
   
 
@@ -72,12 +80,26 @@ window.addEventListener("scroll", function () {
     if (music.paused) {
       music.play()
       btn.innerHTML = "<i class='fa-solid fa-volume-xmark'></i>"
+      btn.classList.add("play");
+
 
     } else {
       music.pause()
       btn.innerHTML = "<i class='fa-solid fa-play'></i>"
+      btn.classList.remove("play");
     }
   });
+
+  btn.addEventListener("mouseover", function() {
+    btn.classList.add("yo");
+
+  })
+
+  btn.addEventListener("mouseout", function() {
+    btn.classList.remove("yo");
+    
+  })
+
 
   let carousel = document.querySelector(".classic");
   let next = document.querySelector(".fa-arrow-right");
@@ -102,7 +124,8 @@ window.addEventListener("scroll", function () {
       desc.innerHTML = `
         <h3>Rashid <span class='hub'>Centre</span></h3>
         <p>
-          Welcome to the ultimate Rashid hub! Whether you're a newcomer or a seasoned fighter, this site is designed to help you master Rashid in Street Fighter 6. Here, you'll find tips, strategies, combo guides, and character insights to elevate your gameplay and make the most of Rashid’s unique speed and mix-up potential. Get ready to take your Rashid skills to the next level!
+        Welcome to the ultimate Rashid hub! Whether you're a newcomer or a seasoned fighter, this site is designed to help you master Rashid in Street Fighter 6. Here, you'll find tips, strategies, combo guides, and character insights to elevate your gameplay and make the most of Rashid’s unique speed and mix-up potential. Get ready to take your Rashid skills to the next level!
+       
         </p>
       `;
       desc.classList.add("firstone")
@@ -157,41 +180,7 @@ next.addEventListener("click", changecarrosel)
   
 setInterval(changecarrosel, 8000 )
 
-function updateTornadoWidth() {
-  const top = document.querySelector('.top');
-  const description = document.querySelector('.description');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
 
-  const topWidth = top.offsetWidth;
-  const descriptionWidth = description.offsetWidth;
-
-  const resultWidth = topWidth - descriptionWidth;
-  tornadoContainer.style.width = `${resultWidth}px`;
-}
-
-// Run it on load
-updateTornadoWidth();
-
-// Optional: also update on window resize
-window.addEventListener('resize', updateTornadoWidth);
-
-function moveTornado() {
-  const tornadoImg = document.querySelector('.tornado img');
-  const tornadoContainer = document.querySelector('.tornadocontainer');
-
-  if (tornadoImg && tornadoContainer) {
-    const containerWidth = tornadoContainer.offsetWidth;
-    const imgWidth = tornadoImg.offsetWidth;
-    const travelDistance = containerWidth - imgWidth;
-
-    tornadoImg.style.transform = `translateX(${travelDistance}px)`;
-
-    // Optional: Reset after it finishes, to repeat
-    setTimeout(() => {
-      tornadoImg.style.transform = `translateX(0px)`;
-    }, 8000); // match duration of transition
-  }
-}
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     const clientSecret = "gl4v4exjfj9sr225q0ep9llxax6y8q";
@@ -227,6 +216,14 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
         const data = await res.json();
         if (data.data && data.data.length > 0) {
           console.log(`${streamerName} is live`);
+          const container = button.closest(".streamerpiece");
+
+  // Find the islive <p> inside this specific streamer block
+          const isLiveIndicator = container.querySelector(".islive");
+
+          if (isLiveIndicator) {
+            isLiveIndicator.style.display = "flex";
+          }
           button.classList.add("live");
         } else {
           console.log(`${streamerName} is offline`);
@@ -238,7 +235,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
 
     async function init() {
       const token = await getAccessToken();
-      const buttons = document.querySelectorAll(".livebutton");
+      const buttons = document.querySelectorAll(".livebuttonn");
 
       buttons.forEach(button => {
         const streamerName = button.getAttribute("data-streamer");
@@ -249,12 +246,45 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     init();
 // Run it on load
 
-const box = document.querySelectorAll(".piece");
+const box = document.querySelectorAll(".combopiece");
 const video = document.querySelector(".videoplayer");
 const iframe = document.querySelector("#popupVideo")
+const divekick = document.querySelector(".diveki");
+const imageviewer = document.querySelector(".imageviewer")
+
+
+function colour() {
+  box.forEach((boxes) =>  {
+    boxes.addEventListener("mouseover", function(event) {
+      let col = boxes.getAttribute("data-colour");
+      boxes.style.boxShadow = `2px 4px 10px 0px ${col}`;
+    })
+    
+    
+  })
+
+  box.forEach((boxes) =>  {
+    boxes.addEventListener("mouseout", function(event) {
+      let col = boxes.getAttribute("data-colour");
+      boxes.style.boxShadow = `none`;
+    })
+    
+    
+  })
+  
+
+
+
+
+
+    
+}
+
+colour();
 
 box.forEach((boxes) =>  {
   boxes.addEventListener("click", function(event) {
+    console.log("working")
     event.stopPropagation();
     video.style.display = "flex";
     let link = boxes.getAttribute("data-link");
@@ -269,6 +299,19 @@ box.forEach((boxes) =>  {
 document.addEventListener("click", function () {
   video.style.display = "none";
   iframe.src = "";
+  imageviewer.style.display = "none";
 });
+
+
+
+
+
+divekick.addEventListener("click", function(event) {
+  document.querySelector(".videoplayer").style.display = "none";
+  event.stopPropagation();
+  imageviewer.style.display = "flex";
+  imageviewer.style.background
+
+})
 
 
