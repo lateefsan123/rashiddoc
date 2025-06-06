@@ -895,6 +895,11 @@ nav.scrolled a {
     
 }
 
+
+.deku {
+    background-image: url("images/deku.png");
+    }
+
 .juninho {
     background-image: url("images/juninho.png");
 }

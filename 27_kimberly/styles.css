@@ -721,12 +721,24 @@ nav.scrolled a {
       background-color: var(--dark-color);
     }
   }
+
+.upper.combo {
+    background-image: url('images/frametraps.png');
+    --base-color: #b0f4c0;  /* mint fog */
+    --dark-color: #8bc89e;
+    background-color: var(--base-color);
+}
+
+
+
 .upper.intro {
     background-image: url('images/intro.png');
     --base-color: #cba4ff;  /* soft lavender violet */
     --dark-color: #a67dd0;
     background-color: var(--base-color);
 }
+
+
 
 .upper.oki {
     background-image: url('images/oki.png');
