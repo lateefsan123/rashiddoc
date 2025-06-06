@@ -561,6 +561,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     transition: all  200ms ease-in-out ;
+    width: auto;
 }
 
 .details .header {
@@ -579,6 +580,7 @@ a {
     text-align: center;
     padding: 5px;
     transition: all  200ms ease-in-out ;
+    width: auto;
 }
 
 .preview {

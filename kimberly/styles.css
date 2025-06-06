@@ -722,7 +722,15 @@ nav.scrolled a {
     }
   }
 
-<<<<<<< HEAD:27_kimberly/styles.css
+
+    .upper.season3 {
+    background-image: url('images/season3_stacked_cool_full.png');
+    --base-color: #a4edff;  /* soft lavender violet */
+    --dark-color: #7dafd0;
+    background-color: var(--base-color);
+}
+
+
 .upper.combo {
     background-image: url('images/frametraps.png');
     --base-color: #b0f4c0;  /* mint fog */
@@ -732,16 +740,11 @@ nav.scrolled a {
 
 
 
-=======
 
-  .upper.season3 {
-    background-image: url('images/season3_stacked_cool_full.png');
-    --base-color: #a4edff;  /* soft lavender violet */
-    --dark-color: #7dafd0;
-    background-color: var(--base-color);
-}
 
->>>>>>> 00d02afe808fc22cda77c639dc237c2e7e0b9c26:kimberly/styles.css
+
+
+
 .upper.intro {
     background-image: url('images/intro.png');
     --base-color: #cba4ff;  /* soft lavender violet */

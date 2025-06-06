@@ -834,6 +834,14 @@ nav.scrolled a {
     
 }
 
+.chrisg {
+    background-image: url("images/chrisg.png");
+}
+
+.ultra {
+    background-image: url("images/ultra.png");
+}
+
 .moke {
     background-image: url("images/moke.png");
 }

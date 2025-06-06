@@ -126,7 +126,7 @@ let character = {
         name: "Ed",
         weight: "190",
         height: "6'0",
-        archetype: "Shoto",
+        archetype: "Defensive",
         num: "no21",
         background: "url('images/edgif.gif')"
 
@@ -196,7 +196,7 @@ let character = {
         name: "Aki",
         weight: "126",
         height: "5'8",
-        archetype: "Rushdown",
+        archetype: "Rushdown/zoner",
         num: "no20",
         background: "url('images/akigif.gif')"
 
