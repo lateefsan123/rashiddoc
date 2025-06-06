@@ -104,7 +104,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Ken <span class='hub'>Centre</span></h3>
+        <h3>Ken <span class='hub'>Center</span></h3>
         <p>
          Welcome to the Ken hub! Whether you're new or experienced, this site helps you master Ken in Street Fighter 6 with tips, combos, and strategies to level up your rushdown game.
         </p>

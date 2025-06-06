@@ -1,5 +1,5 @@
 const navbar = document.querySelector("nav");
-const titletop = document.querySelector(".center")
+const titletop = document.querySelector(".Center")
 const navitems = document.querySelectorAll("nav span")
 const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
@@ -120,7 +120,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Akuma <span class='hub'>Centre</span></h3>
+        <h3>Akuma <span class='hub'>Center</span></h3>
         <p>
         Welcome to the ultimate Akuma hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Akuma in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Akuma gameplay to new heights!
        

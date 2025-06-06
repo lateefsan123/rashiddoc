@@ -1,5 +1,5 @@
 const navbar = document.querySelector("nav");
-const titletop = document.querySelector(".center")
+const titletop = document.querySelector(".Center")
 const title = document.querySelector(".titletop")
 const navitems = document.querySelectorAll("nav span")
 const change = document.querySelector(".changechar");
@@ -123,7 +123,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Chun-Li <span class='hub'>Centre</span></h3>
+        <h3>Chun-Li <span class='hub'>Center</span></h3>
         <p>
           Welcome to the ultimate Chun-Li hub in Street Fighter 6! Whether you're new or a pro, find tips, combos, and strategies to master her speed and mix-ups. Get ready to level up your game!
         </p>

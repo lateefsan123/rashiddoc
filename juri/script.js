@@ -119,7 +119,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Juri <span class='hub'>Centre</span></h3>
+        <h3>Juri <span class='hub'>Center</span></h3>
         <p>
         Welcome to the ultimate Juri hub in Street Fighter 6! Whether you're new or a pro, find tips, combos, and strategies to master her mind games, speed, and deadly pressure. Get ready to level up your game!
         </p>

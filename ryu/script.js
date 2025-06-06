@@ -127,7 +127,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Ryu <span class='hub'>Centre</span></h3>
+        <h3>Ryu <span class='hub'>Center</span></h3>
         <p>
         Welcome to the ultimate Ryu hub! Whether you're just starting out or you're a seasoned warrior, this site is your go-to resource for mastering Ryu in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Ryu gameplay to new heights!
       

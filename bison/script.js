@@ -119,7 +119,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Bison <span class='hub'>Centre</span></h3>
+        <h3>Bison <span class='hub'>Center</span></h3>
         <p>
         Whether you're new to Street Fighter or a seasoned warrior, this site is your go-to resource for mastering Bison in Street Fighter 6. Dive into tips, strategies, combo guides, and in-depth character insights designed to elevate your gameplay. Learn how to dominate with Bison’s unique speed, pressure, and mix-up potential. Get ready to take your Bison skills to the next level and crush the competition!
         </p>

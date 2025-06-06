@@ -123,7 +123,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Mai <span class='hub'>Centre</span></h3>
+        <h3>Mai <span class='hub'>Center</span></h3>
         <p>
           Welcome to the ultimate Mai hub in Street Fighter 6! Whether you're just starting out or a seasoned pro, you'll find tips, combos, and strategies to harness her agility and tricky mix-ups. Get ready to take your game to the next level!
 

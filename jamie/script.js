@@ -121,7 +121,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Jamie <span class='hub'>Centre</span></h3>
+        <h3>Jamie <span class='hub'>Center</span></h3>
         <p>
         Welcome to the ultimate Jamie hub! Whether you're new to the fight or a seasoned pro, this site is here to help you master Jamie in Street Fighter 6. Inside, you'll find tips, strategies, combo guides, and in-depth insights to harness Jamie’s unique speed and mix-up potential. Get ready to level up your game and dominate the competition with Jamie's powerful moves!
         </p>

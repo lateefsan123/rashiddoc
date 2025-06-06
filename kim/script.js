@@ -90,7 +90,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Kimberly <span class='hub'>Centre</span></h3>
+        <h3>Kimberly <span class='hub'>Center</span></h3>
         <p>
           Welcome, Kimberly! Whether you're new or a pro, this hub will help you master Kimberly in Street Fighter 6. Find tips, combos, and strategies to level up your gameplay and unleash her speed and mix-ups!
         </p>

@@ -121,7 +121,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Lily <span class='hub'>Centre</span></h3>
+        <h3>Lily <span class='hub'>Center</span></h3>
         <p>
           Whether you're new to the game or a seasoned pro, this is your go-to place for tips, combos, and strategies to master her wind-powered attacks, tricky mix-ups, and agile movement. Get ready to harness the power of nature and level up your game with Lily!
         </p>

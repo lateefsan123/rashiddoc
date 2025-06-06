@@ -121,7 +121,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Guile <span class='hub'>Centre</span></h3>
+        <h3>Guile <span class='hub'>Center</span></h3>
         <p>
        Welcome to the ultimate Guile hub in Street Fighter 6! Whether you're just starting out or a seasoned player, you'll find tips, combos, and strategies to master his zoning, anti-airs, and pressure. Lock it down, keep it solid and it's time to level up your game with the Sonic Soldier!
        

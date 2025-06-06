@@ -111,7 +111,7 @@ window.addEventListener("scroll", function() {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Blanka <span class='hub'>Centre</span></h3>
+        <h3>Blanka <span class='hub'>Center</span></h3>
         <p>
           Welcome to the Blanka hub! Whether you're new or experienced, this site will help you master Blanka in Street Fighter 6. Find tips, combos, strategies, and insights to sharpen your game. Learn to maximize his mobility, mix-ups, and unpredictable style — and take your Blanka play to the next level.
         </p>

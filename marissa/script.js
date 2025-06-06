@@ -120,7 +120,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Marisa <span class='hub'>Centre</span></h3>
+        <h3>Marisa <span class='hub'>Center</span></h3>
         <p>
           Welcome to the ultimate Marisa hub in Street Fighter 6! Whether you're new to the arena or a battle-hardened warrior, you'll find tips, combos, and strategies to unleash her raw power and armored pressure. Get ready to dominate and elevate your game!
         </p>

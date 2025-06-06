@@ -1,5 +1,5 @@
 const navbar = document.querySelector("nav");
-const titletop = document.querySelector(".center")
+const titletop = document.querySelector(".Center")
 const navitems = document.querySelectorAll("nav span")
 const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
@@ -118,7 +118,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Dee Jay <span class='hub'>Centre</span></h3>
+        <h3>Dee Jay <span class='hub'>Center</span></h3>
         <p>
         Welcome to the ultimate Dee Jay hub! Whether you're new to the game or a seasoned fighter, this site is your go-to resource for mastering Dee Jay in Street Fighter 6. Dive into expert tips, strategies, combo guides, and in-depth insights to amplify your gameplay and make the most of Dee Jay’s dynamic speed, rhythm-based mix-ups, and unrelenting pressure. Get ready to take your Dee Jay skills to the next level!
         </p>

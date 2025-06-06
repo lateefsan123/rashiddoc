@@ -120,7 +120,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Luke <span class='hub'>Centre</span></h3>
+        <h3>Luke <span class='hub'>Center</span></h3>
         <p>
         Welcome to the ultimate Luke hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Luke in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Luke gameplay to new heights!
       

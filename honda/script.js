@@ -121,7 +121,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Honda <span class='hub'>Centre</span></h3>
+        <h3>Honda <span class='hub'>Center</span></h3>
         <p>
           Welcome to the ultimate Honda hub in Street Fighter 6! Whether you're new or a pro, find tips, combos, and strategies to master his powerful moves and defense. Get ready to dominate the ring!
         </p>

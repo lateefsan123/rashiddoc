@@ -119,7 +119,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Manon <span class='hub'>Centre</span></h3>
+        <h3>Manon <span class='hub'>Center</span></h3>
         <p>
         Whether you're new to the game or a seasoned pro, this is your go-to place for tips, combos, and strategies to master her graceful grapples, elegant footwork, and powerful ballet-inspired techniques. Get ready to elevate your playstyle and dominate the ring with Manon!
         </p>
