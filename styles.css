@@ -55,10 +55,8 @@ nav {
         width: 100vw;
         
         overflow: hidden;
-        background-image: 
-            linear-gradient(to top, #000000, #1a1a1a, #1c000d),
-            url("images/white-wall-3-2.png");
-        background-size: contain;
+        background-image: url("images2/SF6_Background.jpeg");
+        background-size: cover;
         background-blend-mode: overlay; /* optional, try multiply or darken too */
         overflow: auto;
         margin: 0;
@@ -215,7 +213,7 @@ nav {
     padding: 5px 20px;
     background-color: #1a1a1a;
     color: white;
-    border: 2px solid #7e22ce; /* Vibrant purple border */
+    border: 2px solid #B76EFF; /* Vibrant purple border */
     border-radius: 10px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -235,7 +233,15 @@ nav {
   .fighter:hover {
     background-color: #2c2c2c;
     border-color: #a855f7; /* Lighter purple on hover */
-    box-shadow: 0 0 10px #7e22ce66;
+    box-shadow: 0 0 8px #B76EFF;
+  }
+
+  .fighter.elena i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #B76EFF;
+    font-size: 1.2rem;
   }
 
   .out {
@@ -253,7 +259,7 @@ a {
   }
 
 .kim {
-    background-image: url("images/kim.png");
+    background-image: url("images2/kimberly.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -267,14 +273,14 @@ a {
 }
 
 .ken {
-    background-image: url("images/Ken_full.png");
+    background-image: url("images2/ken.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .rashid {
-    background-image: url("images/Rashid_full.png");
+    background-image: url("images2/rashid.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -282,154 +288,154 @@ a {
 
 
 .akuma {
-    background-image: url("images/Akuma\ \(1\).png");
+    background-image: url("images2/akuma.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .bison {
-    background-image: url("images/Bison\ \(1\).png");
+    background-image: url("images2/m\ bison.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .blanka {
-    background-image: url("images/Blanka\ \(1\).png");
+    background-image: url("images2/blanka.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .cammy {
-    background-image: url("images/Cammy\ \(1\).png");
+    background-image: url("images2/cammy.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .chunli {
-    background-image: url("images/Chun\ \(1\).png");
+    background-image: url("images2/chun\ li.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .deejay {
-    background-image: url("images/Deejay\ \(1\).png");
+    background-image: url("images2/dee\ jay.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .dhalsim {
-    background-image: url("images/Dhalsim\ \(1\).png");
+    background-image: url("images2/dhalsim.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .honda {
-    background-image: url("images/E.\ Honda\ \(1\).png");
+    background-image: url("images2/e\ honda.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .ed {
-    background-image: url("images/Ed\ \(1\).png");
+    background-image: url("images2/ed.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .jamie {
-    background-image: url("images/Jamie\ \(1\).png");
+    background-image: url("images2/jamie.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .jp {
-    background-image: url("images/JP\ \(1\).png");
+    background-image: url("images2/jp.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .juri {
-    background-image: url("images/Juri\ \(1\).png");
+    background-image: url("images2/juri.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .ryu {
-    background-image: url("images/Ryu\ \(1\).png");
+    background-image: url("images2/ryu.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .terry {
-    background-image: url("images/Terry\ \(1\).png");
+    background-image: url("images2/terry.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .zangief {
-    background-image: url("images/Zangief\ \(1\).png");
+    background-image: url("images2/zangief.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .lily {
-    background-image: url("images/Lily\ \(2\)\ \(1\).png");
+    background-image: url("images2/lily.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .luke {
-    background-image: url("images/Luke\ \(2\)\ \(1\).png");
+    background-image: url("images2/luke.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .manon {
-    background-image: url("images/Manon\ \(2\)\ \(1\).png");
+    background-image: url("images2/manon.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .marrissa {
-    background-image: url("images/Marisa\ \(2\)\ \(1\).png");
+    background-image: url("images2/marisa.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .guile {
-    background-image: url("images/Guile\ \(2\)\ \(1\).png");
+    background-image: url("images2/guile.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .aki {
-    background-image: url("images/AKI\ \(1\)\ \(1\).png");
+    background-image: url("images2/aki.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .mai {
-    background-image: url("images/mai.png");
+    background-image: url("images2/mai.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -545,47 +551,645 @@ a {
     
   }
 
-.right .details {
-    grid-row: 1/4;
-    grid-column: 1/3;
+
+  
+  .details {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .weight, .height, .archetype {
+    background: rgba(20, 20, 30, 0.85);
+    border: 2px solid #B76EFF;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(183, 110, 255, 0.3);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .weight:hover, .height:hover, .archetype:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(183, 110, 255, 0.6);
+  }
+  
+  .header {
+    font-size: 0.75rem;
+    color: #B76EFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .weightkg, .heightcm, .chararchetype {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  * {
+    box-sizing: border-box;
+    
+}
+
+nav {
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.heads {
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.info:hover {
+    transform: scale(1.2);
+}
+
+.info i {
     padding: 10px;
-    border-top: none;
+    font-size: 1.5rem;
+    animation:  pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+  .question-icon.attention {
+    animation: pulse 1.5s infinite;
+  }
+  
+  
+
+    body {
+        width: 100vw;
+        
+        overflow: hidden;
+        background-image: url("images2/SF6_Background.jpeg");
+        background-size: cover;
+        background-blend-mode: overlay; /* optional, try multiply or darken too */
+        overflow: auto;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+.behind {
+    position: fixed;
+    top: 20%;
+    left: 38%;
+    z-index: -1;
+    height: 40%;
+    opacity: 30%;
+}
+
+.about {
+    background-color: white;
+    position: fixed;
+    max-height: 90vh;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: all 300ms ease-in-out;
+}
+
+.about .top h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: black;
+    text-shadow: none;
+
+}
+
+.about .content {
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about .end {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.about .end a {
+    color: #c4001a;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+.about .end a i {
+    margin-right: 6px;
+}
+
+.about .end a:hover, .about .end a i:hover {
+    color: #c4001a;
+    transform: scale(1.1);
+}
+
+.about p {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main {
+    padding: 40px;
+    margin: 0;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    gap: 10vw;
+    background-position: 70% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: auto;
+    filter: grayscale(0%);
+    transition: all 200ms ease-in-out;
+    ;
+
+}
+
+.highlight:hover {
+    transform: scale(1.1);
+    color: darkgrey;
+}
+
+/* this is for the left side of the page that contains the character select */
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40vw;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.top {
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    color: white;
+    text-shadow: -2px 3px 1px rgba(255,0,0,0.66);
+    padding-top: 20px;
+}
+
+
+
+
+.live {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: #a855f7;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px 6px;
+  line-height: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  height: 20px;
+  box-shadow: 0 0 5px black;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;	
+}
+
+
+.fighter {
+    position: relative;
+  overflow: visible; /* make sure badge isn't clipped */
+    padding: 5px 20px;
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid #B76EFF; /* Vibrant purple border */
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: end;
+    -webkit-text-stroke: #000000;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;    filter: grayscale(99%);
+    cursor: not-allowed;
+  }
+  
+  .fighter:hover {
+    background-color: #2c2c2c;
+    border-color: #a855f7; /* Lighter purple on hover */
+    box-shadow: 0 0 8px #B76EFF;
+  }
+
+  .fighter.elena i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #B76EFF;
+    font-size: 1.2rem;
+  }
+
+  .out {
+    filter: none;
+  }
+
+  .out:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+a {
+    text-decoration: none;
+  }
+
+.kim {
+    background-image: url("images2/kimberly.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.elena {
+    background-image: url("images/elena.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ken {
+    background-image: url("images2/ken.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rashid {
+    background-image: url("images2/rashid.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.akuma {
+    background-image: url("images2/akuma.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bison {
+    background-image: url("images2/m\ bison.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blanka {
+    background-image: url("images2/blanka.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cammy {
+    background-image: url("images2/cammy.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.chunli {
+    background-image: url("images2/chun\ li.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.deejay {
+    background-image: url("images2/dee\ jay.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dhalsim {
+    background-image: url("images2/dhalsim.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.honda {
+    background-image: url("images2/e\ honda.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ed {
+    background-image: url("images2/ed.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jamie {
+    background-image: url("images2/jamie.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jp {
+    background-image: url("images2/jp.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.juri {
+    background-image: url("images2/juri.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ryu {
+    background-image: url("images2/ryu.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.terry {
+    background-image: url("images2/terry.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.zangief {
+    background-image: url("images2/zangief.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lily {
+    background-image: url("images2/lily.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.luke {
+    background-image: url("images2/luke.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.manon {
+    background-image: url("images2/manon.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.marrissa {
+    background-image: url("images2/marisa.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.guile {
+    background-image: url("images2/guile.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aki {
+    background-image: url("images2/aki.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mai {
+    background-image: url("images2/mai.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.right {
+    width: 40vw;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.left .top {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 35px;
+    color: white;
+}
+
+.left .middle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* this is for the right side that contains th echaracter preview etc */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+    height: auto;
+    font-size: 1.2rem;
     background: transparent;
-  font-size: 1rem;
   transition: all  200ms ease-in-out ;
 
-}
 
-.weight, .height, .archetype {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    transition: all  200ms ease-in-out ;
-    width: auto;
-}
-
-.details .header {
-    color: blueviolet;
-    padding: 2px 5px 2px;
-    width: auto;
-    text-align: end;
-    background-color: black;
-    transition: all  200ms ease-in-out ;
-}
-
-.heightcm, .weightkg, .chararchetype {
     color: white;
-    width: 40%;
-    background-color: black;
-    text-align: center;
-    padding: 5px;
-    transition: all  200ms ease-in-out ;
-    width: auto;
+    border-bottom: 2px solid white;
 }
 
+.charname {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin: 0px;
+    text-shadow: -2px 3px 1px rgba(255,0,0,0.66);
+    animation: changename 5s infinite alternate ease-in-out;
+}
+
+@keyframes changename {
+    10% {
+        text-shadow: #00CED1;
+    }
+
+    20% {
+        text-shadow: #cd3254;
+    }}
+
+.charnumber {
+    letter-spacing: 3px;
+    margin: 0px;
+}
+
+.fa-twitch {
+    color: purple;
+    animation: twitchlive 5s infinite alternate ease-in-out;
+  }
+
+  @keyframes twitchlive {
+    10% {
+        color: #00CED1;
+    }
+
+    30% {
+        color: red;
+    }
+    50% {
+        color: #7350f4;
+    }
+
+
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: #8A2BE2;
+    }
+    
+  }
+
+
+  
+  .details {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .weight, .height, .archetype {
+    background: rgba(20, 20, 30, 0.85);
+    border: 2px solid #B76EFF;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(183, 110, 255, 0.3);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .weight:hover, .height:hover, .archetype:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(183, 110, 255, 0.6);
+  }
+  
+  .header {
+    font-size: 0.75rem;
+    color: #B76EFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .weightkg, .heightcm, .chararchetype {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+  }
+  
 .preview {
-    grid-column: 3/6;
-    grid-row: 2/7;
+    display: flex;
     height: 100%;
     background-position: center;
     background-size: contain;
@@ -593,15 +1197,64 @@ a {
     transition: all 100ms ease-in-out;
     filter: contrast(100%);
     background-image: url("images/kimgif.gif");
+    width: 100%;
     
     
 }
 
 .right .middle {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+
+@media (max-width: 1400px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+        height: 100%;
+        padding: 10PX;
+    }
+
+    .left.top {
+        height: 20%;
+    }
+
+    .about {
+        width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 20px;
+      }
+    
+      .about img {
+        width: 70px !important;
+      }
+    
+      .about .content, .about .end, .about .top1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .about p, .about a {
+        font-size: 0.95em;
+      }
+
+      .fighter {
+        height: 80px;
+      }
+    
+}
+
+.right .middle {
     height: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
     
 }
 @media (max-width: 1400px) {

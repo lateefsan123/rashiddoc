@@ -851,6 +851,14 @@ nav.scrolled a {
     
 }
 
+.yossan {
+    background-image: url('images/yosan.png');
+}
+
+.nashi {
+    background-image: url('images/nashi.png');
+}
+
 .eskay {
     background-image: url('images/eskay.png');
 }
