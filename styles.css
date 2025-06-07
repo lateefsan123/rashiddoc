@@ -709,6 +709,12 @@ nav {
     text-decoration: none;
 }
 
+.about a {
+    display: inline;
+    white-space: nowrap;
+  }
+  
+
 .main {
     padding: 40px;
     margin: 0;
