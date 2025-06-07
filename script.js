@@ -276,11 +276,20 @@ let character = {
 
 }
 
+const preview = document.querySelector('.preview');
+
+function updatePreview(imageUrl) {
+  preview.style.opacity = '0'; // fade out first
+
+   // match transition time
+}
+
 
 fighters.forEach(function(fighter) {
     fighter.addEventListener("mouseenter", () => {
         let currentfighter = fighter.getAttribute("data-fighter")
         let chardata = character[currentfighter];
+        
 
         charheight.textContent = chardata.height;
         charweight.textContent = chardata.weight;
