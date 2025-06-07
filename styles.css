@@ -1190,7 +1190,7 @@ a {
   
 .preview {
     display: flex;
-    height: 100%;
+    height: 70%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1208,7 +1208,12 @@ a {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    transition: all 100ms ease-in-out;
+
+    transition: all 0.2s ease-in-out;
   }
+
+
 
 
 @media (max-width: 1400px) {
