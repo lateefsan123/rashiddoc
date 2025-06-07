@@ -406,7 +406,7 @@ a {
 }
 
 .aki {
-    background-image: url("images2/aki.jpg");
+    background-image: url("images2/aki.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -878,7 +878,7 @@ a {
 
 
 .akuma {
-    background-image: url("images2/akuma.jpg");
+    background-image: url("images2/akuma.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1018,7 +1018,7 @@ a {
 }
 
 .aki {
-    background-image: url("images2/aki.jpg");
+    background-image: url("images2/aki.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1215,6 +1215,7 @@ a {
 
     transition: all 0.2s ease-in-out;
   }
+
 
 
 
