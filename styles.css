@@ -1303,5 +1303,14 @@ a {
       .fighter {
         height: 80px;
       }
+
+      .left {
+        margin-bottom: 100px;
+      }
     
+      .emptyspace {
+        display: block;
+        height: 200px;
+    }
+
 }

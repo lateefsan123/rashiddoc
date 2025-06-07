@@ -284,6 +284,37 @@ function updatePreview(imageUrl) {
    // match transition time
 }
 
+const fighterButtons = Array.from(document.querySelectorAll('.fighter.out'));
+let currentIndex = 0;
+const fightersPerRow = 4;
+
+fighterButtons[currentIndex].focus();
+
+document.addEventListener('keydown', (e) => {
+  let nextIndex = currentIndex;
+
+  switch (e.key) {
+    case "ArrowRight":
+      nextIndex = (currentIndex + 1) % fighterButtons.length;
+      break;
+    case "ArrowLeft":
+      nextIndex = (currentIndex - 1 + fighterButtons.length) % fighterButtons.length;
+      break;
+    case "ArrowDown":
+      nextIndex = (currentIndex + fightersPerRow) % fighterButtons.length;
+      break;
+    case "ArrowUp":
+      nextIndex = (currentIndex - fightersPerRow + fighterButtons.length) % fighterButtons.length;
+      break;
+  }
+
+  if (nextIndex !== currentIndex) {
+    currentIndex = nextIndex;
+    fighterButtons[currentIndex].focus();
+  }
+});
+
+
 
 fighters.forEach(function(fighter) {
     fighter.addEventListener("mouseenter", () => {
