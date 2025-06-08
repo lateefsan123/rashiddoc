@@ -31,7 +31,7 @@ window.addEventListener("scroll", function () {
 
 
 
-
+music.volume = 0.2;
   
 
 

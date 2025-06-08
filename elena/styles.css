@@ -412,6 +412,13 @@ nav.scrolled a {
     align-self: center;
 }
 
+.docc {
+    background-image: url("images/elenadoc.png");
+    background-position: center center;
+    background-size: contain;
+    background-color: olive;
+}
+
 #playBtn i {
     color: white;
     font-size: 2rem;

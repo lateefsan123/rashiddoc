@@ -779,6 +779,15 @@ nav.scrolled a {
   background-image: url("images/sa2.png");
 }
 
+.upper.sa2p2 {
+  --base-color: #aef7cc;
+  --dark-color: #89c4a2;
+  --light-color: #d4f4ff;
+  background-color: var(--base-color);
+  background-image: url("images/sa2.png");
+}
+
+
 .upper.fivehk {
   --base-color: #FDE2E4;
   --dark-color: #d9b8ba;

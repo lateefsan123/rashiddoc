@@ -73,6 +73,8 @@ window.addEventListener("scroll", function () {
   const music = document.getElementById("bgMusic");
   const btn = document.getElementById("playBtn");
 
+  music.volume = 0.2;
+
   btn.addEventListener("click", () => {
     console.log("hello")
 
