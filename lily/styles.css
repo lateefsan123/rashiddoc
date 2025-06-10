@@ -468,7 +468,7 @@ nav.scrolled a {
     }
 
     .center {
-        color: white;
+        color: black;
     }
 
     .topofpage {
@@ -502,17 +502,25 @@ nav.scrolled a {
         position: fixed;
     }
 
-    .first {
-        color: white;
+
+
+    .first.scrolled {
+        color: black;
     }
 
     .titletop {
         font-size: 1rem;
     }
 
-    .changechar {
-        color: white;
-        border-color: white; 
+ 
+
+    main {
+        background-image: url("images/bg5.jpg");
+        background-size: cover;
+    }
+
+    .nav {
+        color: #000000;
     }
 
 
@@ -809,8 +817,7 @@ nav.scrolled a {
 }
 
 .first.scrolled {
-    color: #A47551;
-    -webkit-text-stroke-color: #000000;
+    color: black;
     -webkit-text-stroke-width: 0.3px;
 }
 

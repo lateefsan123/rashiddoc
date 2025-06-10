@@ -435,6 +435,11 @@ nav.scrolled a {
 
 @media (max-width: 1136px) {
 
+    main {
+        background-image: url("images/achievement.jpg");
+        background-position: 90%;
+    }
+
     .first {
         color: black;
     }

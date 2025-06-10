@@ -513,6 +513,18 @@ nav.scrolled a {
         height: 10% !important;
     }
 
+    main {
+        background-image: url("images/bg5.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .changechar {
+        color: black;
+        border-color: black; 
+    }
+
     nav {
         display: flex !important;
         justify-content: space-between !important;
@@ -524,18 +536,13 @@ nav.scrolled a {
         position: fixed;
     }
 
-    .first {
-        color: white;
-    }
 
     .titletop {
         font-size: 1rem;
+        color: #000000;
     }
 
-    .changechar {
-        color: white;
-        border-color: white; 
-    }
+
 
 
 

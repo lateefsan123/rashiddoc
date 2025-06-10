@@ -412,7 +412,7 @@ nav.scrolled a {
 
 .sidebar.active {
     display: flex;
-    right: 0%;
+    right: 20px;
 }
 
 
@@ -488,6 +488,8 @@ nav.scrolled a {
 
         position: fixed;
     }
+
+    
 
     .first {
         color: white;
@@ -683,6 +685,10 @@ nav.scrolled a {
         background-color: transparent;
 
         position: fixed;
+    }
+
+    main {
+        background-image: url("images/bg5.jpg");
     }
 
     .first {
