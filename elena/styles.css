@@ -17,15 +17,21 @@ a {
 
 
 main {
-    background-color: black;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(48, 1, 95, 0.5)), 
-                url("images/image.png") fixed;
-    background-position: center;
-    background-size: cover;
-   
-
-    
+  background-color: black;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(15, 10, 30, 0.9) 0%,
+      rgba(44, 15, 75, 0.7) 20%,
+      rgba(64, 24, 110, 0.3) 40%,
+      rgba(0, 0, 0, 0) 60%
+    ),
+    url("images/gir.webp") fixed;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 
 
 nav {
@@ -114,11 +120,15 @@ nav span:hover {
 }
 
 .center, .hub {
-    color: #0D47A1;
+    color: rgb(238, 101, 82);
+}
+
+.first.scrolled {
+    color: rgb(238, 101, 82)
 }
 
 nav.scrolled {
-    background-color: rgba(13, 71, 161, 0.7);
+    background-color: rgba(21, 21, 63, 0.7);
     color: white;
 
 }
@@ -149,6 +159,7 @@ nav.scrolled a {
     width: 50%;
     background-color: transparent;
     cursor: pointer;
+    transition: all 300ms ease-in-out;
 }
 
 .changechar.scrolled {
@@ -167,12 +178,17 @@ nav.scrolled a {
     }
 }
 .changechar:hover {
-    background-color: rgb(13, 71, 161);
+    background-color: rgb(238, 101, 82);
     color: white;
     transform: scale(1.1);
 }
 
 
+.changechar.scrolled:hover {
+    background-color: transparent;
+    color: white;
+    transform: scale(1.1);
+}
 
 
 
@@ -191,6 +207,11 @@ nav.scrolled a {
     border-radius: 0% 100% 100% 0% / 56% 0% 100% 44% ;
     border: 5px solid white;
     position: relative;
+}
+
+.carouesel {
+    width: 100%;
+
 }
 
 .profilepic {
@@ -234,8 +255,8 @@ nav.scrolled a {
 }
 
 .achievement {
-    background-image: url("images/achievement.jpg");
-    background-position: 50% 20%;
+    background-image: url("images/notyet.webp");
+    background-position: 30% 0%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -249,8 +270,12 @@ nav.scrolled a {
     -webkit-text-stroke-width: 1px;
 }
 
-.redbull {
+.redbull:hover {
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 0.2px;
+    transform: scale(1.05);
 }
+
 
 
 @keyframes glitch {
@@ -288,7 +313,7 @@ nav.scrolled a {
 .replay h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #d3c2a1;
+    color: white;
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
 }
@@ -300,7 +325,7 @@ nav.scrolled a {
 .leftthird button {
     width: 40%;
     height: 20%;
-    background-color: #e7dfca;
+    background-color: white;
     color: black;
     cursor: pointer;
     border-radius: 15px;
@@ -315,7 +340,7 @@ nav.scrolled a {
     transform: scale(1.1);
     -webkit-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: -5px 5px 0px 0px rgba(223, 0, 0, 0.75);
+    box-shadow: -5px 5px 0px 0px rgb(220,64,41);
     transform: translateY(-2px);
     transition: transform 200ms ease-in;
     animation: moveit 1s infinite alternate;
@@ -323,9 +348,8 @@ nav.scrolled a {
     
 }
 
-
 .rightthird {
-    background-image: url("images/.");
+    background-image: url("images/replay.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -386,13 +410,13 @@ nav.scrolled a {
 
 
 .framedate {
-    background-image: url("images/ogimage.png");
+    background-image: url("images/fat.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 2.3rem;
     width: 2.3rem;
-    border-radius: 50%;
+    border-radius: 10px;
     align-self: center;
     animation: bounce 5s infinite;
     transition: transform 200ms ease-in-out;
@@ -406,7 +430,7 @@ nav.scrolled a {
 }
 
 .fa-file-word {
-    color: green;
+    color: black;
     font-size: 2rem;
     margin-bottom: 15px;
     align-self: center;
@@ -499,20 +523,96 @@ nav.scrolled a {
 
 }
 
+@keyframes pulseBg {
+  0%, 100% {
+    background-color: var(--base-color);
+  }
+  50% {
+    background-color: var(--dark-color);
+  }
+}
+
+.upper.intro {
+  --base-color: #DA3C2F;
+  --dark-color: #8B0E0E;
+  background-color: var(--base-color);
+  background-image: url("images/intro_elena.png");
+}
+
+.upper.combo {
+  --base-color: #4376AA;
+  --dark-color: #2C4F72;
+  background-color: var(--base-color);
+  background-image: url("images/combo.png");
+}
+
+.upper.maxdamage {
+  --base-color: #F1C21B;
+  --dark-color: #C9A114;
+  background-color: var(--base-color);
+  background-image: url("images/maxdamage_elena.png");
+}
+
+.upper.oki {
+  --base-color: #202060;
+  --dark-color: #15153F;
+  background-color: var(--base-color);
+  background-image: url("images/oki.png");
+}
+
+.upper.driveimpact {
+  --base-color: #ffec1e;
+  --dark-color: #D9D9D9;
+  background-color: var(--base-color);
+  background-image: url("images/driveimpact.png");
+}
+
+.upper.safejump {
+  --base-color: #6F4E37;
+  --dark-color: #4A342C;
+  background-color: var(--base-color);
+  background-image: url("images/safejump.png");
+}
+
+.upper.sideswitch {
+  --base-color: #DA3C2F;
+  --dark-color: #8B0E0E;
+  background-color: var(--base-color);
+  background-image: url("images/sideswitch.png");
+}
+
+.upper.stuncombo {
+  --base-color: #4376AA;
+  --dark-color: #2C4F72;
+  background-color: var(--base-color);
+  background-image: url("images/stuncombo_elena.png");
+}
+
+.upper.antielena {
+  --base-color: #F1C21B;
+  --dark-color: #C48A1B;
+  background-color: var(--base-color);
+  background-image: url("images/antielena.png");
+}
+
+.upper:hover {
+  animation: pulseBg 2s infinite ease-in-out;
+}
 
 
 /* streamers section */
-
 .streamers {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-    gap: 40px;
-    justify-content: center;
-    justify-items: center;
-    align-items: start;
-    padding: 100px;
-    color: black
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+  padding: 100px;
+  color: black;
+  max-width: 1800px; 
+  margin: 0 auto;     
 }
 
 .streamerpiece {
@@ -591,44 +691,52 @@ nav.scrolled a {
     
 }
 
+.dogura {
+    background-image: url("images/doguras.jpg");
+}
+
+.keib {
+    background-image: url("images/keib.avif");
+}
+
+.dafeetlee {
+    background-image: url("images/dafeetlee.png");
+}
+
+.kakeru {
+    background-image: url("images/kakeru.png");
+}
 
 .labbers {
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-    gap: 40px;
-    justify-items: center;
-    justify-content: center;
-    align-items: start;
-    padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+  padding: 100px;
+  color: black;
+  max-width: 1800px; 
+  margin: 0 auto;   
     
 }
 
-
 .labberpiece {
-    width: 15rem;
-    height: 15rem;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(140, 105, 71, 0.3);
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 0 4px 8px black;
     box-sizing: border-box;
     border-radius: 360px;
     padding: 50px;
     background-color: white;
-    cursor: pointer;
-    filter: grayscale(100%);
-    transition: transform 200ms;
-    transition: filter 200ms ease-in-out;
-    margin-top: 10px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    transition: transform 200ms ease-in-out;
 }
-
+    
 .labberpiece:hover {
-    filter: grayscale(0%);
-    box-shadow: 2px 4px 10px 0px rgba(199, 3, 3, 0.855);
-
-}
+    transform: scale(1.1);
+    box-shadow: 2px 4px 10px 0px black;
+} 
 
 .labbers h2{
     text-align: center;
@@ -637,14 +745,30 @@ nav.scrolled a {
     transition: opacity 300ms ease-in;
 }
 
+
+.kai {
+    background-image: url("images/kai.webp");
+}
+
+.ivory {
+    background-image: url("images/ivory.png");
+}
+
+.benedict {
+    background-image: url("images/benedict.png");
+}
+
+
+
+
 .videoplayer {
     display: none; /* hidden by default */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 400px;
-    width: 800px;
+    height: 50%;
+    width: 50%;
     background: rgba(0, 0, 0, 0.8); /* dark background */
     justify-content: center;
     align-items: center;
@@ -652,28 +776,11 @@ nav.scrolled a {
   }
 
 .videoplayer iframe {
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
 }
 
-.videoplayer {
-    display: none; /* hidden by default */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 400px;
-    width: 800px;
-    background: rgba(0, 0, 0, 0.8); /* dark background */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
 
-.videoplayer iframe {
-    width: 700px;
-    height: 400px;
-}
   
 
 .fa-twitch.live {
@@ -874,4 +981,25 @@ footer {
     text-decoration: none;
     font-weight: bold;
   }
+}
+
+.carousel-dots {
+    transform: translate(160px, -150px);
+
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.carousel-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  background-color: #DA3C2F; /* Elena red vibe */
 }

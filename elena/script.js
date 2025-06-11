@@ -82,84 +82,86 @@ window.addEventListener("scroll", function () {
   })
 
 
-  let carousel = document.querySelector(".classic");
-  let next = document.querySelector(".fa-arrow-right");
-  let desc = document.querySelector(".description");
+ let carousel = document.querySelector(".classic");
+let next = document.querySelector(".fa-arrow-right");
+let desc = document.querySelector(".description");
+let dots = document.querySelectorAll(".carousel-dots .dot");
 
-  let number = 1; 
+let number = 1;
 
- 
-
-  function changecarrosel() {
-    number+=1
-
-
-    desc.classList.add("fade-out");
-
-    
-    if (number > 3) {
-      number = 1
+function updateDots(index) {
+  dots.forEach((dot, i) => {
+    if (i === index - 1) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
     }
+  });
+}
 
-    if (number == 1) {
-      desc.innerHTML = `
-        <h3>Manon <span class='hub'>Centre</span></h3>
-        <p>
-        Welcome to the ultimate Akuma hub! Whether you're just starting or a seasoned player, this site is your go-to resource for mastering Akuma in Street Fighter 6. Discover tips, strategies, combo guides, and expert insights to elevate your Akuma gameplay to new heights!
-       
-        </p>
-      `;
-      desc.classList.add("firstone")
-      desc.classList.remove("replay");
-      desc.classList.remove("achievement");
-    }
-    
-    if (number == 2) {
-      
-      desc.innerHTML = `
-      <div onclick="window.open('https://www.youtube.com/playlist?list=PLYHo76jk0RQKhQciPpySOPb4-E55GYu5Y', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Shuto CPT Singapore Win</h2>
-      </div>
-    `;
-
-
-      document.querySelector(".redbull").addEventListener("click", () => {
-        document.getElementById("bbmusic").play();
-      });
-      
-      desc.classList.add("achievement");
-      desc.classList.remove("replay");
-      desc.classList.remove("firstone")
-    }
-
-    if (number == 3) {
-      desc.innerHTML = `
-        <div class = 'leftthird'>
-        <h3>Watch High Level Akuma Replays</h3>
-        <a href= "https://www.youtube.com/playlist?list=PLvZ5t8JLwU9I2rratnrITg5QYh4msNl8y" target = "_blank">
-        <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
-        </div>
-        </a>
-        <div class="rightthird"></div>
-        
-      `;
-
-      desc.style.padding = "none";
-
-      
-      desc.classList.add("replay")
-      desc.classList.remove("achievement");
-    }
-    setTimeout(() => {
-      desc.classList.remove("fade-out");
-    }, 50);
+function changecarrosel(to = null) {
+  if (to !== null) {
+    number = to;
+  } else {
+    number += 1;
+    if (number > 3) number = 1;
   }
 
+  desc.classList.add("fade-out");
 
-next.addEventListener("click", changecarrosel) 
+  if (number === 1) {
+    desc.innerHTML = `
+      <h3>Elena <span class='hub'>Centre</span></h3>
+      <p>
+      Welcome to the ultimate Elena hub in Street Fighter 6! Whether you're just vibin' with her for the first time or you're a seasoned footsie god, this is your go-to spot for tech, combos, and movement mastery. Tap into her rhythm, stay unpredictable, and dance your way to domination. Let’s get groovin’!
+      </p>
+    `;
+    desc.className = "description firstone";
+    desc.style.padding = "";
+  }
 
-  
-setInterval(changecarrosel, 8000 )
+  if (number === 2) {
+    desc.innerHTML = `
+      <div onclick="window.open('#')" style="cursor: pointer;">
+        <h2 class="redbull">No Elena tourney wins yet</h2>
+      </div>
+    `;
+    desc.className = "description achievement";
+    desc.style.padding = "";
+    document.querySelector(".redbull").addEventListener("click", () => {
+      document.getElementById("bbmusic").play();
+    });
+  }
+
+  if (number === 3) {
+    desc.innerHTML = `
+      <div class='leftthird'>
+        <h3>Watch High Level Elena Replays</h3>
+        <a href="https://youtube.com/playlist?list=PLvZ5t8JLwU9LJzzudsJmsQDu53jqhGtZU&si=NzGlkTLNDuhqFYAG" target="_blank">
+          <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
+        </a>
+      </div>
+      <div class="rightthird"></div>
+    `;
+    desc.className = "description replay";
+    desc.style.padding = "none";
+  }
+
+  updateDots(number);
+
+  setTimeout(() => {
+    desc.classList.remove("fade-out");
+  }, 50);
+}
+
+next.addEventListener("click", () => changecarrosel());
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => changecarrosel(i + 1));
+});
+
+setInterval(() => changecarrosel(), 8000);
+
 
 
 
