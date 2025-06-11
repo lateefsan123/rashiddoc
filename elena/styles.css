@@ -747,6 +747,14 @@ nav.scrolled a {
   }
 }
 
+.docc {
+    background-image: url("images/elenadoc.png");
+  --dark-color: #8B0E0E;
+  background-color: var(--base-color);
+    --base-color: olive;
+}
+
+
 .upper.intro {
   --base-color: #DA3C2F;
   --dark-color: #8B0E0E;
