@@ -366,11 +366,12 @@ nav.scrolled a {
     .nav {
         display: none !important;
         height: 10% !important;
+        position: relative;
     }
 
     nav {
         display: flex !important;
-        justify-content: space-between !important;
+        justify-content: space-around !important;
         align-items: center;
         padding: 1rem 1rem;
         height: auto;
@@ -390,6 +391,8 @@ nav.scrolled a {
     .changechar {
         color: white;
         border-color: white; 
+
+
     }
 
 

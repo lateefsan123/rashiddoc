@@ -24,7 +24,8 @@ main {
     background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(97, 97, 105, 0.5)), 
                 url("images/edbg.png") fixed;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
    
 }
 
@@ -462,8 +463,8 @@ nav.scrolled a {
         color: black;
     }
 
-    .center {
-        color: white;
+    .center, .hub {
+        color: white !important;
     }
 
     .topofpage {
@@ -514,7 +515,7 @@ nav.scrolled a {
 
 
     #ctitle, #ltitle, #stitle {
-        font-size: 2em !important;
+        font-size: 3em !important;
     }
 
     .footer {
@@ -524,6 +525,19 @@ nav.scrolled a {
     .videoplayer {
         width: 80% !important;
         
+    }
+
+    #ctitle, #ltitle, #stitle {
+        font-size: 7rem;
+        font-family: "Poppins", sans-serif !important;
+        color: white;
+        -webkit-text-stroke-color: #4a5d7e;
+        -webkit-text-stroke-width: 1px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        text-align: center;
+        letter-spacing: 5px;
     }
 
  

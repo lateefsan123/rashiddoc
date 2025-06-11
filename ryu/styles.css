@@ -447,6 +447,12 @@ nav.scrolled a {
 
 @media (max-width: 1136px) {
 
+    main {
+        background-image: url("images/mobile.webp");
+        background-position: 100% auto;
+    }
+    
+
     .first {
         color: black;
     }
@@ -1005,6 +1011,7 @@ nav.scrolled a {
 
 .blaz {
     background-image: url("images/blaz.png");
+  
 }
 
 .jimmy {
