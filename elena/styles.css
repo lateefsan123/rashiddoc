@@ -749,11 +749,18 @@ nav.scrolled a {
 
 .docc {
     background-image: url("images/elenadoc.png");
-  --dark-color: #8B0E0E;
+  --dark-color: #946ac5;
   background-color: var(--base-color);
-    --base-color: olive;
+    --base-color: rgb(231, 166, 225);
 }
 
+
+.modern {
+    background-image: url("images/modern.webp");
+    --dark-color: #bb2561;
+  background-color: var(--base-color);
+    --base-color: rgb(244, 83, 91);
+}
 
 .upper.intro {
   --base-color: #DA3C2F;
