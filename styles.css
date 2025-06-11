@@ -265,13 +265,7 @@ nav {
     box-shadow: 0 0 8px #B76EFF;
   }
 
-  .fighter.elena i {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: #B76EFF;
-    font-size: 1.2rem;
-  }
+
 
   .out {
     filter: none;
@@ -466,7 +460,7 @@ a {
 }
 
 .elena {
-    background-image: url("images2/Elena.png");
+    background-image: url("images2/elena.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -474,13 +468,7 @@ a {
 
 
 
-.elena {
-    background-image: url("images2/Elena.png");
 
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 
 .right {
