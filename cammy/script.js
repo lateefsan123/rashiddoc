@@ -240,6 +240,7 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     init();
 // Run it on load
 
+const docii = document.querySelectorAll(".docii");
 const box = document.querySelectorAll(".combopiece");
 const video = document.querySelector(".videoplayer");
 const iframe = document.querySelector("#popupVideo")
@@ -300,11 +301,13 @@ document.addEventListener("click", function () {
 
 
 
-divekick.addEventListener("click", function(event) {
-  document.querySelector(".videoplayer").style.display = "none";
-  event.stopPropagation();
-  imageviewer.style.display = "flex";
-  imageviewer.style.background
-
-})
+docii.forEach((boxes) => {
+  boxes.addEventListener("click", function (event) {
+    event.stopPropagation();
+    video.classList.add("dociis"); // or just skip this if the styles are in .videoplayer by default
+    video.style.display = "flex";
+    let link = boxes.getAttribute("data-link");
+    iframe.src = link;
+  });
+});
 
