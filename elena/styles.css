@@ -284,6 +284,10 @@ nav.scrolled a {
     transform: scale(1.05);
 }
 
+.redbull {
+    transition: all 300ms ease-in-out;
+}
+
 
 
 @keyframes glitch {
@@ -1248,4 +1252,45 @@ footer {
 
 .carousel-dots .dot.active {
   background-color: #DA3C2F; /* Elena red vibe */
+}
+
+
+.tourneywins {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center; /* center items in their grid cell */
+    justify-content: center; /* center the grid layout */
+    background-repeat: no-repeat;
+    padding: 100px;
+
+    max-width: 2000px; /* set a max width for the grid */
+    margin: 0 auto; /* center the whole grid in the parent container */
+}
+
+
+.super {
+    background-image: url("images/super.png");
+    
+}
+
+
+
+
+.tourney {
+    width: 15rem;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid gold;
+    padding: 20px;
+    background-position: center center;
+    border: none;
+    transition: transform 300ms ease-in-out;
+}
+
+.tourney:hover {
+    transform: scale(1.1);
 }
