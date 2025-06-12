@@ -38,7 +38,6 @@ nav {
 .info i {
     padding: 10px;
     font-size: 1.5rem;
-    animation:  pulse 1.5s infinite;
 }
 
 @keyframes pulse {
@@ -47,7 +46,6 @@ nav {
     100% { transform: scale(1); }
   }
   .question-icon.attention {
-    animation: pulse 1.5s infinite;
   }
   
   
@@ -466,7 +464,58 @@ a {
     background-repeat: no-repeat;
 }
 
+.tierlist {
+    background-image: url("images/tierlist.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.tierlist-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%
+}
+
+.tierlist-button {
+  background: #111; /* dark background */
+  color: #B76EFF;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  border: 2px solid #B76EFF;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #833cca;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #7c25d3;
+  justify-self: center;
+  align-items: center;
+}
+
+.tierlist-button:hover {
+  background-color: #c387ff;
+  color: black;
+  box-shadow: 0 0 20px #bf7ffe;
+  transform: scale(1.05);
+}
+
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px #00b8ff80; }
+  50% { box-shadow: 0 0 20px #00b8ffcc; }
+  100% { box-shadow: 0 0 10px #00b8ff80; }
+}
+
+.tierlist-button {
+  animation: pulseGlow 2.5s infinite;
+}
 
 
 
@@ -479,7 +528,7 @@ a {
 
 .holder {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
