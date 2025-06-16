@@ -585,8 +585,8 @@ nav.scrolled a {
 }
 
 .fa-file-word {
-    color: black;
-    font-size: 2rem;
+    color: white;
+    font-size: 2.5rem;
     margin-bottom: 15px;
     align-self: center;
 }
@@ -810,16 +810,19 @@ nav.scrolled a {
 
 /* streamers section */
 
+
 .streamers, .labbers {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-    gap: 40px;
-    justify-content: center;
-    justify-items: center;
-    align-items: start;
-    padding: 100px;
-    color: black
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+  padding: 100px;
+  color: black;
+  max-width: 1800px; 
+  margin: 0 auto;     
 }
 
 .streamerpiece {
@@ -837,7 +840,6 @@ nav.scrolled a {
     transform: scale(1.1);
     box-shadow: 2px 4px 10px 0px black;
 }  
-    
 .bottom h3 {
     color: white;
 }

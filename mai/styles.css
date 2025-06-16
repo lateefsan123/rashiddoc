@@ -1078,22 +1078,19 @@ nav.scrolled a {
 
 /* streamers section */
 
-.streamers {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-    gap: 40px;
-    justify-content: center;
-    justify-items: center;
-    align-items: start;
-    padding: 100px;
-    color: black
-}
 
-
-.links.twoman {
-    display: flex;
-    justify-content: space-evenly;
+.streamers, .labbers {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+  padding: 100px;
+  color: black;
+  max-width: 1800px; 
+  margin: 0 auto;     
 }
 
 .streamerpiece {
@@ -1110,7 +1107,15 @@ nav.scrolled a {
 .streamerpiece:hover {
     transform: scale(1.1);
     box-shadow: 2px 4px 10px 0px black;
-}  
+}   
+
+
+
+.links.twoman {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
     
 .bottom h3 {
     color: white;
@@ -1217,18 +1222,6 @@ nav.scrolled a {
 }
 
 
-
-.labbers {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-    gap: 40px;
-    justify-items: center;
-    justify-content: center;
-    align-items: start;
-    padding: 50px;
-    
-}
 
 
 .labberpiece {
@@ -1446,6 +1439,12 @@ nav.scrolled a {
     background-image: url("images/combobreaker.png");
     
 }
+
+.ceo {
+    background-image: url("images/ceo.png");
+    
+}
+
 
 
 .tourney {

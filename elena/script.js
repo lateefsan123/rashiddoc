@@ -123,7 +123,7 @@ function changecarrosel(to = null) {
     number = to;
   } else {
     number += 1;
-    if (number > 3) number = 1;
+    if (number > 4) number = 1; // updated to include slide 4
   }
 
   desc.classList.add("fade-out");
@@ -166,6 +166,20 @@ function changecarrosel(to = null) {
     desc.style.padding = "none";
   }
 
+  if (number === 4) {
+    desc.innerHTML = `
+      <div class='leftthird'>
+        <h3>Latest Elena Tech on <i class='fa-brands fa-x-twitter'></i></h3>
+        <a href="https://twitter.com/search?q=%23SF6_Elena&src=typed_query&f=live" target="_blank">
+          <button>CHECK NOW</button>
+        </a>
+      </div>
+      <div class="rightthird"></div>
+    `;
+    desc.className = "description replay"; // reuse style or create a new one
+    desc.style.padding = "none";
+  }
+
   updateDots(number);
 
   setTimeout(() => {
@@ -173,12 +187,14 @@ function changecarrosel(to = null) {
   }, 50);
 }
 
+// event listeners
 next.addEventListener("click", () => changecarrosel());
 
 dots.forEach((dot, i) => {
   dot.addEventListener("click", () => changecarrosel(i + 1));
 });
 
+// auto-scroll
 setInterval(() => changecarrosel(), 8000);
 
 

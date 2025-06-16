@@ -809,33 +809,7 @@ nav.scrolled a {
 
 /* streamers section */
 
-.streamers {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-    gap: 40px;
-    justify-content: center;
-    justify-items: center;
-    align-items: start;
-    padding: 100px;
-    color: black
-}
 
-.streamerpiece {
-    width: 16rem;
-    height: 16rem;
-    box-shadow: 0 4px 8px black;
-    box-sizing: border-box;
-    border-radius: 360px;
-    padding: 50px;
-    background-color: white;
-    transition: transform 200ms ease-in-out;
-}
-    
-.streamerpiece:hover {
-    transform: scale(1.1);
-    box-shadow: 2px 4px 10px 0px rgb(188, 21, 217);
-}
     
 .bottom h3 {
     color: white;
@@ -863,7 +837,6 @@ nav.scrolled a {
     justify-content: space-around;
     align-items: center;
 }
-
 
 
 .fa-youtube {
@@ -968,18 +941,23 @@ nav.scrolled a {
 /* labbers section */
 
 
-.labbers {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-    gap: 40px;
-    justify-items: center;
-    justify-content: center;
-    align-items: start;
-    padding: 50px;
-    
-}
 
+
+
+
+.streamers, .labbers {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+  padding: 100px;
+  color: black;
+  max-width: 1800px; 
+  margin: 0 auto;     
+}
 
 .streamerpiece {
     width: 16rem;
@@ -994,9 +972,13 @@ nav.scrolled a {
     
 .streamerpiece:hover {
     transform: scale(1.1);
-    box-shadow: 2px 4px 10px 0px rgb(188, 21, 217);
-}
+    box-shadow: 2px 4px 10px 0px black;
+}   
     
+.labbers {
+    max-width: 800px;
+}
+
 
 .nesz {
     background-image: url("images/nezs.jpg");
