@@ -471,44 +471,6 @@ a {
     background-repeat: no-repeat;
 }
 
-.tierlist-link {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tierlist-button {
-  color: #B76EFF;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: 0 0 10px #833cca;
-  transition: all 0.2s ease-in-out;
-  text-transform: uppercase;
-  text-shadow: 0 0 5px #7c25d3;
-  justify-self: center;
-  align-items: center;
-}
-
-.tierlist-button:hover {
-  box-shadow: 0 0 20px #bf7ffe;
-}
-
-
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 10px plum; }
-  50% { box-shadow: 0 0 20px plum; }
-  100% { box-shadow: 0 0 10px plum; }
-}
-
-.tierlist-button {
-  animation: pulseGlow 2.5s infinite;
-}
-
-
 
 
 .right {
