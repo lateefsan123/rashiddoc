@@ -54,6 +54,52 @@ nav {
 }
 
 
+.otherpiece {
+    width: 20rem;
+    height: 20rem;
+    border: 7px solid #F5F5F5;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 300ms;
+    cursor: pointer;
+
+}
+
+.otherpiece:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 4px 10px 0px rgb(255, 17, 17);
+
+}
+
+.otherpiece h3 {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.otherpiece p {
+    text-align: center;
+    font-size: 0.8rem;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.otherpiece.upper {
+    height: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.otherpiece.lower {
+    box-sizing: border-box;
+    height: 50%;
+
+}
 
 .first.scrolled {
     color: #7350f4;
@@ -923,6 +969,10 @@ nav.scrolled a {
 
 /* labbers section */
 
+.miro {
+    background-image: url("images/miro.png");
+    background-color: rgb(12, 39, 1); /* Jade Green */
+}
 
 
 
