@@ -21,11 +21,11 @@ a {
 }
 
 main {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(97, 97, 105, 0.5)), 
-                url("images/edbg.png") fixed;
+    background-image: url("images/background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
    
 }
 
@@ -84,7 +84,7 @@ nav.scrolled a {
 
 }
 
-.center, .hub {
+.hub {
     color: rgb(160, 74, 76);
 }
 
@@ -98,7 +98,7 @@ nav.scrolled a {
 
 
 .first.scrolled {
-    color: rgb(160, 74, 76);
+    color: white;
 }
 
 .titletop {
@@ -115,6 +115,7 @@ nav.scrolled a {
 .center {
     margin-left: 10px;
     border: none;
+    color: rgb(160, 74, 76);
     
 }
 
@@ -123,19 +124,26 @@ nav.scrolled a {
     border: 3px solid black;
     padding: 10px;
     width: auto;
-    background-color: white;
     cursor: pointer;
     transition: all ease-in-out 300ms;
+    background-color: transparent;
 }
 
 .changechar.scrolled {
-    border: 3px solid white;
     color: white;
     padding: 10px;
     width: auto;
     background-color: transparent;
     cursor: pointer;
+    animation: change 3s ease-in-out infinite;
 }
+
+@keyframes change {
+    50% {
+        border: 3px solid rgb(43, 199, 226)
+    }
+}
+
 .changechar:hover {
     background-color: rgb(160, 74, 76);
     color: white;
@@ -612,7 +620,7 @@ nav.scrolled a {
 }
 
 .fa-file-word {
-    color: rgb(29, 105, 97);
+    color: white;
     font-size: 2rem;
     margin-bottom: 15px;
     align-self: center;
@@ -1168,12 +1176,12 @@ nav.scrolled a {
 
 
 .combobreaker {
-    background-image: url("images/combobreaker.png");
+    background-image: url("images/combobreaker.webp");
     
 }
 
 .ewclcq {
-    background-image: url("images/ewclcq.png");
+    background-image: url("images/ewclcq_white_text.png");
     
 }
 

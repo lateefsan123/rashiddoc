@@ -1,5 +1,5 @@
 const navbar = document.querySelector("nav");
-const titletop = document.querySelector(".Center")
+const titletop = document.querySelector(".center")
 const title = document.querySelector(".titletop")
 const navitems = document.querySelectorAll("nav span")
 const change = document.querySelector(".changechar");

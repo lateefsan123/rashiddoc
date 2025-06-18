@@ -18,9 +18,7 @@ a {
 
 main {
   background-color: rgb(97, 176, 196);
-  background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
-    url("images/background.jpg");
+  background-image: url("images/sf6-rashid-world-tour-art-1.jpg");
   position: relative;
   top: 0%;
   background-attachment: fixed;

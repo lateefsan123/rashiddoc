@@ -126,7 +126,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Aki <span class='hub'>Centre</span></h3>
+        <h3>Aki <span class='hub'>Center</span></h3>
         <p>
           Welcome to the ultimate A.K.I. hub in Street Fighter 6! Whether you're a newcomer or a seasoned pro, explore tips, combos, and strategies to master her poison mechanics, sneaky setups, and relentless pressure. Get ready to level up your game and strike fear into your opponents!
         </p>

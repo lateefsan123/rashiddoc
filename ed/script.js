@@ -121,7 +121,7 @@ window.addEventListener("scroll", function() {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Ed <span class='hub'>Zone</span></h3>
+        <h3>Ed <span class='hub'>Center</span></h3>
         <p>
           Welcome to the Ed zone! Whether you're new or experienced, this site helps you master Ed in Street Fighter 6 with tips, combos, and strategies. Learn how to dominate with his flicker jabs, control space with psycho upper, and capitalize on trade hits to keep your offense flowing and land devastating combos.
         </p>

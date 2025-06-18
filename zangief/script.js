@@ -1,5 +1,5 @@
 const navbar = document.querySelector("nav");
-const titletop = document.querySelector(".Center")
+const titletop = document.querySelector(".center")
 const navitems = document.querySelectorAll("nav span")
 const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
@@ -106,7 +106,7 @@ window.addEventListener("scroll", function () {
 
     if (number == 1) {
       desc.innerHTML = `
-        <h3>Zangief <span class='hub'>Centre</span></h3>
+        <h3>Zangief <span class='hub'>Center</span></h3>
         <p>
          Welcome to the ultimate Zangief hub! Whether you're new or experienced, this site helps you master Zangief in Street Fighter 6 with tips, strategies, combo guides, and insights. Get ready to take your Zangief gameplay to the next level!
         </p>
