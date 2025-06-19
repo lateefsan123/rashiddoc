@@ -188,22 +188,24 @@ nav.scrolled a {
 }
 
 .achievement {
-    background-image: url("images/achievement.jpg");
-    background-position: 50% 20%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    opacity: 100%;
-    background-color: #000000;
+  background-image: url("images/achievement.jpg");
+  background-position: 50% 65%;
+  background-size: cover; /* shows full image */
+  background-repeat: no-repeat;
+  background-color: white;
 
-    color: white;
-    font-size: 1.5rem;
-    -webkit-text-stroke: #2a2727;
-    -webkit-text-stroke-width: 1px;
-    transition: all, 400ms ease-in;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  color: white;
+  font-size: 1.5rem;
+  -webkit-text-stroke: #2a2727;
+  -webkit-text-stroke-width: 1px;
+  opacity: 1;
+  transition: all 400ms ease-in;
 }
+
 
 .redbull {
     

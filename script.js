@@ -268,7 +268,7 @@ let character = {
         height: "6'1",
         archetype: "Defensive",
         num: "no26",
-        background: "url('images/elenaback.webp')"
+        background: "url('images/elena.gif')"
 
     }
 
