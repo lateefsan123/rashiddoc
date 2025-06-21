@@ -368,16 +368,17 @@
 
          </div>
 
-         <div class="videoplayer">
-            <iframe 
-            id="popupVideo"
-            src="https://www.youtube.com/embed/sy9EElM_eDE?si=e2QRPI2uuxGoRASS"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            onclick="event.stopPropagation()">
-          </iframe>
-         </div>
+         <div class="videoplayer" onclick="closeVideoPlayer(event)">
+    <button class="close-btn" onclick="closeVideoPlayer(event)">×</button>
+    <iframe 
+        id="popupVideo"
+        src="https://www.youtube.com/embed/sy9EElM_eDE?si=e2QRPI2uuxGoRASS"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        onclick="event.stopPropagation()">
+    </iframe>
+</div>
 
     </main>
 
