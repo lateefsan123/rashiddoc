@@ -5,23 +5,9 @@ const change = document.querySelector(".changechar");
 const first = document.querySelector(".first");
 let scrolltop = 0;
 
-const toggle = document.querySelector(".toggle");
-const icon = toggle.querySelector("i"); // Get the <i> inside the toggle
-const sidebar = document.querySelector(".sidebar");
 
-toggle.addEventListener("click", function () {
-  // Toggle sidebar visibility
-  sidebar.classList.toggle("active");
 
-  // Change icon based on state
-  if (sidebar.classList.contains("active")) {
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-x");
-  } else {
-    icon.classList.remove("fa-x");
-    icon.classList.add("fa-bars");
-  }
-});
+
 
 
 
@@ -48,6 +34,17 @@ window.addEventListener("scroll", function () {
     })
   }
 });
+
+const sidebar = document.getElementById("sidebarMenu");
+    const toggleBtn = document.getElementById("toggleButton");
+    const openIcon = document.getElementById("openIcon");
+    const closeIcon = document.getElementById("closeIcon");
+
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("hidden");
+      openIcon.classList.toggle("hidden");
+      closeIcon.classList.toggle("hidden");
+    });
 
 
 
@@ -102,87 +99,91 @@ window.addEventListener("scroll", function () {
     
   })
 
+const next = document.querySelector(".arrow-next");
+const desc = document.querySelector(".description");
+const dots = document.querySelectorAll(".dot");
 
-  let carousel = document.querySelector(".classic");
-  let next = document.querySelector(".fa-arrow-right");
-  let desc = document.querySelector(".description");
+let number = 1;
 
-  let number = 1; 
+function updateDots(index) {
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === index - 1);
+  });
+}
 
- 
+function fadeInContent(content, className) {
+  if (!desc) return;
+  desc.classList.add("fade-out");
+  setTimeout(() => {
+    desc.innerHTML = content;
+    desc.className = `description ${className}`;
+    desc.classList.remove("fade-out");
+  }, 500); // Match CSS transition duration
+}
 
-  function changecarrosel() {
-    number+=1
+function changecarrosel() {
+  number = number >= 4 ? 1 : number + 1;
 
-
-    desc.classList.add("fade-out");
-
-    
-    if (number > 3) {
-      number = 1
-    }
-
-    if (number == 1) {
-      desc.innerHTML = `
-        <h3>Rashid <span class='hub'>Center</span></h3>
-        <p>
+  if (number === 1) {
+    fadeInContent(
+      `
+      <h3>Rashid <span class='hub'>Center</span></h3>
+      <p>
         Welcome to the ultimate Rashid hub! Whether you're a newcomer or a seasoned fighter, this site is designed to help you master Rashid in Street Fighter 6. Here, you'll find tips, strategies, combo guides, and character insights to elevate your gameplay and make the most of Rashid’s unique speed and mix-up potential. Get ready to take your Rashid skills to the next level!
-       
-        </p>
-      `;
-      desc.classList.add("firstone")
-      desc.classList.remove("replay");
-      desc.classList.remove("achievement");
-    }
-    
-    if (number == 2) {
-      
-      desc.innerHTML = `
-      <div onclick="window.open('https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX', '_blank')" style="cursor: pointer;">
-        <h2 class="redbull">Big Bird Red Bull Kumite</h2>
-      </div>
-    `;
-
-
-      document.querySelector(".redbull").addEventListener("click", () => {
-        document.getElementById("bbmusic").play();
-      });
-      
-      desc.classList.add("achievement");
-      desc.classList.remove("replay");
-      desc.classList.remove("firstone")
-    }
-
-    if (number == 3) {
-      desc.innerHTML = `
-        <div class = 'leftthird'>
-        <h3>Watch High Level Rashid Replays</h3>
-        <a href= "https://youtube.com/playlist?list=PLvZ5t8JLwU9Jlu2BBhSkTAqj2SiIMGKdv&si=9JUnKpEmTaRTKw0P" target = "_blank">
-        <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
-        </div>
-        </a>
-        <div class="rightthird"></div>
-        
-      `;
-
-      desc.style.padding = "none";
-
-      
-      desc.classList.add("replay")
-      desc.classList.remove("achievement");
-    }
-    setTimeout(() => {
-      desc.classList.remove("fade-out");
-    }, 50);
+      </p>
+    `,
+      "firstone"
+    );
   }
 
+  if (number === 2) {
+    fadeInContent(
+      `
+      <div class="redbull" onclick="window.open('https://youtube.com/playlist?list=PLYHo76jk0RQJ4H_YcMauE7v8j-kGVAVTR&si=K-P--B3SMYqLKMnX', '_blank')">
+        Big Bird Red Bull Kumite
+      </div>
+    `,
+      "achievement"
+    );
+  }
 
-next.addEventListener("click", changecarrosel) 
+  if (number === 3) {
+    fadeInContent(
+      `
+      <div class='leftthird'>
+        <h3>Watch High Level Rashid Replays</h3>
+        <a href="https://youtube.com/playlist?list=PLvZ5t8JLwU9Jlu2BBhSkTAqj2SiIMGKdv&si=9JUnKpEmTaRTKw0P" target="_blank">
+          <button>WATCH NOW <i class='fa-solid fa-play'></i></button>
+        </a>
+      </div>
+      <div class="rightthird"></div>
+    `,
+      "replay"
+    );
+  }
 
-  
-setInterval(changecarrosel, 8000 )
+  if (number === 4) {
+    fadeInContent(
+      `
+      <h3>Coming Soon <span class='hub'>...</span></h3>
+      <p>
+        More Rashid tech and tournament breakdowns are on the way. Stay tuned!
+      </p>
+    `,
+      "firstone"
+    );
+  }
 
+  updateDots(number);
+}
 
+if (next) {
+  next.addEventListener("click", changecarrosel);
+}
+const intervalId = setInterval(changecarrosel, 12000); // Slower interval for better UX
+
+// Cleanup interval on window unload
+window.addEventListener("unload", () => clearInterval(intervalId));
 
 const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
     const clientSecret = "gl4v4exjfj9sr225q0ep9llxax6y8q";
