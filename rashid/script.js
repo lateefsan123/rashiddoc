@@ -35,22 +35,18 @@ window.addEventListener("scroll", function () {
   }
 });
 
-const sidebar = document.getElementById("sidebarMenu");
-    const toggleBtn = document.getElementById("toggleButton");
-    const openIcon = document.getElementById("openIcon");
-    const closeIcon = document.getElementById("closeIcon");
+    const sidebar = document.getElementById("sidebarMenu");
+  const toggleBtn = document.getElementById("toggleButton");
+  const openIcon = document.getElementById("openIcon");
+  const closeIcon = document.getElementById("closeIcon");
 
+  if (sidebar && toggleBtn && openIcon && closeIcon) {
     toggleBtn.addEventListener("click", () => {
       sidebar.classList.toggle("hidden");
       openIcon.classList.toggle("hidden");
       closeIcon.classList.toggle("hidden");
     });
-
-
-
-
-
-  
+  }
 
 
   const gallant = document.querySelectorAll(".testingit");
@@ -180,8 +176,7 @@ function changecarrosel() {
 if (next) {
   next.addEventListener("click", changecarrosel);
 }
-const intervalId = setInterval(changecarrosel, 12000); // Slower interval for better UX
-
+const intervalId = setInterval(changecarrosel, 12000);
 // Cleanup interval on window unload
 window.addEventListener("unload", () => clearInterval(intervalId));
 
@@ -221,13 +216,12 @@ const clientId = "6tn5unrr0xiau7qmeihljr1uk628nm";
           console.log(`${streamerName} is live`);
           const container = button.closest(".streamerpiece");
 
-  // Find the islive <p> inside this specific streamer block
           const isLiveIndicator = container.querySelector(".islive");
 
           if (isLiveIndicator) {
             isLiveIndicator.style.display = "flex";
           }
-          button.classList.add("live");
+          button.classList.add("fa-bounce");
         } else {
           console.log(`${streamerName} is offline`);
         }
@@ -258,7 +252,6 @@ function closeVideoPlayer(event) {
     const videoPlayer = document.querySelector('.videoplayer');
     const iframe = document.querySelector('#popupVideo');
     videoPlayer.style.display = 'none';
-    // Stop video by resetting iframe src
     iframe.src = iframe.src;
 }
 
