@@ -676,6 +676,11 @@ nav.scrolled a {
     background-image: url("images/season3_stacked_cool_full.png");
 }
 
+.intro {
+    background-color: #9A66C4; /* Skyline purple */
+    background-image: url("images/introo.png");
+}
+
 .combo {
     background-color: #00695c; /* Teal Green - balanced and sleek */
     background-image: url("images/bnb.png");

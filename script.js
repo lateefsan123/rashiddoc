@@ -1,3 +1,261 @@
+// Slideshow functionality
+let slideIndex = 1;
+let slideInterval;
+const slideDelay = 6000; // 6 seconds per slide
+
+// Initialize slideshow
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('=== SLIDESHOW DEBUG START ===');
+    console.log('DOM loaded, initializing slideshow...');
+    
+    // Check localStorage status
+    const hasSeenSlideshow = localStorage.getItem('slideshowSeen');
+    console.log('localStorage slideshowSeen:', hasSeenSlideshow);
+    
+    // Check if user has seen the slideshow before
+    if (hasSeenSlideshow) {
+        console.log('User has seen slideshow before, hiding...');
+        hideSlideshow();
+    } else {
+        console.log('First time user, showing slideshow...');
+        
+        // Check if overlay exists
+        const overlay = document.getElementById('slideshowOverlay');
+        console.log('Overlay element found:', !!overlay);
+        
+        if (overlay) {
+            console.log('Initial overlay state:');
+            console.log('- display:', overlay.style.display);
+            console.log('- opacity:', overlay.style.opacity);
+            console.log('- visibility:', overlay.style.visibility);
+            console.log('- has hidden class:', overlay.classList.contains('hidden'));
+            
+            // Ensure the overlay is visible immediately
+            overlay.style.display = 'flex';
+            overlay.classList.remove('hidden');
+            overlay.style.opacity = '1';
+            overlay.style.pointerEvents = 'auto';
+            overlay.style.visibility = 'visible';
+            console.log('Slideshow overlay made visible immediately');
+            
+            // Check state after making visible
+            console.log('After making visible:');
+            console.log('- display:', overlay.style.display);
+            console.log('- opacity:', overlay.style.opacity);
+            console.log('- visibility:', overlay.style.visibility);
+            console.log('- has hidden class:', overlay.classList.contains('hidden'));
+        }
+        
+        // Initialize slideshow after a short delay
+        setTimeout(function() {
+            console.log('=== INITIALIZING SLIDESHOW ===');
+            showSlides(slideIndex);
+            startSlideshow();
+            
+            // Double-check the overlay is visible
+            if (overlay) {
+                overlay.style.display = 'flex';
+                overlay.classList.remove('hidden');
+                overlay.style.opacity = '1';
+                overlay.style.pointerEvents = 'auto';
+                overlay.style.visibility = 'visible';
+                console.log('Slideshow overlay confirmed visible');
+                
+                // Final state check
+                console.log('Final overlay state:');
+                console.log('- display:', overlay.style.display);
+                console.log('- opacity:', overlay.style.opacity);
+                console.log('- visibility:', overlay.style.visibility);
+                console.log('- has hidden class:', overlay.classList.contains('hidden'));
+            }
+        }, 100);
+    }
+    
+    console.log('=== SLIDESHOW DEBUG END ===');
+});
+
+function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+    
+    console.log('showSlides called with n =', n, 'slides.length =', slides.length, 'dots.length =', dots.length);
+    
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+    }
+    
+    // Remove active class from all dots
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    
+    // Show current slide and activate current dot
+    slides[slideIndex-1].classList.add("active");
+    dots[slideIndex-1].classList.add("active");
+    
+    console.log('Current slide index:', slideIndex, 'Active slide:', slides[slideIndex-1]);
+}
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+    resetSlideshowTimer();
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+    resetSlideshowTimer();
+}
+
+function startSlideshow() {
+    slideInterval = setInterval(() => {
+        slideIndex++;
+        showSlides(slideIndex);
+    }, slideDelay);
+    
+    // Add a periodic check to ensure slideshow stays visible
+    setInterval(() => {
+        const overlay = document.getElementById('slideshowOverlay');
+        if (overlay && !localStorage.getItem('slideshowSeen')) {
+            if (overlay.style.display === 'none' || overlay.classList.contains('hidden')) {
+                console.log('=== SLIDESHOW WAS HIDDEN - RESTORING ===');
+                console.log('Slideshow was hidden, making it visible again...');
+                console.log('Previous state:');
+                console.log('- display:', overlay.style.display);
+                console.log('- has hidden class:', overlay.classList.contains('hidden'));
+                console.log('- localStorage slideshowSeen:', localStorage.getItem('slideshowSeen'));
+                
+                overlay.style.display = 'flex';
+                overlay.classList.remove('hidden');
+                overlay.style.opacity = '1';
+                overlay.style.pointerEvents = 'auto';
+                overlay.style.visibility = 'visible';
+                
+                console.log('Restored state:');
+                console.log('- display:', overlay.style.display);
+                console.log('- has hidden class:', overlay.classList.contains('hidden'));
+            }
+        }
+    }, 500); // Check every 500ms
+}
+
+function resetSlideshowTimer() {
+    clearInterval(slideInterval);
+    startSlideshow();
+}
+
+function skipSlideshow() {
+    console.log('skipSlideshow called');
+    localStorage.setItem('slideshowSeen', 'true');
+    hideSlideshow();
+}
+
+function hideSlideshow() {
+    console.log('=== HIDE SLIDESHOW CALLED ===');
+    console.log('hideSlideshow called from:', new Error().stack);
+    
+    const overlay = document.getElementById('slideshowOverlay');
+    console.log('Overlay element found:', !!overlay);
+    
+    if (overlay) {
+        console.log('Current overlay state before hiding:');
+        console.log('- display:', overlay.style.display);
+        console.log('- opacity:', overlay.style.opacity);
+        console.log('- visibility:', overlay.style.visibility);
+        console.log('- has hidden class:', overlay.classList.contains('hidden'));
+        
+        // Only hide if it's currently visible
+        if (overlay.style.display !== 'none' && !overlay.classList.contains('hidden')) {
+            console.log('Hiding slideshow...');
+            overlay.classList.add('hidden');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                console.log('Slideshow hidden completely');
+            }, 500);
+            clearInterval(slideInterval);
+        } else {
+            console.log('Slideshow already hidden, not hiding again');
+        }
+    } else {
+        console.error('slideshowOverlay element not found');
+    }
+}
+
+// Keyboard navigation for slideshow
+document.addEventListener('keydown', function(e) {
+    const overlay = document.getElementById('slideshowOverlay');
+    if (overlay && overlay.style.display !== 'none' && !overlay.classList.contains('hidden')) {
+        switch(e.key) {
+            case 'ArrowLeft':
+                changeSlide(-1);
+                break;
+            case 'ArrowRight':
+                changeSlide(1);
+                break;
+            case 'Escape':
+                skipSlideshow();
+                break;
+        }
+    }
+    
+    // Debug: Press 'R' to reset slideshow (for testing)
+    if (e.key === 'r' || e.key === 'R') {
+        console.log('Resetting slideshow...');
+        localStorage.removeItem('slideshowSeen');
+        location.reload();
+    }
+    
+    // Debug: Press 'S' to force show slideshow (for testing)
+    if (e.key === 's' || e.key === 'S') {
+        console.log('Force showing slideshow...');
+        const overlay = document.getElementById('slideshowOverlay');
+        if (overlay) {
+            overlay.style.display = 'flex';
+            overlay.classList.remove('hidden');
+            showSlides(1);
+            startSlideshow();
+        }
+    }
+});
+
+// Close slideshow when clicking outside the slideshow container
+document.addEventListener('click', function(e) {
+    const overlay = document.getElementById('slideshowOverlay');
+    const container = document.querySelector('.slideshow-container');
+    
+    // Debug all clicks
+    console.log('=== CLICK EVENT DEBUG ===');
+    console.log('Click target:', e.target);
+    console.log('Click target class:', e.target.className);
+    console.log('Click target id:', e.target.id);
+    console.log('Overlay found:', !!overlay);
+    console.log('Container found:', !!container);
+    
+    if (overlay) {
+        console.log('Overlay state during click:');
+        console.log('- display:', overlay.style.display);
+        console.log('- has hidden class:', overlay.classList.contains('hidden'));
+        console.log('- localStorage slideshowSeen:', localStorage.getItem('slideshowSeen'));
+    }
+    
+    // Only process if slideshow is actually visible and user hasn't seen it before
+    if (overlay && overlay.style.display !== 'none' && !overlay.classList.contains('hidden') && !localStorage.getItem('slideshowSeen')) {
+        if (!container.contains(e.target)) {
+            console.log('=== CLOSING SLIDESHOW VIA CLICK ===');
+            console.log('Clicked outside slideshow, closing...');
+            skipSlideshow();
+            e.stopPropagation(); // Prevent this from triggering other click handlers
+        } else {
+            console.log('Click was inside slideshow container, not closing');
+        }
+    } else {
+        console.log('Click conditions not met for closing slideshow');
+    }
+});
+
 let fighters = document.querySelectorAll(".fighter");
 
 // preview selects
@@ -348,7 +606,20 @@ about.addEventListener("click", function(event) {
     event.stopPropagation();
 })
 
-document.addEventListener("click", function () {
+document.addEventListener("click", function (e) {
+    console.log('=== ABOUT MODAL CLICK HANDLER ===');
+    console.log('About modal click handler triggered');
+    
+    // Don't close about modal if slideshow is active
+    const overlay = document.getElementById('slideshowOverlay');
+    console.log('Overlay found in about handler:', !!overlay);
+    
+    if (overlay && overlay.style.display !== 'none' && !overlay.classList.contains('hidden')) {
+        console.log('Slideshow is active, not closing about modal');
+        return; // Don't process this click if slideshow is active
+    }
+    
+    console.log('Closing about modal');
     about.style.display = "none";
     mains.style.filter = "grayscale(0%)";
   });

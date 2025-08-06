@@ -984,6 +984,10 @@ nav.scrolled a {
     
 }
 
+.ultra {
+    background-image: url("images/ultra.png");
+}
+
 .suzaku {
     background-image: url("images/suzaku.png");
 }
