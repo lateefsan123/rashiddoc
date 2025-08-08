@@ -71,6 +71,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     }
     
+    // Add event listener for skip button
+    const skipButton = document.querySelector('.skip-button');
+    if (skipButton) {
+        console.log('Skip button found, adding event listener');
+        skipButton.addEventListener('click', function(e) {
+            console.log('Skip button clicked!');
+            e.preventDefault();
+            e.stopPropagation();
+            skipSlideshow();
+        });
+    } else {
+        console.log('Skip button not found');
+    }
+    
     console.log('=== SLIDESHOW DEBUG END ===');
 });
 
