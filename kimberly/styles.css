@@ -768,6 +768,13 @@ nav.scrolled a {
     background-color: var(--base-color);
 }
 
+.upper.oki-can-s3 {
+    background-image: url('images/okicans3.png');
+    --base-color: #ffb3ab;  /* soft coral red */
+    --dark-color: #d98e86;
+    background-color: var(--base-color);
+}
+
 .upper.burnout {
     background-image: url('images/burnout.png');
     --base-color: #b1e692;  /* mellow lime green */
